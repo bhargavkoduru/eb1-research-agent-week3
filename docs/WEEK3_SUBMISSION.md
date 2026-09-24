@@ -51,5 +51,4 @@ The hosted URL is still pending deployment. The app can also be run locally usin
 
 - GitHub repository: https://github.com/bhargavkoduru/eb1-research-agent-week3 (public; standalone Week 3 app).
 - Hosted app URL: add the actual deployed URL (optional extra alongside the required deliverables).
-- Live demo video, at most five minutes: add after recording.
 - Google Doc: paste this document and the Week 3 evaluation report into your own Google Doc.

@@ -19,6 +19,7 @@ def public_files():
     files.extend((ROOT / 'evals/iteration3').glob('*.json'))
     files.extend((ROOT / 'corpus/index').glob('*'))
     files.extend((ROOT / '.github/workflows').glob('*.yml'))
+    files.extend(ROOT / 'docs' / name for name in ('WEEK2_PROJECT_REPORT.docx', 'WEEK3_PROJECT_REPORT.docx') if (ROOT / 'docs' / name).exists())
     local_only = {'docs/DEMO_SCRIPT.md', '.streamlit/secrets.toml'}
     files = [path for path in files if path.relative_to(ROOT).as_posix() not in local_only]
     # Exact-key scan only, never print a key or a matching line.
@@ -35,6 +36,9 @@ def public_files():
         if path.name == '.env' or path.name.endswith('.secrets.toml') or path.suffix in ('.pdf', '.sqlite', '.db') or (path.suffix == '.npy' and relative != 'corpus/index/vectors.npy'):
             raise ValueError('A private/runtime file was selected for export')
         raw = path.read_bytes()
+        if path.suffix == '.docx':
+            with zipfile.ZipFile(path) as document:
+                raw += b''.join(document.read(name) for name in document.namelist())
         if any(s.encode() in raw for s in secrets):
             raise ValueError('Secret scan failed; export stopped without displaying the secret')
     return sorted(set(files))

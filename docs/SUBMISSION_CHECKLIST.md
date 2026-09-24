@@ -11,14 +11,13 @@ This custom use case follows the supplied Week 3 handout. Submit this repository
 | End-to-end validation | Five scenario categories covered by live and deterministic checks; 27 standalone tests passed, including hosted access/isolation; see GitHub Actions. |
 | Documentation and prompts | `WEEK3_SUBMISSION.md`, `WEEK3_EVALUATION.md`, `ARCHITECTURE.md` and `eb1/research.py`. |
 | Manual baseline comparison | Not measured. Time one manual policy search and checklist preparation before claiming a time-saving percentage. |
-| GitHub assets and live video up to five minutes | This repository and ZIP contain the Week 3 agent. Separate Week 3 video recording remains. |
+| GitHub assets | This repository and ZIP contain the Week 3 agent. |
 
 ## Finish this week's submission
 
-1. Review `WEEK3_SUBMISSION.md` and `WEEK3_EVALUATION.md`, then copy them into your Google Doc. Add your name and final links.
+1. Upload `WEEK3_PROJECT_REPORT.docx` to Google Drive and open it with Google Docs. Replace `[Your name]`; the report already includes the evaluation and repository link.
 2. Use **https://github.com/bhargavkoduru/eb1-research-agent-week3** as this week's GitHub link. It is public; no examiner invitation is needed.
-3. Record a live demo of this app, at most five minutes, explaining the project, AI coding assistance and final result. Demo scripts stay local.
-4. Optionally deploy this repository using `CLOUD_DEPLOYMENT.md`. Add the actual URL; examiners need no password or API key. Hosting is not yet complete.
-5. Submit the Doc, video and GitHub links through the course form. Nothing has been submitted to the course on your behalf.
+3. Optionally deploy this repository using `CLOUD_DEPLOYMENT.md`. Add the actual URL; examiners need no password or API key. Hosting is not yet complete.
+4. Submit the Doc and GitHub links through the course form. Nothing has been submitted to the course on your behalf.
 
 Demonstrate human approval before save. Use local mode for restart recovery; the hosted browser workspace is temporary. Do not claim a measured human time saving.
