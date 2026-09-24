@@ -29,16 +29,16 @@ This standalone Week 3 app opens directly to the research agent. Its four tools 
 
 | Data | Location and handling |
 | --- | --- |
-| API keys | Local `.env` or hosted Streamlit secrets, loaded server-side; excluded from Git and the submission ZIP. |
+| API keys | Local `.env`, loaded by the local application; excluded from Git and the submission ZIP. |
 | Source PDFs | Local project folder; selected public pages were sent to LlamaCloud for parsing. Raw PDFs and cloud responses are excluded from the ZIP. |
 | Public prepared chapters | `data/corpus/` locally; a reproducible public-only copy is included under `corpus/` in the submission. |
-| Embeddings and chunks | `data/index/` on the server; a checked public-only copy in `corpus/index/` makes cloud startup independent of embedding calls. No Pinecone index is needed. |
+| Embeddings and chunks | `data/index/` on the server; a checked public-only copy in `corpus/index/` makes startup independent of embedding calls. No Pinecone index is needed. |
 | Questions and passages | Sent to Nebius for embedding, reranking and generation. This is not fully offline processing. |
 | Research drafts and conversations | Local `runtime/checkpoints.sqlite`, retained across app restarts. |
 | Approved checklists | Local `runtime/research.sqlite`; final save requires review. |
 | Evaluation samples | Public policy questions only, under `evals/`. |
 
-Local mode must bind to `127.0.0.1`. Hosted mode needs no login. Each browser session receives a server-generated random identity and separate SQLite files under `runtime/visitors/<random identity>/`, with session and global daily request allowances. The research service stays in that browser's session state; only the public retriever is shared. URL parameters cannot select another workspace. Local files are not additionally encrypted by the app. Hosted workspace access ends when the browser session resets, including a page refresh. Server files may remain until a platform rebuild removes them; this is not automatic deletion. Download important checklists. Local mode retains its stable workspace across restarts. See `CLOUD_DEPLOYMENT.md` for access controls, limits and deployment steps.
+The local Streamlit process binds to `127.0.0.1`. Questions and policy excerpts go to Nebius, while checkpoints and approved checklists stay on the local computer. Files are not additionally encrypted by the app. Local mode retains its stable workspace across restarts. See the README for setup.
 
 ## Decisions and limits
 

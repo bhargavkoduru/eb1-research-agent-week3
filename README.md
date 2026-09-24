@@ -9,14 +9,13 @@ Example: **Research EB-1B judging evidence and prepare a short checklist of docu
 ## Submission links
 
 - Code: https://github.com/bhargavkoduru/eb1-research-agent-week3
-- [Editable Word report](docs/WEEK3_PROJECT_REPORT.docx) ? includes the write-up and evaluation; ready to open in Google Docs.
+- [Editable Word report](docs/WEEK3_PROJECT_REPORT.docx) - includes the write-up and evaluation; ready to open in Google Docs.
 - [Google Doc draft](docs/WEEK3_SUBMISSION.md)
 - [Evaluation and retained limitations](docs/WEEK3_EVALUATION.md)
 - [Requirement mapping and remaining actions](docs/SUBMISSION_CHECKLIST.md)
 - [Architecture](docs/ARCHITECTURE.md) and [source preparation](docs/SOURCE_AUDIT.md)
-- Hosted URL: **not deployed yet**. Follow [deployment instructions](docs/CLOUD_DEPLOYMENT.md).
 
-This repository provides the project documentation and code assets for the weekly submission. A hosted app URL is an extra convenience. API keys are excluded from Git and the submission ZIP.
+This repository provides the project documentation and code assets for the weekly submission. API keys are excluded from Git and the submission ZIP.
 
 ## Run a fresh copy
 
@@ -52,8 +51,8 @@ $env:EB1_HOSTED = 'false'
 
 The standalone suite passed **27 tests** locally. Tests use substitutes for provider calls. The evaluation command makes paid Nebius requests; existing measurements are included. The ZIP is `dist/eb1-research-agent-week3-submission.zip`. [GitHub Actions](https://github.com/bhargavkoduru/eb1-research-agent-week3/actions/workflows/tests.yml) runs the standalone test suite.
 
-## Hosting and privacy
+## Local execution and privacy
 
-The owner configures the Nebius key in server secrets; examiners enter no key or password. Questions and policy excerpts go to Nebius. Public retrieval data is shared; browser workspaces are separate. Download approved checklists before refreshing or closing the hosted app. Local SQLite checkpoints persist across local app restarts; hosted anonymous access lasts only for the current browser session.
+The app runs on the local computer at http://127.0.0.1:8501. No app login is required. Anyone reproducing live results supplies their own Nebius API key in a local `.env`; keys are never included in the repository. Questions and retrieved excerpts go to Nebius. Local SQLite checkpoints and approved checklists persist across app restarts.
 
-Only public policy material is included. Original PDFs, candidate records, `.env`, cloud secrets, runtime databases stay outside Git. See [build provenance](docs/BUILD_ORIGIN.md) for the original shared implementation.
+Only public policy material is included. Original PDFs, candidate records, `.env`, private settings and runtime databases stay outside Git. See [build provenance](docs/BUILD_ORIGIN.md) for the original shared implementation.
