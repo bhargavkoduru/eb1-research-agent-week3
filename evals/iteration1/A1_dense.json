@@ -1,0 +1,109 @@
+{
+  "id": "A1",
+  "mode": "dense",
+  "kind": "ambiguous",
+  "cache_key": "88f22f0875c35d32d9c4a0c90b0bfb3b22e412b32e7dacbdb5a2f7278fdc719c",
+  "expected": "Ask whether EB-1A or EB-1B; do not silently choose.",
+  "gold_ids": [],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "Yes, you can self-petition for an EB-1A visa because the petition does not require a job offer and the alien may file the petition on their own behalf.",
+        "citations": [
+          "eb1a-p003-c02"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p003-c02",
+            "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner."
+          }
+        ]
+      },
+      {
+        "text": "For EB-1B, self-petitioning is not permitted because the petition must be filed by a U.S. employer, such as a university or private employer, and requires a job offer for a tenured or tenure-track position or comparable research position.",
+        "citations": [
+          "eb1b-p015-c02"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p015-c02",
+            "text": "A U.S. employer, including a university institution of higher learning or private employer, may petition for a professor or researcher who is internationally recognized as outstanding in a specific academic area to work in a tenured or tenure-track position or a comparable position to conduct research."
+          }
+        ]
+      }
+    ],
+    "question": "Can I self-petition?",
+    "category": "Both",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 3,
+        "printed_manual_page": 787,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p003-c02",
+        "section": "Self-Petitioners",
+        "text": "### Self-Petitioners\n\nA petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]",
+        "dense_score": 0.7836
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 15,
+        "printed_manual_page": 799,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p015-c02",
+        "section": "A. Eligibility",
+        "text": "### A. Eligibility\n\nA U.S. employer, including a university institution of higher learning or private employer, may petition for a professor or researcher who is internationally recognized as outstanding in a specific academic area to work in a tenured or tenure-track position or a comparable position to conduct research.[1]",
+        "dense_score": 0.6388
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 3,
+        "printed_manual_page": 787,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p003-c01",
+        "section": "A. Eligibility",
+        "text": "When seeking classification as a person of extraordinary ability, a petitioner files an Immigrant Petition for Alien Workers (Form I-140) on behalf of an alien (who may be the petitioner) with evidence demonstrating that the beneficiary is eligible.[1]\n\n\n\nEligibility for Extraordinary Ability Classification\n\n    \n\n  \n\n\nThe person has extraordinary ability in the sciences\n\n        arts\n\n        education\n\n        business\n\n        or athletics\n\n        which has been demonstrated by sustained national or international acclaim\n\n        and whose achievements have been recognized in the field through extensive documentation.\n\n    \n\n    \nThe person seeks to enter the United States to continue work in the area of extraordinary ability.\n\n    \n\n    \nThe person's entry into the United States will substantially benefit the United States in the future.",
+        "dense_score": 0.6303
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 11,
+        "printed_manual_page": 795,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p011-c03",
+        "section": "2. Final Merits Determination",
+        "text": "## 2. Final Merits Determination\n\nIn the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination.\n\nAn officer may not limit the kind of evidence the officer thinks the person should be able to submit and deny the petition if that particular type of evidence (whether one of the prescribed types[42] or comparable evidence[43]) is absent, if the person nonetheless submitted other types of evidence that meet the regulatory requirements for the classification.\n\nFor example, an officer may think that if a person is extraordinary, there should be published articles about the person and the person's work. However, an officer cannot deny the petition because no published articles were submitted, so long as the petitioner has submitted other evidence that meets the three qualifying criteria which demonstrates the person is in fact extraordinary. Approval or denial of a petition is based on the type and quality of evidence submitted rather than assumptions about the failure to address different criteria.",
+        "dense_score": 0.6138
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 6.72
+  },
+  "behavior_pass": false,
+  "precision_at_4": null,
+  "recall_at_4": null,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

@@ -1,0 +1,23 @@
+{
+  "id": "A2",
+  "mode": "hybrid",
+  "kind": "ambiguous",
+  "cache_key": "e4c10ba08fed09e083d2828f99cda9e35a305835c5687d03c488f0e5e7efdf7e",
+  "expected": "Ask EB-1A or EB-1B because the thresholds differ.",
+  "gold_ids": [],
+  "answer": {
+    "status": "clarify",
+    "message": "Are you asking about EB-1A (extraordinary ability) or EB-1B (outstanding professors and researchers)? Select a category and ask again.",
+    "claims": [],
+    "question": "How many criteria do I need?",
+    "category": "Both",
+    "passages": [],
+    "retrieval_warning": null,
+    "seconds": 0.0
+  },
+  "behavior_pass": true,
+  "precision_at_4": null,
+  "recall_at_4": null,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

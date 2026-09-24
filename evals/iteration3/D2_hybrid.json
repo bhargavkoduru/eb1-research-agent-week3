@@ -1,0 +1,137 @@
+{
+  "id": "D2",
+  "mode": "hybrid",
+  "kind": "direct",
+  "cache_key": "9c1a2c22a86607c4b6a3782ce24e695a709336505f0a5177c83ccb574e6b12f7",
+  "expected": "Actual participation required, not just invitation; invitation plus completed-review evidence is an example.",
+  "gold_ids": [
+    "eb1a-p007-c01"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "For EB-1A, an invitation to peer review alone is not sufficient; the review must actually be completed to satisfy the criterion.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e4",
+          "eb1a-p007-c01-e9"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;"
+          },
+          {
+            "id": "eb1a-p007-c01",
+            "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01"
+        ]
+      },
+      {
+        "text": "USCIS requires evidence that the person not only received an invitation to judge but also participated in the judging process, such as by completing a peer review.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e9"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01"
+        ]
+      },
+      {
+        "text": "The completion of a peer review is a required component of the evidence, as demonstrated by the need to submit both a request to review and proof that the review was completed.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e4"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;"
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01"
+        ]
+      }
+    ],
+    "question": "For EB-1A judging, is an invitation to peer review sufficient, or must the review actually be completed?",
+    "category": "EB-1A",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 7,
+        "printed_manual_page": 791,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p007-c01",
+        "section": "Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]",
+        "text": "## Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]\n\nUSCIS determines whether the person has acted as the judge of the work of others in the same or an allied field of specification.\n\nExamples of judging the work of others may include, but are not limited to:\n\n* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;\n\n* Peer review of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n\n* Serving as a member of a Ph.D. dissertation committee that makes the final judgment as to whether a candidate's body of work satisfies the requirements for a doctoral degree, as evidenced by departmental records; and\n\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review.",
+        "dense_score": 0.8085
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 11,
+        "printed_manual_page": 795,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p011-c02",
+        "section": "Comparable evidence: Comparable evidence to establish the person's eligibility if the standards do not readily apply to the person's occupation.[39]",
+        "text": "However, objectively meeting the regulatory criteria in the first step alone does not establish that the person in fact meets the requirements for classification as a person with extraordinary ability.[41]\n\n**For example:**\n\n* Participating in the judging of the work of others in the same or an allied field of specialization alone, regardless of the circumstances, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's participation to determine whether it was indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\n* Publishing scholarly articles in professional or major trade publications or other major media alone, regardless of the caliber, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's publications to determine whether they were indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\nThe question of whether the person is one of that small percentage who have risen to the very top of the field of endeavor and enjoys sustained national or international acclaim should be addressed in the second step of the analysis (final merits determination). In the first step, the officer is only required to determine if the evidence objectively meets the regulatory criteria.",
+        "dense_score": 0.7115
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 12,
+        "printed_manual_page": 796,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p012-c02",
+        "section": "2. Final Merits Determination",
+        "text": "* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and\n\n* The record establishes that the person is named as an investigator, scientist, or researcher on a peer-reviewed and competitively-funded U.S. government grant or stipend for STEM research. This type of evidence can be a positive factor indicating a person is among the small percentage at the top of the person's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the person's extraordinary ability in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the person has achieved sustained national or international acclaim and recognition in their field of expertise.\n\nWhile a person may be stronger in one particular evidentiary area than in others, the totality of the evidence must establish that the person is extraordinary. If the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concluded that the petitioner has not demonstrated by a preponderance of the evidence that the person has extraordinary ability.[50] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.\n\nIf requesting additional evidence is appropriate, officers should provide some explanation of the deficiencies in the evidence already submitted and, if possible, examples of persuasive evidence that the petitioner might provide to corroborate the statements made in the petition. If a petitioner has submitted evidence that the petitioner believes establishes the person's extraordinary ability, merely restating the evidentiary requirements or stating that the evidence submitted is insufficient does not clarify to the petitioner how to overcome the deficiencies.\n\nWith respect to demonstrating extraordinary ability in athletics, USCIS considers a male athlete who has been competing against women to be a negative factor in determining whether the alien is among the small percentage at the very top of the field.[51]",
+        "dense_score": 0.7353
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 14,
+        "printed_manual_page": 798,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p014-c01",
+        "section": "Footnotes",
+        "text": "[^ 16] See 8 CFR 204.5(h)(3).\n\n[^ 17] For example, in evaluating an award submitted under 8 CFR 204.5(h)(3)(i), it is necessary to consider the level of recognition the award holds to determine whether it is \"nationally or internationally recognized,\" consistent with the requirements of the criterion. However, evidence that the beneficiary's work was displayed at an artistic exhibition alone, regardless of caliber or significance, would satisfy the requirements of 8 CFR 204.5(h)(3)(vii).\n\n[^ 18] See *Kazarian v. USCIS* (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010).\n\n[^ 19] See 8 CFR 204.5(h)(3).\n\n[^ 20] See 8 CFR 204.5(h)(3)(i).\n\n[^ 21] In general, qualifying awards include team awards where each member receives a trophy, certification, or medal; appears on the podium or stage; or is specifically named in the awarding organization's announcement of the award selection. Examples include members of a musical group who receive an award and relay team members who appear together on the medal podium. Mere acknowledgment from the award recipient does not constitute receiving the award from the awarding authority.\n\n[^ 22] The Carnegie Classification of Institutions of Higher Education recognizes R1 and R2 doctoral universities as having very high or high research activity, respectively, based on publicly available federal government data regarding the number of doctoral degrees awarded and the amount of total research expenditures. See the Carnegie Classification of Institutions of Higher Education's Carnegie Classification webpage.\n\n[^ 23] See 8 CFR 204.5(h)(3)(ii).\n\n[^ 24] While current membership is not required to meet the plain language requirements of this criterion, if the petition is not accompanied by any recent evidence, the length of time since membership may be a consideration for whether the person has sustained acclaim in the final merits determination.\n\n[^ 25] See 8 CFR 204.5(h)(3)(iii).\n\n[^ 26] See 8 CFR 204.5(h)(3)(iv).\n\n[^ 27] See 8 CFR 204.5(h)(3)(v).\n\n[^ 28] See 8 CFR 204.5(h)(3)(vi).\n\n[^ 29] While many articles accepted for presentation at conferences do not result in publication, there are conferences that peer review and publish accepted presentations in professional journals (sometimes called proceedings), such that they may qualify as scholarly articles under this criterion.",
+        "dense_score": 0.6545
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 9.41
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.25,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

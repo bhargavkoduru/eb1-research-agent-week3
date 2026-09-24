@@ -1,0 +1,23 @@
+{
+  "id": "A3",
+  "mode": "hybrid",
+  "kind": "ambiguous",
+  "cache_key": "95db4adb3d59e55fcf23cfa1010e4732fcce1ea316aa1b4292933bfed351758b",
+  "expected": "Ask which category; no single universal answer.",
+  "gold_ids": [],
+  "answer": {
+    "status": "clarify",
+    "message": "Are you asking about EB-1A (extraordinary ability) or EB-1B (outstanding professors and researchers)? Select a category and ask again.",
+    "claims": [],
+    "question": "Do I need a job offer for this?",
+    "category": "Both",
+    "passages": [],
+    "retrieval_warning": null,
+    "seconds": 0.0
+  },
+  "behavior_pass": true,
+  "precision_at_4": null,
+  "recall_at_4": null,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

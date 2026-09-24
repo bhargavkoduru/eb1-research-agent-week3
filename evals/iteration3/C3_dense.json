@@ -1,0 +1,151 @@
+{
+  "id": "C3",
+  "mode": "dense",
+  "kind": "cross_chapter",
+  "cache_key": "21e6590e5f25b0ce95122fb0a26383d54b3751f0b01ecb5748858efaa0d78a9a",
+  "expected": "EB-1A criterion calls for major significance; EB-1B criterion does not require major significance but requires an original contribution to the academic field, not merely an individual laboratory.",
+  "gold_ids": [
+    "eb1a-p007-c02",
+    "eb1b-p019-c02"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "EB-1A requires original contributions of major significance in the field, while EB-1B requires original scientific or scholarly research contributions to the academic field without a requirement for major significance.",
+        "evidence_ids": [
+          "eb1a-p007-c02-e3",
+          "eb1b-p019-c02-e6"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c02",
+            "text": "Second, USCIS determines whether the original contributions are of major significance to the field."
+          },
+          {
+            "id": "eb1b-p019-c02",
+            "text": "The regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c02",
+          "eb1b-p019-c02"
+        ]
+      },
+      {
+        "text": "Major significance is explicitly required for EB-1A but is not required for EB-1B, though the latter still requires contributions that are original and meaningful to the academic field.",
+        "evidence_ids": [
+          "eb1a-p007-c02-e3",
+          "eb1b-p019-c02-e6"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c02",
+            "text": "Second, USCIS determines whether the original contributions are of major significance to the field."
+          },
+          {
+            "id": "eb1b-p019-c02",
+            "text": "The regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c02",
+          "eb1b-p019-c02"
+        ]
+      },
+      {
+        "text": "Both EB-1A and EB-1B allow similar types of evidence, such as published materials, expert letters, citations, and patents, to support the claim of original contributions, but the threshold for significance differs between the two categories.",
+        "evidence_ids": [
+          "eb1a-p007-c02-e4",
+          "eb1b-p019-c02-e3"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c02",
+            "text": "Examples of relevant evidence include, but are not limited to:"
+          },
+          {
+            "id": "eb1b-p019-c02",
+            "text": "Examples of relevant evidence of qualifying contributions may include, but are not limited to:"
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c02",
+          "eb1b-p019-c02"
+        ]
+      }
+    ],
+    "question": "Compare EB-1A original contributions of major significance with EB-1B original scientific or scholarly research contributions. Is major significance required by both criteria?",
+    "category": "Both",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 7,
+        "printed_manual_page": 791,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p007-c02",
+        "section": "Criterion 5: The person's original scientific, scholarly, artistic, athletic, or business-related contributions of major significance in the field.[27]",
+        "text": "## Criterion 5: The person's original scientific, scholarly, artistic, athletic, or business-related contributions of major significance in the field.[27]\n\nFirst, USCIS determines whether the person has made original contributions in the field.\n\nSecond, USCIS determines whether the original contributions are of major significance to the field.\n\nExamples of relevant evidence include, but are not limited to:\n\n* Published materials about the significance of the person's original work;\n\n* Testimonials, letters, and affidavits about the person's original work;\n\n* Documentation that the person's original work was cited at a level indicative of major significance in the field; and\n\n* Patents or licenses deriving from the person's work or evidence of commercial use of the person's work.\n\n**Considerations:**\n\nAnalysis under this criterion focuses on whether the person's original work constitutes major, significant contributions to the field.\n\nEvidence that the person's work was funded, patented, or published, while potentially demonstrating the work's originality, will not necessarily establish, on its own, that the work is of major significance to the field.\n\nFor example, published research that has provoked widespread commentary on its importance from others working in the field, and documentation that it has been highly cited relative to others' work in that field, may be probative of the significance of the person's contributions to the field of endeavor.\n\nSimilarly, evidence that the person developed a patented technology that has attracted significant attention or commercialization may establish the significance of the person's original contribution to the field. If a patent remains pending, USCIS generally requires additional supporting evidence to document the originality of the person's contribution, such as detailed reference letters.\n\nDetailed letters from experts in the field explaining the nature and significance of the person's contribution may also provide valuable context for evaluating the claimed original contributions of major significance, particularly when the record includes documentation corroborating the claimed significance.\n\nSubmitted letters should specifically describe the person's contribution and its significance to the field and should also set forth the basis of the writer's knowledge and expertise.",
+        "dense_score": 0.7663
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 19,
+        "printed_manual_page": 803,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p019-c02",
+        "section": "Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]",
+        "text": "## Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]\n\nUSCIS determines whether the beneficiary has made original scientific or scholarly research contributions to the academic field.\n\nExamples of relevant evidence of qualifying contributions may include, but are not limited to:\n\n* Published materials about the significance of the beneficiary's original work;\n* Testimonials, letters, and affidavits about the beneficiary's original work;\n* Documentation that the beneficiary's original work was cited at a level indicative of an original scientific or scholarly research contribution to an academic field; and\n* Patents or licenses deriving from the beneficiary's work or evidence of commercial use of the beneficiary's work.\n\n**Considerations:**\n\nThe regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution.\n\nThe regulations include a separate criterion for scholarly articles.[17] Therefore, contributions are a separate evidentiary requirement from scholarly articles.\n\nPossible items that could satisfy this criterion include, but are not limited to:\n\n* Citation history or patterns for the beneficiary's work, as evidenced by number of citations, as well as an examination of the impact factor for the journals in which the beneficiary publishes.[18] While many scholars publish, not all are cited or publish in journals with significant impact factors. The petitioner may use web tools such as Google Scholar, SciFinder, and the Web of Science to establish the number of citations and the impact factor for journals; and\n\n* Detailed letters from experts in the field explaining the nature and significance of the beneficiary's contribution may also provide valuable context for evaluating whether the original work is a contribution to the academic field, particularly when the record includes documentation corroborating the claimed significance. Submitted letters should specifically describe the beneficiary's contribution and its significance to the field and should also set forth the basis of the writer's knowledge and expertise.",
+        "dense_score": 0.7279
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 22,
+        "printed_manual_page": 806,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p022-c02",
+        "section": "Footnotes",
+        "text": "## Footnotes\n\n[1] See INA 203(b)(1)(B). See 8 CFR 204.5(i).\n\n[2] See 8 CFR 204.5(i)(3).\n\n[3] See 8 CFR 204.5(i)(2).\n\n[4] See 8 CFR 204.5(i)(2) (definition of academic field).\n\n[5] See 8 CFR 204.5(i)(2), defining \"permanent, in reference to a research position\" as \"either tenured, tenure-track, or for a term of indefinite or unlimited duration, and in which the employee will ordinarily have an expectation of continued employment unless there is good cause for termination.\"\n\n[6] See 8 CFR 204.5(i)(3)(iii) and 8 CFR 204.5(i)(3)(iv). See 8 CFR 204.5(i)(2) for definitions for permanent and academic field.\n\n[7] See Matter of Chawathe (PDF), 25 I&N Dec. 369, 376 (AAO 2010) (\"[T]ruth is to be determined not by the quantity of evidence alone but by its quality. Therefore, in adjudicating the application pursuant to the preponderance of the evidence standard, the director must examine each piece of evidence for relevance, probative value, and credibility, both individually and within the context of the totality of the evidence, to determine whether the fact to be proven is probably true\"). See Kazarian v. USCIS (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010). USCIS has interpreted Kazarian as applicable to outstanding professor and researcher petitions.\n\n[8] See 8 CFR 204.5(i)(3)(i). The regulation at 8 CFR 204.5(i)(3)(ii) allows a petitioner to submit comparable evidence to establish eligibility if the standards in 8 CFR 204.5(i)(3)(i) do not readily apply.\n\n[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D).",
+        "dense_score": 0.6443
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 16,
+        "printed_manual_page": 800,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p016-c03",
+        "section": "Criterion 1: Receipt of major prizes or awards for outstanding achievement in the academic field. [10]",
+        "text": "## Criterion 1: Receipt of major prizes or awards for outstanding achievement in the academic field. [10]\n\n\n\n\nFirst\n\n        USCIS determines if the beneficiary was the recipient of prizes or awards. The description of this type of evidence in the regulation indicates that the focus must be on the beneficiary's receipt of the major prizes or awards\n\n        as opposed to the employer's receipt of the prizes or awards.\n\n    \n\n    \nSecond\n\n        USCIS determines whether the prizes or awards received are major ones and are for outstanding achievement in the academic field.",
+        "dense_score": 0.6288
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 16.17
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.5,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

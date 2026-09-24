@@ -1,0 +1,230 @@
+{
+  "reviewer": "Automated test reviewer; not a real user approval",
+  "scenarios": [
+    {
+      "name": "live research, restart, edit, approve, idempotent save",
+      "pass": true,
+      "seconds": 20.76,
+      "trace": [
+        {
+          "step": 1,
+          "action": "search_policy",
+          "reason": ""
+        },
+        {
+          "observation": "Retrieved 4 passages.",
+          "warning": null
+        },
+        {
+          "step": 2,
+          "action": "draft_checklist",
+          "reason": "Based on the policy manual evidence, a checklist has been drafted to verify EB-1B eligibility, focusing on international recognition, employment with leading institutions, speaking invitations, grant funding, publication quality, citation impact, and expert testimonials. The checklist includes required documentation and contextual explanations to meet the preponderance of evidence standard."
+        },
+        {
+          "action": "save_approved_checklist",
+          "saved_id": "d1512a20262644bb3989ff53",
+          "attempts": 1
+        }
+      ],
+      "draft": {
+        "title": "Research EB-1B judging evidence and prepare a short checklist of documentation to verify.",
+        "category": "EB-1B",
+        "snapshot": "2026-09-23",
+        "items": [
+          {
+            "task": "Review and document this policy point.",
+            "text": "The petitioner must provide evidence that the beneficiary is recognized internationally as outstanding in a specific academic field, which is defined as a body of specialized knowledge offered at an accredited U.S. university or institution of higher education.",
+            "evidence_ids": [
+              "eb1b-p016-c01-e1",
+              "eb1b-p016-c01-e2"
+            ],
+            "quotes": [
+              {
+                "id": "eb1b-p016-c01",
+                "text": "The regulation describes the evidence that the petitioner must submit in support of an Immigrant Petition for Alien Workers (Form I-140) for an outstanding professor or researcher.[2] The petitioner must submit evidence to demonstrate that the beneficiary professor or researcher (beneficiary) is recognized internationally as outstanding in the academic field specified in the petition. Academic field means \"a body of specialized knowledge offered for study at an accredited U.S. university or institution of higher education.\"[3]"
+              },
+              {
+                "id": "eb1b-p016-c01",
+                "text": "By regulatory definition, a body of specialized knowledge is larger than a very small area of specialization in which only a single course is taught or that is the subject of a very specialized dissertation. As such, it would be acceptable to find the beneficiary is an outstanding professor or researcher in particle physics rather than physics in general, as long as the petitioner has demonstrated that the claimed field is \"a body of specialized knowledge offered for study at an accredited United States university or institution of higher education.\"[4]"
+              }
+            ],
+            "citations": [
+              "eb1b-p016-c01"
+            ]
+          },
+          {
+            "task": "Review and document this policy point.",
+            "text": "The beneficiary must have at least three years of experience in teaching or research in the academic field in which they will be employed.",
+            "evidence_ids": [
+              "eb1b-p016-c01-e3"
+            ],
+            "quotes": [
+              {
+                "id": "eb1b-p016-c01",
+                "text": "In addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]"
+              }
+            ],
+            "citations": [
+              "eb1b-p016-c01"
+            ]
+          },
+          {
+            "task": "Review and document this policy point.",
+            "text": "The petitioner must submit an offer of tenured or tenure-track employment (for professors) or permanent employment (for researchers) from a qualifying prospective employer.",
+            "evidence_ids": [
+              "eb1b-p016-c01-e3"
+            ],
+            "quotes": [
+              {
+                "id": "eb1b-p016-c01",
+                "text": "In addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]"
+              }
+            ],
+            "citations": [
+              "eb1b-p016-c01"
+            ]
+          },
+          {
+            "task": "Review and document this policy point.",
+            "text": "The petitioner must submit at least two types of evidence demonstrating the beneficiary's international recognition, such as employment with leading institutions, unsolicited speaking invitations at recognized conferences, or being named as an investigator on a peer-reviewed, competitively funded U.S. government STEM grant.",
+            "evidence_ids": [
+              "eb1b-p021-c01-e1",
+              "eb1b-p021-c01-e2",
+              "eb1b-p021-c01-e3"
+            ],
+            "quotes": [
+              {
+                "id": "eb1b-p021-c01",
+                "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;"
+              },
+              {
+                "id": "eb1b-p021-c01",
+                "text": "* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and"
+              },
+              {
+                "id": "eb1b-p021-c01",
+                "text": "* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field."
+              }
+            ],
+            "citations": [
+              "eb1b-p021-c01"
+            ]
+          },
+          {
+            "task": "Review and document this policy point.",
+            "text": "The petitioner must provide context explaining the significance of the evidence and how it demonstrates the beneficiary's international recognition in the totality of the circumstances, including quality of publications, citation rates, and expert testimonials.",
+            "evidence_ids": [
+              "eb1b-p021-c01-e4",
+              "eb1b-p020-c03-e5",
+              "eb1b-p020-c03-e6",
+              "eb1b-p019-c02-e9",
+              "eb1b-p019-c02-e10"
+            ],
+            "quotes": [
+              {
+                "id": "eb1b-p021-c01",
+                "text": "In all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the beneficiary's international recognition in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the beneficiary is internationally recognized as outstanding."
+              },
+              {
+                "id": "eb1b-p020-c03",
+                "text": "* The record demonstrates that the beneficiary has published articles in highly-ranked journals relative to other journals in the field, as demonstrated by, for example, evidence the petitioner provides regarding the journal's impact factor.[26] Depending on the level of recognition of the journals in question, as demonstrated by evidence in the record, there may be a high level of recognition associated with publication in such journals, especially if the beneficiary is the most significant contributor to the publication, a senior author, or the sole author of the article;"
+              },
+              {
+                "id": "eb1b-p020-c03",
+                "text": "* The petitioner provides evidence demonstrating that the total rate of citations to the beneficiary's body of published work is high relative to others in the field, such as the beneficiary has a high h-index[27] for the field. Depending on the field and the comparative data the petitioner provides, such evidence may indicate a beneficiary's high overall standing for the purpose of demonstrating that the beneficiary enjoys international recognition as outstanding;[28]"
+              },
+              {
+                "id": "eb1b-p019-c02",
+                "text": "* Citation history or patterns for the beneficiary's work, as evidenced by number of citations, as well as an examination of the impact factor for the journals in which the beneficiary publishes.[18] While many scholars publish, not all are cited or publish in journals with significant impact factors. The petitioner may use web tools such as Google Scholar, SciFinder, and the Web of Science to establish the number of citations and the impact factor for journals; and"
+              },
+              {
+                "id": "eb1b-p019-c02",
+                "text": "* Detailed letters from experts in the field explaining the nature and significance of the beneficiary's contribution may also provide valuable context for evaluating whether the original work is a contribution to the academic field, particularly when the record includes documentation corroborating the claimed significance. Submitted letters should specifically describe the beneficiary's contribution and its significance to the field and should also set forth the basis of the writer's knowledge and expertise."
+              }
+            ],
+            "citations": [
+              "eb1b-p021-c01",
+              "eb1b-p020-c03",
+              "eb1b-p019-c02"
+            ]
+          }
+        ],
+        "user_note": "Automated test: locate confirmation of completed peer review.",
+        "sources": [
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 21,
+            "printed_manual_page": 805,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p021-c01",
+            "section": "2. Final Merits Determination",
+            "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;\n\n* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and\n\n* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the beneficiary's international recognition in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the beneficiary is internationally recognized as outstanding.\n\nWhen requesting additional evidence or denying a petition, if the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concludes that the petitioner, by a preponderance of the evidence, has not demonstrated that the beneficiary is an outstanding professor or researcher.[31] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.[32]",
+            "dense_score": 0.6406
+          },
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 20,
+            "printed_manual_page": 804,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p020-c03",
+            "section": "2. Final Merits Determination",
+            "text": "## 2. Final Merits Determination\n\nMeeting the minimum requirement by providing at least two types of initial evidence does not, in itself, establish that the beneficiary in fact meets the requirements for classification as an outstanding professor or researcher.[23] Officers also consider the quality of the evidence. In the second step of the analysis in each case, officers should evaluate the evidence together when considering the petition in its entirety to make a final merits determination of whether or not the petitioner, by a preponderance of the evidence, has demonstrated that the beneficiary is recognized internationally as outstanding in a specific academic area.[24]\n\nAt this step, officers consider any potentially relevant evidence, even if such evidence does not fit one of the above regulatory criteria or was not presented as comparable evidence. The officers consider all evidence in the totality. Some evidence may weigh more favorably on its own, while other evidence is more persuasive when viewed with other evidence.\n\nThe following are examples of situations where evidence in the record may help officers evaluate the quality of the initial or comparable evidence to determine whether, in a totality analysis that considers all of the evidence, the beneficiary is internationally recognized as outstanding:[25]\n\n* The record demonstrates that the beneficiary has published articles in highly-ranked journals relative to other journals in the field, as demonstrated by, for example, evidence the petitioner provides regarding the journal's impact factor.[26] Depending on the level of recognition of the journals in question, as demonstrated by evidence in the record, there may be a high level of recognition associated with publication in such journals, especially if the beneficiary is the most significant contributor to the publication, a senior author, or the sole author of the article;\n\n* The petitioner provides evidence demonstrating that the total rate of citations to the beneficiary's body of published work is high relative to others in the field, such as the beneficiary has a high h-index[27] for the field. Depending on the field and the comparative data the petitioner provides, such evidence may indicate a beneficiary's high overall standing for the purpose of demonstrating that the beneficiary enjoys international recognition as outstanding;[28]",
+            "dense_score": 0.6212
+          },
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 19,
+            "printed_manual_page": 803,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p019-c02",
+            "section": "Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]",
+            "text": "## Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]\n\nUSCIS determines whether the beneficiary has made original scientific or scholarly research contributions to the academic field.\n\nExamples of relevant evidence of qualifying contributions may include, but are not limited to:\n\n* Published materials about the significance of the beneficiary's original work;\n* Testimonials, letters, and affidavits about the beneficiary's original work;\n* Documentation that the beneficiary's original work was cited at a level indicative of an original scientific or scholarly research contribution to an academic field; and\n* Patents or licenses deriving from the beneficiary's work or evidence of commercial use of the beneficiary's work.\n\n**Considerations:**\n\nThe regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution.\n\nThe regulations include a separate criterion for scholarly articles.[17] Therefore, contributions are a separate evidentiary requirement from scholarly articles.\n\nPossible items that could satisfy this criterion include, but are not limited to:\n\n* Citation history or patterns for the beneficiary's work, as evidenced by number of citations, as well as an examination of the impact factor for the journals in which the beneficiary publishes.[18] While many scholars publish, not all are cited or publish in journals with significant impact factors. The petitioner may use web tools such as Google Scholar, SciFinder, and the Web of Science to establish the number of citations and the impact factor for journals; and\n\n* Detailed letters from experts in the field explaining the nature and significance of the beneficiary's contribution may also provide valuable context for evaluating whether the original work is a contribution to the academic field, particularly when the record includes documentation corroborating the claimed significance. Submitted letters should specifically describe the beneficiary's contribution and its significance to the field and should also set forth the basis of the writer's knowledge and expertise.",
+            "dense_score": 0.6015
+          },
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 16,
+            "printed_manual_page": 800,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p016-c01",
+            "section": "B. Evidence",
+            "text": "## B. Evidence\n\nThe regulation describes the evidence that the petitioner must submit in support of an Immigrant Petition for Alien Workers (Form I-140) for an outstanding professor or researcher.[2] The petitioner must submit evidence to demonstrate that the beneficiary professor or researcher (beneficiary) is recognized internationally as outstanding in the academic field specified in the petition. Academic field means \"a body of specialized knowledge offered for study at an accredited U.S. university or institution of higher education.\"[3]\n\nBy regulatory definition, a body of specialized knowledge is larger than a very small area of specialization in which only a single course is taught or that is the subject of a very specialized dissertation. As such, it would be acceptable to find the beneficiary is an outstanding professor or researcher in particle physics rather than physics in general, as long as the petitioner has demonstrated that the claimed field is \"a body of specialized knowledge offered for study at an accredited United States university or institution of higher education.\"[4]\n\nIn addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as an outstanding professor or researcher.[7]\n\n\n\nPetition to Classify an Outstanding Professor or Researcher: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.\n\n    \n\n  \n\n\nOfficers should apply a preponderance of the evidence standard when making these determinations.",
+            "dense_score": 0.6045
+          }
+        ]
+      }
+    },
+    {
+      "name": "ambiguous request asks, then cancels",
+      "pass": true,
+      "seconds": 0.01
+    },
+    {
+      "name": "unsupported request hands off",
+      "pass": true,
+      "seconds": 0.01,
+      "message": "This policy corpus cannot estimate a personal approval probability. A qualified immigration professional can review the complete case; this app can research specific policy requirements.",
+      "trace": []
+    }
+  ]
+}

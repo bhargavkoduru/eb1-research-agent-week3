@@ -1,0 +1,139 @@
+{
+  "id": "C2",
+  "mode": "hybrid",
+  "kind": "cross_chapter",
+  "cache_key": "a94813e189e61c9e14729478d6c23f2ecc3306a0e4c926e7d2686caa39ecfed1",
+  "expected": "Both need actual participation, not just invitation; EB-1A same/allied field of specialization; EB-1B same/allied academic field.",
+  "gold_ids": [
+    "eb1a-p007-c01",
+    "eb1b-p019-c01"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "In both EB-1A and EB-1B, an invitation alone to judge the work of others is not sufficient; the petitioner must show that the individual actually participated in judging activities in the same or an allied field.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e9",
+          "eb1b-p019-c01-e6"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+          },
+          {
+            "id": "eb1b-p019-c01",
+            "text": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01",
+          "eb1b-p019-c01"
+        ]
+      },
+      {
+        "text": "For EB-1A, actual participation in judging satisfies the first-step regulatory criterion, but in the second step, USCIS evaluates whether such participation reflects the individual being among the top of their field with sustained acclaim.",
+        "evidence_ids": [
+          "eb1a-p011-c02-e3"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p011-c02",
+            "text": "* Participating in the judging of the work of others in the same or an allied field of specialization alone, regardless of the circumstances, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's participation to determine whether it was indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim."
+          }
+        ],
+        "citations": [
+          "eb1a-p011-c02"
+        ]
+      },
+      {
+        "text": "For EB-1B, actual participation in judging satisfies the first-step requirement, but the second step requires evaluation of whether this participation indicates the beneficiary is internationally recognized as outstanding in their academic field.",
+        "evidence_ids": [
+          "eb1b-p016-c02-e4"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p016-c02",
+            "text": "* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area."
+          }
+        ],
+        "citations": [
+          "eb1b-p016-c02"
+        ]
+      }
+    ],
+    "question": "Compare the judging criterion in EB-1A and EB-1B. Is an invitation alone enough for either?",
+    "category": "Both",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 7,
+        "printed_manual_page": 791,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p007-c01",
+        "section": "Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]",
+        "text": "## Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]\n\nUSCIS determines whether the person has acted as the judge of the work of others in the same or an allied field of specification.\n\nExamples of judging the work of others may include, but are not limited to:\n\n* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;\n\n* Peer review of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n\n* Serving as a member of a Ph.D. dissertation committee that makes the final judgment as to whether a candidate's body of work satisfies the requirements for a doctoral degree, as evidenced by departmental records; and\n\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review.",
+        "dense_score": 0.6882
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 19,
+        "printed_manual_page": 803,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p019-c01",
+        "section": "Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]",
+        "text": "## Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]\n\nUSCIS determines whether the beneficiary has participated, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.\n\nExamples of qualifying judging experience may include, but are not limited to:\n\n* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field.\n\nFor example, a petitioner might document a beneficiary's peer review work by submitting a copy of a request from a journal to the beneficiary to do the review, accompanied by evidence confirming that the beneficiary actually completed the review.",
+        "dense_score": 0.6768
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 11,
+        "printed_manual_page": 795,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p011-c02",
+        "section": "Comparable evidence: Comparable evidence to establish the person's eligibility if the standards do not readily apply to the person's occupation.[39]",
+        "text": "However, objectively meeting the regulatory criteria in the first step alone does not establish that the person in fact meets the requirements for classification as a person with extraordinary ability.[41]\n\n**For example:**\n\n* Participating in the judging of the work of others in the same or an allied field of specialization alone, regardless of the circumstances, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's participation to determine whether it was indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\n* Publishing scholarly articles in professional or major trade publications or other major media alone, regardless of the caliber, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's publications to determine whether they were indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\nThe question of whether the person is one of that small percentage who have risen to the very top of the field of endeavor and enjoys sustained national or international acclaim should be addressed in the second step of the analysis (final merits determination). In the first step, the officer is only required to determine if the evidence objectively meets the regulatory criteria.",
+        "dense_score": 0.659
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 16,
+        "printed_manual_page": 800,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p016-c02",
+        "section": "1. Assess Whether Evidence Meets Any Regulatory Criteria",
+        "text": "### 1. Assess Whether Evidence Meets Any Regulatory Criteria\n\nThe first step of the evidentiary review is limited to determining whether the evidence submitted with the petition is comprised of at least two of the six regulatory criteria.[8]\n\nFor purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[9] Officers should not yet make a determination regarding whether or not the beneficiary is recognized internationally as outstanding in the academic field.\n\nFor example:\n\n* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\n* Authorship of scholarly books or articles (in scholarly journals with international circulation) in the academic field alone, regardless of the caliber, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's authorship of books or articles should be evaluated to determine whether they were indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\nThe issue of whether the beneficiary is recognized internationally as outstanding in a specific academic area should be addressed in the second step of the analysis (final merits determination), not in the first step where the officer is only required to determine if the evidence objectively meets the regulatory criteria.\n\nThe following tables provide details on the limited determinations that officers should make when first evaluating the evidence, including comparable evidence.",
+        "dense_score": 0.6441
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 4.1
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.5,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

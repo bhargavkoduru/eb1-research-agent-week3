@@ -1,0 +1,167 @@
+{
+  "id": "D1",
+  "mode": "hybrid",
+  "kind": "direct",
+  "cache_key": "7ce1b2181f224adf4db63ab72906802b6a176d65984bfc5b121b802a9bfcc4ca",
+  "expected": "Self-petition allowed, no job offer required; still intend to continue work in the area and substantially benefit the United States.",
+  "gold_ids": [
+    "eb1a-p003-c02"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "A person can self-petition for EB-1A without a job offer.",
+        "evidence_ids": [
+          "eb1a-p003-c02-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p003-c02",
+            "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]"
+          }
+        ],
+        "citations": [
+          "eb1a-p003-c02"
+        ]
+      },
+      {
+        "text": "The self-petitioner must still demonstrate an intent to continue work in the area of their extraordinary ability and that their work will substantially benefit the United States in the future.",
+        "evidence_ids": [
+          "eb1a-p003-c02-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p003-c02",
+            "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]"
+          }
+        ],
+        "citations": [
+          "eb1a-p003-c02"
+        ]
+      },
+      {
+        "text": "The person's entry into the United States must substantially benefit the United States in the future, which is interpreted broadly and requires a fact-dependent assessment.",
+        "evidence_ids": [
+          "eb1a-p003-c05-e1",
+          "eb1a-p003-c05-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p003-c05",
+            "text": "### 3. Entry to Substantially Benefit the United States"
+          },
+          {
+            "id": "eb1a-p003-c05",
+            "text": "To qualify as a person with extraordinary ability, the person's entry must substantially benefit the United States in the future.[8] Although neither the statute nor the regulations specifically define the statutory phrase \"substantially benefit,\" it has been interpreted broadly.[9]"
+          }
+        ],
+        "citations": [
+          "eb1a-p003-c05"
+        ]
+      },
+      {
+        "text": "The petitioner must provide sufficient context and explanation to demonstrate that the evidence establishes sustained national or international acclaim and recognition in the field of expertise.",
+        "evidence_ids": [
+          "eb1a-p012-c02-e3"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p012-c02",
+            "text": "In all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the person's extraordinary ability in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the person has achieved sustained national or international acclaim and recognition in their field of expertise."
+          }
+        ],
+        "citations": [
+          "eb1a-p012-c02"
+        ]
+      },
+      {
+        "text": "The totality of the evidence must establish that the person is among the small percentage at the top of their field, and the officer must articulate specific reasons if the petition is denied.",
+        "evidence_ids": [
+          "eb1a-p012-c02-e4"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p012-c02",
+            "text": "While a person may be stronger in one particular evidentiary area than in others, the totality of the evidence must establish that the person is extraordinary. If the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concluded that the petitioner has not demonstrated by a preponderance of the evidence that the person has extraordinary ability.[50] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial."
+          }
+        ],
+        "citations": [
+          "eb1a-p012-c02"
+        ]
+      }
+    ],
+    "question": "For EB-1A, can a person self-petition without a job offer? What must they still demonstrate?",
+    "category": "EB-1A",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 3,
+        "printed_manual_page": 787,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p003-c02",
+        "section": "Self-Petitioners",
+        "text": "### Self-Petitioners\n\nA petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]",
+        "dense_score": 0.8
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 3,
+        "printed_manual_page": 787,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p003-c05",
+        "section": "3. Entry to Substantially Benefit the United States",
+        "text": "### 3. Entry to Substantially Benefit the United States\n\nTo qualify as a person with extraordinary ability, the person's entry must substantially benefit the United States in the future.[8] Although neither the statute nor the regulations specifically define the statutory phrase \"substantially benefit,\" it has been interpreted broadly.[9]\n\nWhether the petitioner demonstrates that the person's employment meets this requirement requires a fact-dependent assessment of the case. In some cases, a Request for Evidence (RFE) may be appropriate if an officer is not yet satisfied that the petitioner has met this requirement. There is no standard rule as to what will substantially benefit the United States. However, male athletes seeking to enter the United States",
+        "dense_score": 0.5709
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 3,
+        "printed_manual_page": 787,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p003-c01",
+        "section": "A. Eligibility",
+        "text": "When seeking classification as a person of extraordinary ability, a petitioner files an Immigrant Petition for Alien Workers (Form I-140) on behalf of an alien (who may be the petitioner) with evidence demonstrating that the beneficiary is eligible.[1]\n\n\n\nEligibility for Extraordinary Ability Classification\n\n    \n\n  \n\n\nThe person has extraordinary ability in the sciences\n\n        arts\n\n        education\n\n        business\n\n        or athletics\n\n        which has been demonstrated by sustained national or international acclaim\n\n        and whose achievements have been recognized in the field through extensive documentation.\n\n    \n\n    \nThe person seeks to enter the United States to continue work in the area of extraordinary ability.\n\n    \n\n    \nThe person's entry into the United States will substantially benefit the United States in the future.",
+        "dense_score": 0.6196
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 12,
+        "printed_manual_page": 796,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p012-c02",
+        "section": "2. Final Merits Determination",
+        "text": "* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and\n\n* The record establishes that the person is named as an investigator, scientist, or researcher on a peer-reviewed and competitively-funded U.S. government grant or stipend for STEM research. This type of evidence can be a positive factor indicating a person is among the small percentage at the top of the person's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the person's extraordinary ability in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the person has achieved sustained national or international acclaim and recognition in their field of expertise.\n\nWhile a person may be stronger in one particular evidentiary area than in others, the totality of the evidence must establish that the person is extraordinary. If the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concluded that the petitioner has not demonstrated by a preponderance of the evidence that the person has extraordinary ability.[50] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.\n\nIf requesting additional evidence is appropriate, officers should provide some explanation of the deficiencies in the evidence already submitted and, if possible, examples of persuasive evidence that the petitioner might provide to corroborate the statements made in the petition. If a petitioner has submitted evidence that the petitioner believes establishes the person's extraordinary ability, merely restating the evidentiary requirements or stating that the evidence submitted is insufficient does not clarify to the petitioner how to overcome the deficiencies.\n\nWith respect to demonstrating extraordinary ability in athletics, USCIS considers a male athlete who has been competing against women to be a negative factor in determining whether the alien is among the small percentage at the very top of the field.[51]",
+        "dense_score": 0.5791
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 16.66
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.25,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

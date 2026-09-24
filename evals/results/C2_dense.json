@@ -1,0 +1,154 @@
+{
+  "id": "C2",
+  "mode": "dense",
+  "kind": "cross_chapter",
+  "cache_key": "a94813e189e61c9e14729478d6c23f2ecc3306a0e4c926e7d2686caa39ecfed1",
+  "expected": "Both need actual participation, not just invitation; EB-1A same/allied field of specialization; EB-1B same/allied academic field.",
+  "gold_ids": [
+    "eb1a-p007-c01",
+    "eb1b-p019-c01"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "In both EB-1A and EB-1B, an invitation alone is not sufficient to meet the judging criterion; the person must have actually participated in judging the work of others in the same or an allied field.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e9",
+          "eb1b-p019-c01-e6"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+          },
+          {
+            "id": "eb1b-p019-c01",
+            "text": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01",
+          "eb1b-p019-c01"
+        ]
+      },
+      {
+        "text": "For EB-1A, qualifying judging activities include peer reviewing for scholarly journals, reviewing conference submissions, serving on Ph.D. dissertation committees, and reviewing government research funding proposals, provided actual participation is documented.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e4",
+          "eb1a-p007-c01-e5",
+          "eb1a-p007-c01-e6",
+          "eb1a-p007-c01-e7"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;"
+          },
+          {
+            "id": "eb1a-p007-c01",
+            "text": "* Peer review of abstracts or papers submitted for presentation at scholarly conferences in the respective field;"
+          },
+          {
+            "id": "eb1a-p007-c01",
+            "text": "* Serving as a member of a Ph.D. dissertation committee that makes the final judgment as to whether a candidate's body of work satisfies the requirements for a doctoral degree, as evidenced by departmental records; and"
+          },
+          {
+            "id": "eb1a-p007-c01",
+            "text": "* Peer reviewer for government research funding programs."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01"
+        ]
+      },
+      {
+        "text": "For EB-1B, similar judging activities qualify, such as reviewing conference papers, peer reviewing scholarly publications, serving on doctoral committees, and evaluating government research grants, with the requirement that actual participation be proven, not just an invitation.",
+        "evidence_ids": [
+          "eb1b-p019-c01-e4"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p019-c01",
+            "text": "* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs."
+          }
+        ],
+        "citations": [
+          "eb1b-p019-c01"
+        ]
+      }
+    ],
+    "question": "Compare the judging criterion in EB-1A and EB-1B. Is an invitation alone enough for either?",
+    "category": "Both",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 7,
+        "printed_manual_page": 791,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p007-c01",
+        "section": "Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]",
+        "text": "## Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]\n\nUSCIS determines whether the person has acted as the judge of the work of others in the same or an allied field of specification.\n\nExamples of judging the work of others may include, but are not limited to:\n\n* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;\n\n* Peer review of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n\n* Serving as a member of a Ph.D. dissertation committee that makes the final judgment as to whether a candidate's body of work satisfies the requirements for a doctoral degree, as evidenced by departmental records; and\n\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review.",
+        "dense_score": 0.6883
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 12,
+        "printed_manual_page": 796,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p012-c02",
+        "section": "2. Final Merits Determination",
+        "text": "* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and\n\n* The record establishes that the person is named as an investigator, scientist, or researcher on a peer-reviewed and competitively-funded U.S. government grant or stipend for STEM research. This type of evidence can be a positive factor indicating a person is among the small percentage at the top of the person's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the person's extraordinary ability in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the person has achieved sustained national or international acclaim and recognition in their field of expertise.\n\nWhile a person may be stronger in one particular evidentiary area than in others, the totality of the evidence must establish that the person is extraordinary. If the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concluded that the petitioner has not demonstrated by a preponderance of the evidence that the person has extraordinary ability.[50] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.\n\nIf requesting additional evidence is appropriate, officers should provide some explanation of the deficiencies in the evidence already submitted and, if possible, examples of persuasive evidence that the petitioner might provide to corroborate the statements made in the petition. If a petitioner has submitted evidence that the petitioner believes establishes the person's extraordinary ability, merely restating the evidentiary requirements or stating that the evidence submitted is insufficient does not clarify to the petitioner how to overcome the deficiencies.\n\nWith respect to demonstrating extraordinary ability in athletics, USCIS considers a male athlete who has been competing against women to be a negative factor in determining whether the alien is among the small percentage at the very top of the field.[51]",
+        "dense_score": 0.6859
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 19,
+        "printed_manual_page": 803,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p019-c01",
+        "section": "Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]",
+        "text": "## Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]\n\nUSCIS determines whether the beneficiary has participated, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.\n\nExamples of qualifying judging experience may include, but are not limited to:\n\n* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field.\n\nFor example, a petitioner might document a beneficiary's peer review work by submitting a copy of a request from a journal to the beneficiary to do the review, accompanied by evidence confirming that the beneficiary actually completed the review.",
+        "dense_score": 0.677
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 21,
+        "printed_manual_page": 805,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p021-c01",
+        "section": "2. Final Merits Determination",
+        "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;\n\n* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and\n\n* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the beneficiary's international recognition in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the beneficiary is internationally recognized as outstanding.\n\nWhen requesting additional evidence or denying a petition, if the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concludes that the petitioner, by a preponderance of the evidence, has not demonstrated that the beneficiary is an outstanding professor or researcher.[31] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.[32]",
+        "dense_score": 0.6756
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 7.29
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.5,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

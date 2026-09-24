@@ -1,0 +1,117 @@
+{
+  "id": "D2",
+  "mode": "hybrid",
+  "kind": "direct",
+  "cache_key": "370e9a267a3b5cc5298d13a4a86cc6f510d85ee304e5ba39573bfd94ecea5723",
+  "expected": "Actual participation required, not just invitation; invitation plus completed-review evidence is an example.",
+  "gold_ids": [
+    "eb1a-p007-c01"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "For EB-1A, an invitation to peer review is not sufficient; the petitioner must show that the person actually participated in judging the work of others.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e9"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01"
+        ]
+      },
+      {
+        "text": "Evidence of completed peer review, such as a journal's request accompanied by proof the review was completed, is required to meet the regulatory criterion for judging the work of others.",
+        "evidence_ids": [
+          "eb1a-p007-c01-e4"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p007-c01",
+            "text": "* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;"
+          }
+        ],
+        "citations": [
+          "eb1a-p007-c01"
+        ]
+      }
+    ],
+    "question": "For EB-1A judging, is an invitation to peer review sufficient, or must the review actually be completed?",
+    "category": "EB-1A",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 7,
+        "printed_manual_page": 791,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p007-c01",
+        "section": "Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]",
+        "text": "## Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]\n\nUSCIS determines whether the person has acted as the judge of the work of others in the same or an allied field of specification.\n\nExamples of judging the work of others may include, but are not limited to:\n\n* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;\n\n* Peer review of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n\n* Serving as a member of a Ph.D. dissertation committee that makes the final judgment as to whether a candidate's body of work satisfies the requirements for a doctoral degree, as evidenced by departmental records; and\n\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review.",
+        "dense_score": 0.8085
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 11,
+        "printed_manual_page": 795,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p011-c02",
+        "section": "Comparable evidence: Comparable evidence to establish the person's eligibility if the standards do not readily apply to the person's occupation.[39]",
+        "text": "However, objectively meeting the regulatory criteria in the first step alone does not establish that the person in fact meets the requirements for classification as a person with extraordinary ability.[41]\n\n**For example:**\n\n* Participating in the judging of the work of others in the same or an allied field of specialization alone, regardless of the circumstances, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's participation to determine whether it was indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\n* Publishing scholarly articles in professional or major trade publications or other major media alone, regardless of the caliber, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's publications to determine whether they were indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\nThe question of whether the person is one of that small percentage who have risen to the very top of the field of endeavor and enjoys sustained national or international acclaim should be addressed in the second step of the analysis (final merits determination). In the first step, the officer is only required to determine if the evidence objectively meets the regulatory criteria.",
+        "dense_score": 0.7115
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 11,
+        "printed_manual_page": 795,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p011-c03",
+        "section": "2. Final Merits Determination",
+        "text": "## 2. Final Merits Determination\n\nIn the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination.\n\nAn officer may not limit the kind of evidence the officer thinks the person should be able to submit and deny the petition if that particular type of evidence (whether one of the prescribed types[42] or comparable evidence[43]) is absent, if the person nonetheless submitted other types of evidence that meet the regulatory requirements for the classification.\n\nFor example, an officer may think that if a person is extraordinary, there should be published articles about the person and the person's work. However, an officer cannot deny the petition because no published articles were submitted, so long as the petitioner has submitted other evidence that meets the three qualifying criteria which demonstrates the person is in fact extraordinary. Approval or denial of a petition is based on the type and quality of evidence submitted rather than assumptions about the failure to address different criteria.",
+        "dense_score": 0.7043
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 12,
+        "printed_manual_page": 796,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p012-c01",
+        "section": "2. Final Merits Determination",
+        "text": "At this step, officers consider any potentially relevant evidence in the record, even if such evidence does not fit one of the above regulatory criteria or was not presented as comparable evidence. The officers consider all evidence in the totality. Some evidence may weigh more favorably on its own, while other evidence is more persuasive when viewed with other evidence.\n\nThe following are examples of situations where evidence in the record may help officers evaluate the quality of the initial or comparable evidence and determine whether in a totality analysis that considers all of the evidence, the person is among the small percentage at the top of the field and has sustained national or international acclaim:[44]\n\n* The record demonstrates that the person has published articles in particularly highly-ranked journals (including published conference proceedings) relative to other journals in the field, as demonstrated by, for example, evidence the petitioner provides regarding the journal's impact factor.[45] Depending on the level of recognition of the journals in question, as demonstrated by evidence in the record, there may be particular prestige or acclaim associated with publication in such journals, especially if the person is the most significant contributor to the published article, a senior author, or the sole author of the article;\n\n* The petitioner provides evidence demonstrating that the total rate of citations to the person's body of published work is high relative to others in the field, such as the person has a high h-index[46] for the field. Depending on the field and the comparative data the petitioner provides, such evidence may indicate a person's high overall standing for the purpose of demonstrating that the person is among the small percentage at the top of the field;[47]\n\n* The petitioner documents the person's employment or research experience with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[48] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[49]). Such employment or experience can be a positive factor toward demonstrating that the person is among the small percentage at the top of the field;\n\n* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and",
+        "dense_score": 0.6984
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 2.6
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.25,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

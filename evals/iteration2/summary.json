@@ -1,0 +1,20 @@
+{
+  "dense": {
+    "questions": 15,
+    "request_errors": 0,
+    "behavior_pass": 15,
+    "mean_gold_precision_at_4": 0.3888888888888889,
+    "mean_gold_recall_at_4": 1.0,
+    "p95_seconds_nearest_rank": 16.54,
+    "supported_claim_rate": "Pending independent claim/evidence review; citation validation alone is not faithfulness."
+  },
+  "hybrid": {
+    "questions": 15,
+    "request_errors": 0,
+    "behavior_pass": 15,
+    "mean_gold_precision_at_4": 0.3888888888888889,
+    "mean_gold_recall_at_4": 1.0,
+    "p95_seconds_nearest_rank": 20.19,
+    "supported_claim_rate": "Pending independent claim/evidence review; citation validation alone is not faithfulness."
+  }
+}

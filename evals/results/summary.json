@@ -1,0 +1,26 @@
+{
+  "dense": {
+    "questions": 15,
+    "request_errors": 0,
+    "behavior_pass": 15,
+    "mean_gold_precision_at_4": 0.3888888888888889,
+    "mean_gold_recall_at_4": 1.0,
+    "p95_seconds_nearest_rank": 10.28,
+    "supported_claim_rate": "Pending independent claim/evidence review; citation validation alone is not faithfulness."
+  },
+  "hybrid": {
+    "questions": 15,
+    "request_errors": 0,
+    "behavior_pass": 15,
+    "mean_gold_precision_at_4": 0.3888888888888889,
+    "mean_gold_recall_at_4": 1.0,
+    "p95_seconds_nearest_rank": 7.57,
+    "supported_claim_rate": {
+      "supported": 25,
+      "total": 26,
+      "rate": 0.9615384615384616,
+      "reviewer": "Codex assistant evidence audit; not an independent human or legal review"
+    },
+    "citation_integrity_claims": 26
+  }
+}

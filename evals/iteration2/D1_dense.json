@@ -1,0 +1,179 @@
+{
+  "id": "D1",
+  "mode": "dense",
+  "kind": "direct",
+  "cache_key": "7ce1b2181f224adf4db63ab72906802b6a176d65984bfc5b121b802a9bfcc4ca",
+  "expected": "Self-petition allowed, no job offer required; still intend to continue work in the area and substantially benefit the United States.",
+  "gold_ids": [
+    "eb1a-p003-c02"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "A person can self-petition for EB-1A without a job offer.",
+        "evidence_ids": [
+          "eb1a-p003-c02-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p003-c02",
+            "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]"
+          }
+        ],
+        "citations": [
+          "eb1a-p003-c02"
+        ]
+      },
+      {
+        "text": "The person must still demonstrate an intent to continue work in the area of their extraordinary ability and that their work will substantially benefit the United States in the future.",
+        "evidence_ids": [
+          "eb1a-p003-c02-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p003-c02",
+            "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]"
+          }
+        ],
+        "citations": [
+          "eb1a-p003-c02"
+        ]
+      },
+      {
+        "text": "The person must demonstrate sustained national or international acclaim and that their achievements have been recognized in the field of expertise.",
+        "evidence_ids": [
+          "eb1a-p003-c01-e4",
+          "eb1a-p003-c01-e5"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p003-c01",
+            "text": "which has been demonstrated by sustained national or international acclaim"
+          },
+          {
+            "id": "eb1a-p003-c01",
+            "text": "and whose achievements have been recognized in the field through extensive documentation."
+          }
+        ],
+        "citations": [
+          "eb1a-p003-c01"
+        ]
+      },
+      {
+        "text": "The evidence submitted must establish that the person is one of the small percentage who have risen to the very top of their field of endeavor.",
+        "evidence_ids": [
+          "eb1a-p004-c02-e7",
+          "eb1a-p011-c03-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p004-c02",
+            "text": "On the other hand, the submission of voluminous documentation may not contain sufficient persuasive evidence to establish the beneficiary's eligibility. The evidence provided in support of the petition must ultimately establish that the beneficiary \"is one of that small percentage who have risen to the very top of the field of endeavor.\"[13]"
+          },
+          {
+            "id": "eb1a-p011-c03",
+            "text": "In the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination."
+          }
+        ],
+        "citations": [
+          "eb1a-p004-c02",
+          "eb1a-p011-c03"
+        ]
+      },
+      {
+        "text": "The petition must be evaluated using a two-step analysis: first, whether the evidence meets regulatory criteria, and second, a final merits determination based on the totality of the evidence.",
+        "evidence_ids": [
+          "eb1a-p004-c02-e10",
+          "eb1a-p011-c03-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1a-p004-c02",
+            "text": "Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\")."
+          },
+          {
+            "id": "eb1a-p011-c03",
+            "text": "In the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination."
+          }
+        ],
+        "citations": [
+          "eb1a-p004-c02",
+          "eb1a-p011-c03"
+        ]
+      }
+    ],
+    "question": "For EB-1A, can a person self-petition without a job offer? What must they still demonstrate?",
+    "category": "EB-1A",
+    "passages": [
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 3,
+        "printed_manual_page": 787,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p003-c02",
+        "section": "Self-Petitioners",
+        "text": "### Self-Petitioners\n\nA petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]",
+        "dense_score": 0.7999
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 4,
+        "printed_manual_page": 788,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p004-c02",
+        "section": "B. Evidence of Extraordinary Ability",
+        "text": "## B. Evidence of Extraordinary Ability\n\nThe regulations describe various types of evidence that the petitioner must submit in support of a petition as documentation of the beneficiary's extraordinary ability.[11] In general, the petitioner must submit evidence that:\n\n* The person has sustained national or international acclaim; and\n\n* The person's achievements have been recognized in the field of expertise.\n\nThis initial evidence must include either evidence of a one-time achievement (for example, a major internationally recognized award, such as the Nobel Prize) or at least three of the types of evidence listed in the regulations.[12]\n\nThe evidence provided in support of the petition need not specifically use the words \"extraordinary.\" Rather, the material should be such that it is readily apparent that the person's contributions to the field are qualifying. Also, although some of the regulatory language relating to evidence occasionally uses plurals, it is entirely possible that the presentation of a single piece of evidence in a specific evidentiary category may be sufficient.\n\nOn the other hand, the submission of voluminous documentation may not contain sufficient persuasive evidence to establish the beneficiary's eligibility. The evidence provided in support of the petition must ultimately establish that the beneficiary \"is one of that small percentage who have risen to the very top of the field of endeavor.\"[13]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as a person with extraordinary ability.[14]\n\n\n\nPetition for Extraordinary Ability Classification: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.",
+        "dense_score": 0.6277
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 3,
+        "printed_manual_page": 787,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p003-c01",
+        "section": "A. Eligibility",
+        "text": "When seeking classification as a person of extraordinary ability, a petitioner files an Immigrant Petition for Alien Workers (Form I-140) on behalf of an alien (who may be the petitioner) with evidence demonstrating that the beneficiary is eligible.[1]\n\n\n\nEligibility for Extraordinary Ability Classification\n\n    \n\n  \n\n\nThe person has extraordinary ability in the sciences\n\n        arts\n\n        education\n\n        business\n\n        or athletics\n\n        which has been demonstrated by sustained national or international acclaim\n\n        and whose achievements have been recognized in the field through extensive documentation.\n\n    \n\n    \nThe person seeks to enter the United States to continue work in the area of extraordinary ability.\n\n    \n\n    \nThe person's entry into the United States will substantially benefit the United States in the future.",
+        "dense_score": 0.62
+      },
+      {
+        "document_id": "eb1a",
+        "chapter": 2,
+        "chapter_title": "Extraordinary Ability",
+        "source_pdf_page": 11,
+        "printed_manual_page": 795,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+        "id": "eb1a-p011-c03",
+        "section": "2. Final Merits Determination",
+        "text": "## 2. Final Merits Determination\n\nIn the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination.\n\nAn officer may not limit the kind of evidence the officer thinks the person should be able to submit and deny the petition if that particular type of evidence (whether one of the prescribed types[42] or comparable evidence[43]) is absent, if the person nonetheless submitted other types of evidence that meet the regulatory requirements for the classification.\n\nFor example, an officer may think that if a person is extraordinary, there should be published articles about the person and the person's work. However, an officer cannot deny the petition because no published articles were submitted, so long as the petitioner has submitted other evidence that meets the three qualifying criteria which demonstrates the person is in fact extraordinary. Approval or denial of a petition is based on the type and quality of evidence submitted rather than assumptions about the failure to address different criteria.",
+        "dense_score": 0.6168
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 16.54
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.25,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

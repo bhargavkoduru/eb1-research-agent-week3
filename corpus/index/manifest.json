@@ -1,0 +1,8 @@
+{
+  "fingerprint": "dc8f27c480a04f0379d20f3901a1bff4f6a95d281183747fc40de62e78dd357d",
+  "embedding_model": "Qwen/Qwen3-Embedding-8B",
+  "dimensions": 4096,
+  "chunks": 65,
+  "strategy": "page-section-550-v2",
+  "snapshot": "2026-09-23"
+}

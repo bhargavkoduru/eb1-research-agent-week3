@@ -1,0 +1,5 @@
+* text=auto eol=lf
+# These files have recorded byte-level fingerprints; preserve them on every OS.
+corpus/** -text
+evals/** -text
+*.npy binary

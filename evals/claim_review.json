@@ -1,0 +1,86 @@
+{
+  "reviewer": "Codex assistant evidence audit; not an independent human or legal review",
+  "scope": "Final hybrid output claims assessed against their attached source excerpts and question context. Compound claims count as supported only when fully supported; this is not a held-out evaluation.",
+  "reviews": {
+    "D1": {
+      "supported": [
+        true,
+        true,
+        true
+      ],
+      "note": "Self-petition, continued work and prospective benefit supported by source excerpts.",
+      "result_sha256": "80c61da0c9a0cc2060840297117bb9a05087fb25ee7b24d68465222193a84163"
+    },
+    "D2": {
+      "supported": [
+        true,
+        true
+      ],
+      "note": "Within the peer-review question context, completed participation and its documentation are supported.",
+      "result_sha256": "e26fc2d63c1b9af6cbef8d501198b732422023f4fcca370d20e84829f4d59bb6"
+    },
+    "D3": {
+      "supported": [
+        true,
+        true,
+        true
+      ],
+      "note": "Two-step distinction, totality and illustrative final-merits factors are supported.",
+      "result_sha256": "12e01083c0edabd3484e34ec647e45d7942ff7c244fb89fb6ffe4fa1b5719b7d"
+    },
+    "D4": {
+      "supported": [
+        true,
+        true,
+        true
+      ],
+      "note": "Initial threshold and separate final-merits test, with contextual examples, are supported.",
+      "result_sha256": "32ccf94a8bec7797fd501efa3692939579e4cb5bc8c8d8b389e30ba85c247691"
+    },
+    "D5": {
+      "supported": [
+        true,
+        true,
+        true
+      ],
+      "note": "Labor certification, employer letter and separate ability-to-pay point are supported.",
+      "result_sha256": "33363d33433d2a19e0e53ae1d93a1081b902028b4ae22da515c7584cdc49d8b3"
+    },
+    "D6": {
+      "supported": [
+        true,
+        true,
+        true
+      ],
+      "note": "Missing termination clause alone is not disqualifying; permanency and funding expectations supported.",
+      "result_sha256": "7586eb6b3ce470ac56284bd05d09a489a628e9d108181f5278bb928e1c27f871"
+    },
+    "C1": {
+      "supported": [
+        true,
+        true,
+        true
+      ],
+      "note": "Self-petitioner versus employer and offer requirements supported.",
+      "result_sha256": "810249bd002a2a8f7b2c1b16c3d68070a84f5ae46c4bba440b46c9cb249c5b53"
+    },
+    "C2": {
+      "supported": [
+        true,
+        true,
+        true
+      ],
+      "note": "Actual judging and different second-step standards supported. Opening wording could preserve 'academic field' more explicitly.",
+      "result_sha256": "b1071a72302790b50bd351180c101b4f3140edd2e7027413eb9793736fdb34d3"
+    },
+    "C3": {
+      "supported": [
+        false,
+        true,
+        true
+      ],
+      "note": "Claim 1 calls original contributions a 'mandatory criterion', which overstates an optional evidentiary route. Claims 2 and 3 are supported in the question's contributions-criterion context. This failure is retained in the report, not counted as correct.",
+      "result_sha256": "044fdfe62c44c271a5e5641ccd943a8f33f8aa28e08380fab9a0cfc9b63441bb"
+    }
+  }
+}

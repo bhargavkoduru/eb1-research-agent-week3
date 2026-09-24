@@ -1,0 +1,23 @@
+{
+  "id": "A1",
+  "mode": "dense",
+  "kind": "ambiguous",
+  "cache_key": "99c2448631219b63f271c070671ccf7e044667796fa98d9e193a3509191ced7d",
+  "expected": "Ask whether EB-1A or EB-1B; do not silently choose.",
+  "gold_ids": [],
+  "answer": {
+    "status": "clarify",
+    "message": "Are you asking about EB-1A (extraordinary ability) or EB-1B (outstanding professors and researchers)? Select a category and ask again.",
+    "claims": [],
+    "question": "Can I self-petition?",
+    "category": "Both",
+    "passages": [],
+    "retrieval_warning": null,
+    "seconds": 0.0
+  },
+  "behavior_pass": true,
+  "precision_at_4": null,
+  "recall_at_4": null,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

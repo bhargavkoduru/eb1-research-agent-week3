@@ -1,0 +1,174 @@
+{
+  "reviewer": "Automated test reviewer; not a real user approval",
+  "scenarios": [
+    {
+      "name": "live research, restart, edit, approve, idempotent save",
+      "pass": true,
+      "focus_check": true,
+      "specific_task_check": true,
+      "seconds": 12.87,
+      "trace": [
+        {
+          "step": 1,
+          "action": "search_policy",
+          "query": "EB-1B evidence for judging the work of others",
+          "reason": "Searching for policy guidance on what constitutes acceptable evidence for 'judging the work of others' under EB-1B criteria."
+        },
+        {
+          "observation": "Retrieved 4 passages.",
+          "warning": null
+        },
+        {
+          "step": 2,
+          "action": "draft_checklist",
+          "query": null,
+          "reason": "Collected sufficient evidence on EB-1B judging criteria. Drafting a short checklist of required documentation to verify participation as a judge of others' work."
+        },
+        {
+          "action": "save_approved_checklist",
+          "saved_id": "6d2368b352f74ff8fd9ffcaa",
+          "attempts": 1
+        }
+      ],
+      "draft": {
+        "title": "Research EB-1B judging evidence and prepare a short checklist of documentation to verify.",
+        "category": "EB-1B",
+        "snapshot": "2026-09-23",
+        "items": [
+          {
+            "task": "Verify documentation showing the beneficiary completed judging activities, such as peer review reports, signed evaluation forms, or official acknowledgments from conference organizers or funding bodies.",
+            "text": "For EB-1B, the beneficiary must have actually participated, either individually or on a panel, as a judge of the work of others in the same or an allied academic field, not merely been invited to do so.",
+            "evidence_ids": [
+              "eb1b-p019-c01-e6"
+            ],
+            "research_task": "Verify documentation showing the beneficiary completed judging activities, such as peer review reports, signed evaluation forms, or official acknowledgments from conference organizers or funding bodies.",
+            "quotes": [
+              {
+                "id": "eb1b-p019-c01",
+                "text": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field."
+              }
+            ],
+            "citations": [
+              "eb1b-p019-c01"
+            ]
+          },
+          {
+            "task": "Collect specific examples of judging activities, such as emails from journal editors with review assignments and confirmation of submission, or official committee membership letters.",
+            "text": "Qualifying judging activities include reviewing papers for scholarly journals, evaluating conference abstracts, serving on doctoral dissertation committees, or reviewing government research funding applications.",
+            "evidence_ids": [
+              "eb1b-p019-c01-e4"
+            ],
+            "research_task": "Collect specific examples of judging activities, such as emails from journal editors with review assignments and confirmation of submission, or official committee membership letters.",
+            "quotes": [
+              {
+                "id": "eb1b-p019-c01",
+                "text": "* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs."
+              }
+            ],
+            "citations": [
+              "eb1b-p019-c01"
+            ]
+          },
+          {
+            "task": "Ensure the judging evidence is clearly tied to the academic field claimed and prepare to evaluate its weight in the context of the beneficiary's overall international recognition.",
+            "text": "Participation in judging alone satisfies the first step of the regulatory criteria, regardless of the prestige or volume of the judging activity, but its significance is assessed in the second step to determine international recognition.",
+            "evidence_ids": [
+              "eb1b-p016-c02-e4",
+              "eb1b-p022-c02-e9"
+            ],
+            "research_task": "Ensure the judging evidence is clearly tied to the academic field claimed and prepare to evaluate its weight in the context of the beneficiary's overall international recognition.",
+            "quotes": [
+              {
+                "id": "eb1b-p016-c02",
+                "text": "* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area."
+              },
+              {
+                "id": "eb1b-p022-c02",
+                "text": "[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D)."
+              }
+            ],
+            "citations": [
+              "eb1b-p016-c02",
+              "eb1b-p022-c02"
+            ]
+          }
+        ],
+        "user_note": "Automated test: locate confirmation of completed peer review.",
+        "sources": [
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 19,
+            "printed_manual_page": 803,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p019-c01",
+            "section": "Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]",
+            "text": "## Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]\n\nUSCIS determines whether the beneficiary has participated, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.\n\nExamples of qualifying judging experience may include, but are not limited to:\n\n* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field.\n\nFor example, a petitioner might document a beneficiary's peer review work by submitting a copy of a request from a journal to the beneficiary to do the review, accompanied by evidence confirming that the beneficiary actually completed the review.",
+            "dense_score": 0.7558
+          },
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 16,
+            "printed_manual_page": 800,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p016-c02",
+            "section": "1. Assess Whether Evidence Meets Any Regulatory Criteria",
+            "text": "### 1. Assess Whether Evidence Meets Any Regulatory Criteria\n\nThe first step of the evidentiary review is limited to determining whether the evidence submitted with the petition is comprised of at least two of the six regulatory criteria.[8]\n\nFor purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[9] Officers should not yet make a determination regarding whether or not the beneficiary is recognized internationally as outstanding in the academic field.\n\nFor example:\n\n* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\n* Authorship of scholarly books or articles (in scholarly journals with international circulation) in the academic field alone, regardless of the caliber, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's authorship of books or articles should be evaluated to determine whether they were indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\nThe issue of whether the beneficiary is recognized internationally as outstanding in a specific academic area should be addressed in the second step of the analysis (final merits determination), not in the first step where the officer is only required to determine if the evidence objectively meets the regulatory criteria.\n\nThe following tables provide details on the limited determinations that officers should make when first evaluating the evidence, including comparable evidence.",
+            "dense_score": 0.6696
+          },
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 22,
+            "printed_manual_page": 806,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p022-c02",
+            "section": "Footnotes",
+            "text": "## Footnotes\n\n[1] See INA 203(b)(1)(B). See 8 CFR 204.5(i).\n\n[2] See 8 CFR 204.5(i)(3).\n\n[3] See 8 CFR 204.5(i)(2).\n\n[4] See 8 CFR 204.5(i)(2) (definition of academic field).\n\n[5] See 8 CFR 204.5(i)(2), defining \"permanent, in reference to a research position\" as \"either tenured, tenure-track, or for a term of indefinite or unlimited duration, and in which the employee will ordinarily have an expectation of continued employment unless there is good cause for termination.\"\n\n[6] See 8 CFR 204.5(i)(3)(iii) and 8 CFR 204.5(i)(3)(iv). See 8 CFR 204.5(i)(2) for definitions for permanent and academic field.\n\n[7] See Matter of Chawathe (PDF), 25 I&N Dec. 369, 376 (AAO 2010) (\"[T]ruth is to be determined not by the quantity of evidence alone but by its quality. Therefore, in adjudicating the application pursuant to the preponderance of the evidence standard, the director must examine each piece of evidence for relevance, probative value, and credibility, both individually and within the context of the totality of the evidence, to determine whether the fact to be proven is probably true\"). See Kazarian v. USCIS (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010). USCIS has interpreted Kazarian as applicable to outstanding professor and researcher petitions.\n\n[8] See 8 CFR 204.5(i)(3)(i). The regulation at 8 CFR 204.5(i)(3)(ii) allows a petitioner to submit comparable evidence to establish eligibility if the standards in 8 CFR 204.5(i)(3)(i) do not readily apply.\n\n[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D).",
+            "dense_score": 0.6645
+          },
+          {
+            "document_id": "eb1b",
+            "chapter": 3,
+            "chapter_title": "Outstanding Professor or Researcher",
+            "source_pdf_page": 16,
+            "printed_manual_page": 800,
+            "source_file": "Policy Manual_USCIS_eb.pdf",
+            "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+            "snapshot_date": "2026-09-23",
+            "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+            "id": "eb1b-p016-c01",
+            "section": "B. Evidence",
+            "text": "## B. Evidence\n\nThe regulation describes the evidence that the petitioner must submit in support of an Immigrant Petition for Alien Workers (Form I-140) for an outstanding professor or researcher.[2] The petitioner must submit evidence to demonstrate that the beneficiary professor or researcher (beneficiary) is recognized internationally as outstanding in the academic field specified in the petition. Academic field means \"a body of specialized knowledge offered for study at an accredited U.S. university or institution of higher education.\"[3]\n\nBy regulatory definition, a body of specialized knowledge is larger than a very small area of specialization in which only a single course is taught or that is the subject of a very specialized dissertation. As such, it would be acceptable to find the beneficiary is an outstanding professor or researcher in particle physics rather than physics in general, as long as the petitioner has demonstrated that the claimed field is \"a body of specialized knowledge offered for study at an accredited United States university or institution of higher education.\"[4]\n\nIn addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as an outstanding professor or researcher.[7]\n\n\n\nPetition to Classify an Outstanding Professor or Researcher: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.\n\n    \n\n  \n\n\nOfficers should apply a preponderance of the evidence standard when making these determinations.",
+            "dense_score": 0.6513
+          }
+        ]
+      }
+    },
+    {
+      "name": "ambiguous request asks, then cancels",
+      "pass": true,
+      "seconds": 0.01
+    },
+    {
+      "name": "unsupported request hands off",
+      "pass": true,
+      "seconds": 0.01,
+      "message": "This policy corpus cannot estimate a personal approval probability. A qualified immigration professional can review the complete case; this app can research specific policy requirements.",
+      "trace": []
+    }
+  ]
+}

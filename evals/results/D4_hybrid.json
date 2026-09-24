@@ -1,0 +1,176 @@
+{
+  "id": "D4",
+  "mode": "hybrid",
+  "kind": "direct",
+  "cache_key": "8f45165b3c50e6f7d37349d7e54c7cc43f39cbaa3c1d20e4f6f8d0dc81ccc403",
+  "expected": "At least two of six criteria at the first step; then totality assessment of international recognition as outstanding.",
+  "gold_ids": [
+    "eb1b-p016-c02",
+    "eb1b-p020-c03"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "The EB-1B initial evidence threshold requires the petitioner to submit at least two types of evidence that objectively meet the regulatory criteria, without assessing whether the beneficiary is internationally recognized as outstanding at this stage.",
+        "evidence_ids": [
+          "eb1b-p016-c02-e2",
+          "eb1b-p016-c02-e3",
+          "eb1b-p016-c01-e6"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p016-c02",
+            "text": "The first step of the evidentiary review is limited to determining whether the evidence submitted with the petition is comprised of at least two of the six regulatory criteria.[8]"
+          },
+          {
+            "id": "eb1b-p016-c02",
+            "text": "For purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[9] Officers should not yet make a determination regarding whether or not the beneficiary is recognized internationally as outstanding in the academic field."
+          },
+          {
+            "id": "eb1b-p016-c01",
+            "text": "Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\")."
+          }
+        ],
+        "citations": [
+          "eb1b-p016-c02",
+          "eb1b-p016-c01"
+        ]
+      },
+      {
+        "text": "The final merits assessment evaluates all evidence in totality, including the quality and context of the initial and comparable evidence, to determine whether the beneficiary is internationally recognized as outstanding in the academic field by a preponderance of the evidence.",
+        "evidence_ids": [
+          "eb1b-p020-c03-e2",
+          "eb1b-p020-c03-e3",
+          "eb1b-p016-c01-e7"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p020-c03",
+            "text": "Meeting the minimum requirement by providing at least two types of initial evidence does not, in itself, establish that the beneficiary in fact meets the requirements for classification as an outstanding professor or researcher.[23] Officers also consider the quality of the evidence. In the second step of the analysis in each case, officers should evaluate the evidence together when considering the petition in its entirety to make a final merits determination of whether or not the petitioner, by a preponderance of the evidence, has demonstrated that the beneficiary is recognized internationally as outstanding in a specific academic area.[24]"
+          },
+          {
+            "id": "eb1b-p020-c03",
+            "text": "At this step, officers consider any potentially relevant evidence, even if such evidence does not fit one of the above regulatory criteria or was not presented as comparable evidence. The officers consider all evidence in the totality. Some evidence may weigh more favorably on its own, while other evidence is more persuasive when viewed with other evidence."
+          },
+          {
+            "id": "eb1b-p016-c01",
+            "text": "Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification."
+          }
+        ],
+        "citations": [
+          "eb1b-p020-c03",
+          "eb1b-p016-c01"
+        ]
+      },
+      {
+        "text": "During the final merits determination, officers may consider additional evidence such as publication in high-impact journals, citation metrics, employment at leading institutions, invited presentations, and participation in competitive grant funding to assess international recognition.",
+        "evidence_ids": [
+          "eb1b-p020-c03-e5",
+          "eb1b-p020-c03-e6",
+          "eb1b-p021-c01-e1",
+          "eb1b-p021-c01-e2",
+          "eb1b-p021-c01-e3"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p020-c03",
+            "text": "* The record demonstrates that the beneficiary has published articles in highly-ranked journals relative to other journals in the field, as demonstrated by, for example, evidence the petitioner provides regarding the journal's impact factor.[26] Depending on the level of recognition of the journals in question, as demonstrated by evidence in the record, there may be a high level of recognition associated with publication in such journals, especially if the beneficiary is the most significant contributor to the publication, a senior author, or the sole author of the article;"
+          },
+          {
+            "id": "eb1b-p020-c03",
+            "text": "* The petitioner provides evidence demonstrating that the total rate of citations to the beneficiary's body of published work is high relative to others in the field, such as the beneficiary has a high h-index[27] for the field. Depending on the field and the comparative data the petitioner provides, such evidence may indicate a beneficiary's high overall standing for the purpose of demonstrating that the beneficiary enjoys international recognition as outstanding;[28]"
+          },
+          {
+            "id": "eb1b-p021-c01",
+            "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;"
+          },
+          {
+            "id": "eb1b-p021-c01",
+            "text": "* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and"
+          },
+          {
+            "id": "eb1b-p021-c01",
+            "text": "* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field."
+          }
+        ],
+        "citations": [
+          "eb1b-p020-c03",
+          "eb1b-p021-c01"
+        ]
+      }
+    ],
+    "question": "What are the EB-1B initial evidence threshold and the subsequent final merits assessment?",
+    "category": "EB-1B",
+    "passages": [
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 16,
+        "printed_manual_page": 800,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p016-c01",
+        "section": "B. Evidence",
+        "text": "## B. Evidence\n\nThe regulation describes the evidence that the petitioner must submit in support of an Immigrant Petition for Alien Workers (Form I-140) for an outstanding professor or researcher.[2] The petitioner must submit evidence to demonstrate that the beneficiary professor or researcher (beneficiary) is recognized internationally as outstanding in the academic field specified in the petition. Academic field means \"a body of specialized knowledge offered for study at an accredited U.S. university or institution of higher education.\"[3]\n\nBy regulatory definition, a body of specialized knowledge is larger than a very small area of specialization in which only a single course is taught or that is the subject of a very specialized dissertation. As such, it would be acceptable to find the beneficiary is an outstanding professor or researcher in particle physics rather than physics in general, as long as the petitioner has demonstrated that the claimed field is \"a body of specialized knowledge offered for study at an accredited United States university or institution of higher education.\"[4]\n\nIn addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as an outstanding professor or researcher.[7]\n\n\n\nPetition to Classify an Outstanding Professor or Researcher: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.\n\n    \n\n  \n\n\nOfficers should apply a preponderance of the evidence standard when making these determinations.",
+        "dense_score": 0.6549
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 16,
+        "printed_manual_page": 800,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p016-c02",
+        "section": "1. Assess Whether Evidence Meets Any Regulatory Criteria",
+        "text": "### 1. Assess Whether Evidence Meets Any Regulatory Criteria\n\nThe first step of the evidentiary review is limited to determining whether the evidence submitted with the petition is comprised of at least two of the six regulatory criteria.[8]\n\nFor purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[9] Officers should not yet make a determination regarding whether or not the beneficiary is recognized internationally as outstanding in the academic field.\n\nFor example:\n\n* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\n* Authorship of scholarly books or articles (in scholarly journals with international circulation) in the academic field alone, regardless of the caliber, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's authorship of books or articles should be evaluated to determine whether they were indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\nThe issue of whether the beneficiary is recognized internationally as outstanding in a specific academic area should be addressed in the second step of the analysis (final merits determination), not in the first step where the officer is only required to determine if the evidence objectively meets the regulatory criteria.\n\nThe following tables provide details on the limited determinations that officers should make when first evaluating the evidence, including comparable evidence.",
+        "dense_score": 0.7608
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 20,
+        "printed_manual_page": 804,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p020-c03",
+        "section": "2. Final Merits Determination",
+        "text": "## 2. Final Merits Determination\n\nMeeting the minimum requirement by providing at least two types of initial evidence does not, in itself, establish that the beneficiary in fact meets the requirements for classification as an outstanding professor or researcher.[23] Officers also consider the quality of the evidence. In the second step of the analysis in each case, officers should evaluate the evidence together when considering the petition in its entirety to make a final merits determination of whether or not the petitioner, by a preponderance of the evidence, has demonstrated that the beneficiary is recognized internationally as outstanding in a specific academic area.[24]\n\nAt this step, officers consider any potentially relevant evidence, even if such evidence does not fit one of the above regulatory criteria or was not presented as comparable evidence. The officers consider all evidence in the totality. Some evidence may weigh more favorably on its own, while other evidence is more persuasive when viewed with other evidence.\n\nThe following are examples of situations where evidence in the record may help officers evaluate the quality of the initial or comparable evidence to determine whether, in a totality analysis that considers all of the evidence, the beneficiary is internationally recognized as outstanding:[25]\n\n* The record demonstrates that the beneficiary has published articles in highly-ranked journals relative to other journals in the field, as demonstrated by, for example, evidence the petitioner provides regarding the journal's impact factor.[26] Depending on the level of recognition of the journals in question, as demonstrated by evidence in the record, there may be a high level of recognition associated with publication in such journals, especially if the beneficiary is the most significant contributor to the publication, a senior author, or the sole author of the article;\n\n* The petitioner provides evidence demonstrating that the total rate of citations to the beneficiary's body of published work is high relative to others in the field, such as the beneficiary has a high h-index[27] for the field. Depending on the field and the comparative data the petitioner provides, such evidence may indicate a beneficiary's high overall standing for the purpose of demonstrating that the beneficiary enjoys international recognition as outstanding;[28]",
+        "dense_score": 0.77
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 21,
+        "printed_manual_page": 805,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p021-c01",
+        "section": "2. Final Merits Determination",
+        "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;\n\n* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and\n\n* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the beneficiary's international recognition in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the beneficiary is internationally recognized as outstanding.\n\nWhen requesting additional evidence or denying a petition, if the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concludes that the petitioner, by a preponderance of the evidence, has not demonstrated that the beneficiary is an outstanding professor or researcher.[31] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.[32]",
+        "dense_score": 0.6896
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 5.51
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.5,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}

@@ -1,0 +1,167 @@
+{
+  "id": "D5",
+  "mode": "hybrid",
+  "kind": "direct",
+  "cache_key": "343c35bcf30eeea2ad3498a02b3d474cd9a4ec75b2c71d2150369ed655ca6b31",
+  "expected": "No permanent labor certification; employer letter offering tenured/tenure-track teaching or permanent research in the field; employer ability to pay.",
+  "gold_ids": [
+    "eb1b-p021-c02"
+  ],
+  "answer": {
+    "status": "answered",
+    "message": "",
+    "claims": [
+      {
+        "text": "For EB-1B, a permanent labor certification is not required.",
+        "evidence_ids": [
+          "eb1b-p021-c02-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p021-c02",
+            "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+          }
+        ],
+        "citations": [
+          "eb1b-p021-c02"
+        ]
+      },
+      {
+        "text": "The offer of employment for EB-1B must be in the form of a letter from the prospective U.S. employer to the beneficiary and must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.",
+        "evidence_ids": [
+          "eb1b-p021-c02-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p021-c02",
+            "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+          }
+        ],
+        "citations": [
+          "eb1b-p021-c02"
+        ]
+      },
+      {
+        "text": "The petitioner must demonstrate that the employer has the ability to pay the beneficiary's salary.",
+        "evidence_ids": [
+          "eb1b-p021-c02-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p021-c02",
+            "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+          }
+        ],
+        "citations": [
+          "eb1b-p021-c02"
+        ]
+      },
+      {
+        "text": "For research positions, the offer of employment must be for a permanent research position, which can include positions funded by renewable grants if there is a reasonable expectation of continued funding and employment.",
+        "evidence_ids": [
+          "eb1b-p021-c03-e2",
+          "eb1b-p021-c03-e3"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p021-c03",
+            "text": "The petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment."
+          },
+          {
+            "id": "eb1b-p021-c03",
+            "text": "For example, many research positions are funded by grant money received on a yearly basis. Researchers, therefore, are sometimes employed under employment contracts that are valid in 1-year increments. If the petitioning employer demonstrates, however, the intent to continue to seek funding and a reasonable expectation that funding will continue (such as demonstrated prior renewals for extended long-term research projects), such employment can be considered permanent within the meaning of the regulation.[40] Officers should also consider the circumstances surrounding the job offer as well as the benefits attached to the position. A position that appears to be limited to a specific term, such as in the example above, can meet the regulatory test if the position normally continues beyond the term (that is, if the funding grants are normally renewed)."
+          }
+        ],
+        "citations": [
+          "eb1b-p021-c03"
+        ]
+      },
+      {
+        "text": "Positions that are temporary, adjunct, limited duration fellowships, or similar roles with no reasonable expectation of long-term employment do not qualify as tenured or tenure-track positions for EB-1B.",
+        "evidence_ids": [
+          "eb1b-p022-c01-e2"
+        ],
+        "quotes": [
+          {
+            "id": "eb1b-p022-c01",
+            "text": "However, officers should evaluate whether the overall nature of the position is tenured or tenure-track. USCIS does not consider positions that are temporary, adjunct, limited duration fellowships, or similar positions where the employee has no reasonable expectation of long-term employment with the university, to be tenured or tenure-track positions."
+          }
+        ],
+        "citations": [
+          "eb1b-p022-c01"
+        ]
+      }
+    ],
+    "question": "For EB-1B, does the employer need a permanent labor certification, and what offer-of-employment evidence is required?",
+    "category": "EB-1B",
+    "passages": [
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 21,
+        "printed_manual_page": 805,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p021-c02",
+        "section": "C. Qualifying Status of Employer",
+        "text": "## C. Qualifying Status of Employer\n\nAlthough a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]\n\nThe beneficiary of a petition for outstanding professor or researcher must be seeking to work for a university; an institution of higher education; or a department, division, or institute of a private employer if the department, division, or institute employs at least three persons full time in research activities and has achieved documented accomplishments in an academic field.[36]\n\nIn general, positions with government agencies at the federal, state, or local level do not fit within the statutory framework unless the government agency is shown to be a U.S. university or an institution of higher learning.[37] Therefore, USCIS may only approve a petition for outstanding professor or researcher in instances where the offer of permanent employment is from a government agency if that agency can establish that it is a U.S. university or an institution of higher learning. Government agencies do not qualify as private employers.\n\nGovernment agencies that do not fit the statutory framework may have other available immigration avenues for offers of permanent employment to professors or researchers. For example, assuming all of the eligibility requirements for that visa preference category have been met, a government agency may file a petition for the person under the extraordinary ability classification.[38]",
+        "dense_score": 0.7054
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 16,
+        "printed_manual_page": 800,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p016-c01",
+        "section": "B. Evidence",
+        "text": "## B. Evidence\n\nThe regulation describes the evidence that the petitioner must submit in support of an Immigrant Petition for Alien Workers (Form I-140) for an outstanding professor or researcher.[2] The petitioner must submit evidence to demonstrate that the beneficiary professor or researcher (beneficiary) is recognized internationally as outstanding in the academic field specified in the petition. Academic field means \"a body of specialized knowledge offered for study at an accredited U.S. university or institution of higher education.\"[3]\n\nBy regulatory definition, a body of specialized knowledge is larger than a very small area of specialization in which only a single course is taught or that is the subject of a very specialized dissertation. As such, it would be acceptable to find the beneficiary is an outstanding professor or researcher in particle physics rather than physics in general, as long as the petitioner has demonstrated that the claimed field is \"a body of specialized knowledge offered for study at an accredited United States university or institution of higher education.\"[4]\n\nIn addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as an outstanding professor or researcher.[7]\n\n\n\nPetition to Classify an Outstanding Professor or Researcher: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.\n\n    \n\n  \n\n\nOfficers should apply a preponderance of the evidence standard when making these determinations.",
+        "dense_score": 0.6486
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 21,
+        "printed_manual_page": 805,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p021-c03",
+        "section": "1. Research Positions",
+        "text": "### 1. Research Positions\n\nThe petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment.\n\nFor example, many research positions are funded by grant money received on a yearly basis. Researchers, therefore, are sometimes employed under employment contracts that are valid in 1-year increments. If the petitioning employer demonstrates, however, the intent to continue to seek funding and a reasonable expectation that funding will continue (such as demonstrated prior renewals for extended long-term research projects), such employment can be considered permanent within the meaning of the regulation.[40] Officers should also consider the circumstances surrounding the job offer as well as the benefits attached to the position. A position that appears to be limited to a specific term, such as in the example above, can meet the regulatory test if the position normally continues beyond the term (that is, if the funding grants are normally renewed).",
+        "dense_score": 0.6953
+      },
+      {
+        "document_id": "eb1b",
+        "chapter": 3,
+        "chapter_title": "Outstanding Professor or Researcher",
+        "source_pdf_page": 22,
+        "printed_manual_page": 806,
+        "source_file": "Policy Manual_USCIS_eb.pdf",
+        "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+        "snapshot_date": "2026-09-23",
+        "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+        "id": "eb1b-p022-c01",
+        "section": "2. Tenure or Tenure-Track Positions",
+        "text": "The determination as to whether a position qualifies as a tenured or a tenure-track position is not linked to the regulatory requirement that the position be permanent.[41] The definition of permanent applies only to research positions. Officers do not need to evaluate whether the employment contract for a tenured or tenure-track position has a \"good cause for termination\" clause and should not deny a petition seeking an outstanding professor for a tenured or tenure-track position on that basis alone.\n\nHowever, officers should evaluate whether the overall nature of the position is tenured or tenure-track. USCIS does not consider positions that are temporary, adjunct, limited duration fellowships, or similar positions where the employee has no reasonable expectation of long-term employment with the university, to be tenured or tenure-track positions.",
+        "dense_score": 0.5135
+      }
+    ],
+    "retrieval_warning": null,
+    "seconds": 14.4
+  },
+  "behavior_pass": true,
+  "precision_at_4": 0.25,
+  "recall_at_4": 1.0,
+  "human_claim_review": null,
+  "human_answer_correct": null
+}
