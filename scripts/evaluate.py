@@ -37,6 +37,8 @@ def main():
                        precision_at_4=len(gold & retrieved) / len(retrieved) if gold else None,
                        recall_at_4=len(gold & retrieved) / len(gold) if gold else None,
                        human_claim_review=None, human_answer_correct=None)
+            if answer['status'] == 'unavailable':
+                row['error'] = 'AnswerServiceUnavailable'
         except Exception as exc:
             row.update(error=type(exc).__name__, behavior_pass=False)
         path.write_text(json.dumps(row, ensure_ascii=False, indent=2), encoding='utf-8')
@@ -53,7 +55,7 @@ def main():
     summary = {}
     for mode in ('dense', 'hybrid'):
         selected = [r for r in rows if r['mode'] == mode]
-        successful = [r for r in selected if 'answer' in r]
+        successful = [r for r in selected if 'answer' in r and 'error' not in r]
         times = sorted(r['answer']['seconds'] for r in successful)
         precisions = [r['precision_at_4'] for r in successful if r['precision_at_4'] is not None]
         recalls = [r['recall_at_4'] for r in successful if r['recall_at_4'] is not None]

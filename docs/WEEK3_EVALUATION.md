@@ -1,6 +1,6 @@
 # Week 3 evaluation
 
-Final model: `Qwen/Qwen3-235B-A22B-Instruct-2507` on Nebius. Tests used public policy questions and synthetic workflow state; no candidate records.
+Original evaluation model: `Qwen/Qwen3-235B-A22B-Instruct-2507` on Nebius. Tests used public policy questions and synthetic workflow state; no candidate records.
 
 ## Results
 
@@ -28,3 +28,7 @@ All five scenario categories passed in this small test suite. This is not a stat
 
 
 The standalone Week 3 suite passed **27 tests** locally, retaining the agent, approval, persistence and access-control checks. GitHub Actions validates the standalone repository; the earlier live evaluation artifacts remain unchanged.
+
+## Current runtime
+
+The default model and timeout handling have since changed. See [the response-time follow-up](PERFORMANCE.md). The measurements above remain the original Qwen baseline.

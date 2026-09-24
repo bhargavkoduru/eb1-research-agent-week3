@@ -190,3 +190,26 @@ def test_approval_probability_hands_off_without_model(tmp_path):
     assert agent.snapshot(ident).values['status'] == 'handoff'
     assert not agent.store.load(ident)
     agent.close()
+
+
+def test_search_preserves_goal_when_planner_broadens_query(tmp_path):
+    queries = []
+
+    class RecordingRetriever:
+        def search(self, query, *args):
+            queries.append(query)
+            return [PASSAGE], None
+
+    def broad_planner(_system, state):
+        return {'action': 'search_policy' if not state['evidence'] else 'draft_checklist',
+                'query': 'General EB-1B eligibility documentation'}
+
+    goal = 'Research EB-1B judging evidence and completed reviews'
+    agent = new_agent(tmp_path, retriever=RecordingRetriever(), planner=broad_planner)
+    try:
+        ident = agent.start(goal, 'EB-1B')
+        assert goal in queries[0]
+        assert agent.snapshot(ident).values['status'] == 'review'
+        assert agent.store.load(ident) == []
+    finally:
+        agent.close()

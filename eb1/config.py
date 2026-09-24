@@ -21,7 +21,7 @@ def hosted():
     return str(setting('EB1_HOSTED', 'true')).lower() not in ('0', 'false', 'no')
 
 
-CHAT_MODEL = setting('NEBIUS_CHAT_MODEL', 'Qwen/Qwen3-235B-A22B-Instruct-2507')
+CHAT_MODEL = setting('NEBIUS_CHAT_MODEL', 'openai/gpt-oss-120b')
 EMBED_MODEL = setting('NEBIUS_EMBED_MODEL', 'Qwen/Qwen3-Embedding-8B')
 BASE_URL = 'https://api.tokenfactory.nebius.com/v1'
 CORPUS = ROOT / 'data' / 'corpus' / 'pages.json'

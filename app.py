@@ -73,7 +73,7 @@ with st.form('new_research'):
     start = st.form_submit_button('Start research', type='primary')
 if start:
     try:
-        with st.spinner('The agent is choosing its next steps and researching…'):
+        with st.spinner('The agent is choosing its next steps and researching…', show_time=True):
             with live_operation(viewer):
                 st.session_state['research_id'] = agent.start(goal, category)
         st.rerun()
@@ -99,7 +99,7 @@ if sessions:
             cancel_research = st.form_submit_button('Cancel research')
         if continue_research or cancel_research:
             try:
-                with st.spinner('Continuing research…'):
+                with st.spinner('Continuing research…', show_time=True):
                     if cancel_research:
                         agent.resume(selected, {'action': 'cancel'})
                     else:

@@ -1,0 +1,1568 @@
+{
+  "date": "2026-09-24",
+  "model": "openai/gpt-oss-120b",
+  "provider": "Nebius Token Factory",
+  "method": "Existing 15 development questions, hybrid retrieval, up to three concurrent requests. Separate agent check with scripted public-policy approval.",
+  "qa": {
+    "model": "openai/gpt-oss-120b",
+    "concurrency": 3,
+    "original_evaluation_unchanged": true,
+    "questions": [
+      {
+        "id": "A1",
+        "expected": "Ask whether EB-1A or EB-1B; do not silently choose.",
+        "answer": {
+          "status": "clarify",
+          "message": "Are you asking about EB-1A (extraordinary ability) or EB-1B (outstanding professors and researchers)? Select a category and ask again.",
+          "claims": [],
+          "question": "Can I self-petition?",
+          "category": "Both",
+          "passages": [],
+          "retrieval_warning": null,
+          "seconds": 0.0
+        },
+        "behavior_pass": true,
+        "recall_at_4": null
+      },
+      {
+        "id": "A2",
+        "expected": "Ask EB-1A or EB-1B because the thresholds differ.",
+        "answer": {
+          "status": "clarify",
+          "message": "Are you asking about EB-1A (extraordinary ability) or EB-1B (outstanding professors and researchers)? Select a category and ask again.",
+          "claims": [],
+          "question": "How many criteria do I need?",
+          "category": "Both",
+          "passages": [],
+          "retrieval_warning": null,
+          "seconds": 0.0
+        },
+        "behavior_pass": true,
+        "recall_at_4": null
+      },
+      {
+        "id": "A3",
+        "expected": "Ask which category; no single universal answer.",
+        "answer": {
+          "status": "clarify",
+          "message": "Are you asking about EB-1A (extraordinary ability) or EB-1B (outstanding professors and researchers)? Select a category and ask again.",
+          "claims": [],
+          "question": "Do I need a job offer for this?",
+          "category": "Both",
+          "passages": [],
+          "retrieval_warning": null,
+          "seconds": 0.0
+        },
+        "behavior_pass": true,
+        "recall_at_4": null
+      },
+      {
+        "id": "C1",
+        "expected": "EB-1A permits self-petition without job offer; EB-1B employer petitions with qualifying offer.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "EB‑1A petitions can be filed by the beneficiary as a self‑petitioner and do not require a job offer.",
+              "evidence_ids": [
+                "eb1a-p003-c02-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p003-c02",
+                  "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]"
+                }
+              ],
+              "citations": [
+                "eb1a-p003-c02"
+              ]
+            },
+            {
+              "text": "EB‑1B petitions must be filed by the prospective U.S. employer, not by the beneficiary.",
+              "evidence_ids": [
+                "eb1b-p021-c02-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p021-c02",
+                  "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+                }
+              ],
+              "citations": [
+                "eb1b-p021-c02"
+              ]
+            },
+            {
+              "text": "EB‑1B requires an offer of employment for a permanent research or tenure‑track teaching position, and the employer must show the intent of indefinite employment.",
+              "evidence_ids": [
+                "eb1b-p021-c02-e2",
+                "eb1b-p021-c03-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p021-c02",
+                  "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+                },
+                {
+                  "id": "eb1b-p021-c03",
+                  "text": "The petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment."
+                }
+              ],
+              "citations": [
+                "eb1b-p021-c02",
+                "eb1b-p021-c03"
+              ]
+            }
+          ],
+          "question": "Compare EB-1A and EB-1B: who petitions and is a job offer required?",
+          "category": "Both",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 3,
+              "printed_manual_page": 787,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p003-c02",
+              "section": "Self-Petitioners",
+              "text": "### Self-Petitioners\n\nA petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]",
+              "dense_score": 0.6631
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c03",
+              "section": "1. Research Positions",
+              "text": "### 1. Research Positions\n\nThe petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment.\n\nFor example, many research positions are funded by grant money received on a yearly basis. Researchers, therefore, are sometimes employed under employment contracts that are valid in 1-year increments. If the petitioning employer demonstrates, however, the intent to continue to seek funding and a reasonable expectation that funding will continue (such as demonstrated prior renewals for extended long-term research projects), such employment can be considered permanent within the meaning of the regulation.[40] Officers should also consider the circumstances surrounding the job offer as well as the benefits attached to the position. A position that appears to be limited to a specific term, such as in the example above, can meet the regulatory test if the position normally continues beyond the term (that is, if the funding grants are normally renewed).",
+              "dense_score": 0.5839
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c02",
+              "section": "C. Qualifying Status of Employer",
+              "text": "## C. Qualifying Status of Employer\n\nAlthough a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]\n\nThe beneficiary of a petition for outstanding professor or researcher must be seeking to work for a university; an institution of higher education; or a department, division, or institute of a private employer if the department, division, or institute employs at least three persons full time in research activities and has achieved documented accomplishments in an academic field.[36]\n\nIn general, positions with government agencies at the federal, state, or local level do not fit within the statutory framework unless the government agency is shown to be a U.S. university or an institution of higher learning.[37] Therefore, USCIS may only approve a petition for outstanding professor or researcher in instances where the offer of permanent employment is from a government agency if that agency can establish that it is a U.S. university or an institution of higher learning. Government agencies do not qualify as private employers.\n\nGovernment agencies that do not fit the statutory framework may have other available immigration avenues for offers of permanent employment to professors or researchers. For example, assuming all of the eligibility requirements for that visa preference category have been met, a government agency may file a petition for the person under the extraordinary ability classification.[38]",
+              "dense_score": 0.6106
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 13,
+              "printed_manual_page": 797,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p013-c01",
+              "section": "Letters of Support",
+              "text": "In some cases, letters from others in the beneficiary's field may merely make general assertions about the beneficiary, and at most, indicate that the beneficiary is a competent, respected figure within the field of endeavor, but the record lacks sufficient, concrete evidence supporting such statements. These letters should be considered, but do not necessarily show the beneficiary's claimed extraordinary ability.\n\n*Evaluating Immigrant Petitions Filed on Behalf of O-1 Nonimmigrants*\n\nAn officer might encounter a case where a petition is filed on behalf of a person who was previously classified as an O-1 nonimmigrant with extraordinary ability, or extraordinary achievement in the case of persons in the motion picture and television industry.[52] Though the prior approval of an O-1 petition is a relevant consideration and can be an indicator of eligibility in adjudicating an immigrant petition for a person with extraordinary ability, it is not determinative.[53]\n\nDue to the similarities in many of the evidentiary requirements, some courts have asked USCIS to provide an explanation as to why, if the person had previously been classified in a roughly analogous nonimmigrant category, USCIS has determined that the person is not eligible for the employment-based immigrant visa classification in question.\n\nFor this reason, where possible, officers issuing denials in such cases should provide a brief discussion as to why, notwithstanding the previous O-1 nonimmigrant visa petition approval, the petitioner has failed to meet its burden to establish that the beneficiary is eligible for classification as an immigrant with extraordinary ability.",
+              "dense_score": 0.5484
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion.",
+          "seconds": 10.5
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "C2",
+        "expected": "Both need actual participation, not just invitation; EB-1A same/allied field of specialization; EB-1B same/allied academic field.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "Both EB‑1A and EB‑1B require the applicant to have participated, individually or on a panel, as a judge of the work of others in the same or an allied field.",
+              "evidence_ids": [
+                "eb1a-p007-c01-e2",
+                "eb1b-p019-c01-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p007-c01",
+                  "text": "USCIS determines whether the person has acted as the judge of the work of others in the same or an allied field of specification."
+                },
+                {
+                  "id": "eb1b-p019-c01",
+                  "text": "USCIS determines whether the beneficiary has participated, either individually or on a panel, as the judge of the work of others in the same or an allied academic field."
+                }
+              ],
+              "citations": [
+                "eb1a-p007-c01",
+                "eb1b-p019-c01"
+              ]
+            },
+            {
+              "text": "USCIS mandates that the petitioner show the person was not only invited to judge but actually performed the judging activity.",
+              "evidence_ids": [
+                "eb1a-p007-c01-e9",
+                "eb1b-p019-c01-e6"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p007-c01",
+                  "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+                },
+                {
+                  "id": "eb1b-p019-c01",
+                  "text": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field."
+                }
+              ],
+              "citations": [
+                "eb1a-p007-c01",
+                "eb1b-p019-c01"
+              ]
+            },
+            {
+              "text": "Consequently, an invitation by itself is not enough to satisfy the judging criterion for either EB‑1A or EB‑1B.",
+              "evidence_ids": [
+                "eb1a-p007-c01-e9",
+                "eb1b-p019-c01-e6"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p007-c01",
+                  "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+                },
+                {
+                  "id": "eb1b-p019-c01",
+                  "text": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field."
+                }
+              ],
+              "citations": [
+                "eb1a-p007-c01",
+                "eb1b-p019-c01"
+              ]
+            }
+          ],
+          "question": "Compare the judging criterion in EB-1A and EB-1B. Is an invitation alone enough for either?",
+          "category": "Both",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 7,
+              "printed_manual_page": 791,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p007-c01",
+              "section": "Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]",
+              "text": "## Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]\n\nUSCIS determines whether the person has acted as the judge of the work of others in the same or an allied field of specification.\n\nExamples of judging the work of others may include, but are not limited to:\n\n* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;\n\n* Peer review of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n\n* Serving as a member of a Ph.D. dissertation committee that makes the final judgment as to whether a candidate's body of work satisfies the requirements for a doctoral degree, as evidenced by departmental records; and\n\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review.",
+              "dense_score": 0.688
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 19,
+              "printed_manual_page": 803,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p019-c01",
+              "section": "Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]",
+              "text": "## Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]\n\nUSCIS determines whether the beneficiary has participated, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.\n\nExamples of qualifying judging experience may include, but are not limited to:\n\n* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field.\n\nFor example, a petitioner might document a beneficiary's peer review work by submitting a copy of a request from a journal to the beneficiary to do the review, accompanied by evidence confirming that the beneficiary actually completed the review.",
+              "dense_score": 0.6768
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 12,
+              "printed_manual_page": 796,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p012-c02",
+              "section": "2. Final Merits Determination",
+              "text": "* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and\n\n* The record establishes that the person is named as an investigator, scientist, or researcher on a peer-reviewed and competitively-funded U.S. government grant or stipend for STEM research. This type of evidence can be a positive factor indicating a person is among the small percentage at the top of the person's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the person's extraordinary ability in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the person has achieved sustained national or international acclaim and recognition in their field of expertise.\n\nWhile a person may be stronger in one particular evidentiary area than in others, the totality of the evidence must establish that the person is extraordinary. If the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concluded that the petitioner has not demonstrated by a preponderance of the evidence that the person has extraordinary ability.[50] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.\n\nIf requesting additional evidence is appropriate, officers should provide some explanation of the deficiencies in the evidence already submitted and, if possible, examples of persuasive evidence that the petitioner might provide to corroborate the statements made in the petition. If a petitioner has submitted evidence that the petitioner believes establishes the person's extraordinary ability, merely restating the evidentiary requirements or stating that the evidence submitted is insufficient does not clarify to the petitioner how to overcome the deficiencies.\n\nWith respect to demonstrating extraordinary ability in athletics, USCIS considers a male athlete who has been competing against women to be a negative factor in determining whether the alien is among the small percentage at the very top of the field.[51]",
+              "dense_score": 0.6861
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c01",
+              "section": "2. Final Merits Determination",
+              "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;\n\n* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and\n\n* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the beneficiary's international recognition in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the beneficiary is internationally recognized as outstanding.\n\nWhen requesting additional evidence or denying a petition, if the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concludes that the petitioner, by a preponderance of the evidence, has not demonstrated that the beneficiary is an outstanding professor or researcher.[31] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.[32]",
+              "dense_score": 0.6765
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion.",
+          "seconds": 12.78
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "C3",
+        "expected": "EB-1A criterion calls for major significance; EB-1B criterion does not require major significance but requires an original contribution to the academic field, not merely an individual laboratory.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "EB‑1A requires that the petitioner’s original contributions be of major significance to the field.",
+              "evidence_ids": [
+                "eb1a-p007-c02-e3",
+                "eb1a-p007-c02-e10"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p007-c02",
+                  "text": "Second, USCIS determines whether the original contributions are of major significance to the field."
+                },
+                {
+                  "id": "eb1a-p007-c02",
+                  "text": "Analysis under this criterion focuses on whether the person's original work constitutes major, significant contributions to the field."
+                }
+              ],
+              "citations": [
+                "eb1a-p007-c02"
+              ]
+            },
+            {
+              "text": "EB‑1B does not require the contributions to be of major significance; it only requires original scientific or scholarly research contributions to the academic field.",
+              "evidence_ids": [
+                "eb1b-p019-c02-e6"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p019-c02",
+                  "text": "The regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution."
+                }
+              ],
+              "citations": [
+                "eb1b-p019-c02"
+              ]
+            },
+            {
+              "text": "Therefore, major significance is a required element for EB‑1A but not for EB‑1B.",
+              "evidence_ids": [
+                "eb1a-p007-c02-e3",
+                "eb1b-p019-c02-e6"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p007-c02",
+                  "text": "Second, USCIS determines whether the original contributions are of major significance to the field."
+                },
+                {
+                  "id": "eb1b-p019-c02",
+                  "text": "The regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution."
+                }
+              ],
+              "citations": [
+                "eb1a-p007-c02",
+                "eb1b-p019-c02"
+              ]
+            }
+          ],
+          "question": "Compare EB-1A original contributions of major significance with EB-1B original scientific or scholarly research contributions. Is major significance required by both criteria?",
+          "category": "Both",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 7,
+              "printed_manual_page": 791,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p007-c02",
+              "section": "Criterion 5: The person's original scientific, scholarly, artistic, athletic, or business-related contributions of major significance in the field.[27]",
+              "text": "## Criterion 5: The person's original scientific, scholarly, artistic, athletic, or business-related contributions of major significance in the field.[27]\n\nFirst, USCIS determines whether the person has made original contributions in the field.\n\nSecond, USCIS determines whether the original contributions are of major significance to the field.\n\nExamples of relevant evidence include, but are not limited to:\n\n* Published materials about the significance of the person's original work;\n\n* Testimonials, letters, and affidavits about the person's original work;\n\n* Documentation that the person's original work was cited at a level indicative of major significance in the field; and\n\n* Patents or licenses deriving from the person's work or evidence of commercial use of the person's work.\n\n**Considerations:**\n\nAnalysis under this criterion focuses on whether the person's original work constitutes major, significant contributions to the field.\n\nEvidence that the person's work was funded, patented, or published, while potentially demonstrating the work's originality, will not necessarily establish, on its own, that the work is of major significance to the field.\n\nFor example, published research that has provoked widespread commentary on its importance from others working in the field, and documentation that it has been highly cited relative to others' work in that field, may be probative of the significance of the person's contributions to the field of endeavor.\n\nSimilarly, evidence that the person developed a patented technology that has attracted significant attention or commercialization may establish the significance of the person's original contribution to the field. If a patent remains pending, USCIS generally requires additional supporting evidence to document the originality of the person's contribution, such as detailed reference letters.\n\nDetailed letters from experts in the field explaining the nature and significance of the person's contribution may also provide valuable context for evaluating the claimed original contributions of major significance, particularly when the record includes documentation corroborating the claimed significance.\n\nSubmitted letters should specifically describe the person's contribution and its significance to the field and should also set forth the basis of the writer's knowledge and expertise.",
+              "dense_score": 0.7666
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 19,
+              "printed_manual_page": 803,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p019-c02",
+              "section": "Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]",
+              "text": "## Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]\n\nUSCIS determines whether the beneficiary has made original scientific or scholarly research contributions to the academic field.\n\nExamples of relevant evidence of qualifying contributions may include, but are not limited to:\n\n* Published materials about the significance of the beneficiary's original work;\n* Testimonials, letters, and affidavits about the beneficiary's original work;\n* Documentation that the beneficiary's original work was cited at a level indicative of an original scientific or scholarly research contribution to an academic field; and\n* Patents or licenses deriving from the beneficiary's work or evidence of commercial use of the beneficiary's work.\n\n**Considerations:**\n\nThe regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution.\n\nThe regulations include a separate criterion for scholarly articles.[17] Therefore, contributions are a separate evidentiary requirement from scholarly articles.\n\nPossible items that could satisfy this criterion include, but are not limited to:\n\n* Citation history or patterns for the beneficiary's work, as evidenced by number of citations, as well as an examination of the impact factor for the journals in which the beneficiary publishes.[18] While many scholars publish, not all are cited or publish in journals with significant impact factors. The petitioner may use web tools such as Google Scholar, SciFinder, and the Web of Science to establish the number of citations and the impact factor for journals; and\n\n* Detailed letters from experts in the field explaining the nature and significance of the beneficiary's contribution may also provide valuable context for evaluating whether the original work is a contribution to the academic field, particularly when the record includes documentation corroborating the claimed significance. Submitted letters should specifically describe the beneficiary's contribution and its significance to the field and should also set forth the basis of the writer's knowledge and expertise.",
+              "dense_score": 0.7285
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 4,
+              "printed_manual_page": 788,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p004-c02",
+              "section": "B. Evidence of Extraordinary Ability",
+              "text": "## B. Evidence of Extraordinary Ability\n\nThe regulations describe various types of evidence that the petitioner must submit in support of a petition as documentation of the beneficiary's extraordinary ability.[11] In general, the petitioner must submit evidence that:\n\n* The person has sustained national or international acclaim; and\n\n* The person's achievements have been recognized in the field of expertise.\n\nThis initial evidence must include either evidence of a one-time achievement (for example, a major internationally recognized award, such as the Nobel Prize) or at least three of the types of evidence listed in the regulations.[12]\n\nThe evidence provided in support of the petition need not specifically use the words \"extraordinary.\" Rather, the material should be such that it is readily apparent that the person's contributions to the field are qualifying. Also, although some of the regulatory language relating to evidence occasionally uses plurals, it is entirely possible that the presentation of a single piece of evidence in a specific evidentiary category may be sufficient.\n\nOn the other hand, the submission of voluminous documentation may not contain sufficient persuasive evidence to establish the beneficiary's eligibility. The evidence provided in support of the petition must ultimately establish that the beneficiary \"is one of that small percentage who have risen to the very top of the field of endeavor.\"[13]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as a person with extraordinary ability.[14]\n\n\n\nPetition for Extraordinary Ability Classification: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.",
+              "dense_score": 0.6293
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 22,
+              "printed_manual_page": 806,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p022-c02",
+              "section": "Footnotes",
+              "text": "## Footnotes\n\n[1] See INA 203(b)(1)(B). See 8 CFR 204.5(i).\n\n[2] See 8 CFR 204.5(i)(3).\n\n[3] See 8 CFR 204.5(i)(2).\n\n[4] See 8 CFR 204.5(i)(2) (definition of academic field).\n\n[5] See 8 CFR 204.5(i)(2), defining \"permanent, in reference to a research position\" as \"either tenured, tenure-track, or for a term of indefinite or unlimited duration, and in which the employee will ordinarily have an expectation of continued employment unless there is good cause for termination.\"\n\n[6] See 8 CFR 204.5(i)(3)(iii) and 8 CFR 204.5(i)(3)(iv). See 8 CFR 204.5(i)(2) for definitions for permanent and academic field.\n\n[7] See Matter of Chawathe (PDF), 25 I&N Dec. 369, 376 (AAO 2010) (\"[T]ruth is to be determined not by the quantity of evidence alone but by its quality. Therefore, in adjudicating the application pursuant to the preponderance of the evidence standard, the director must examine each piece of evidence for relevance, probative value, and credibility, both individually and within the context of the totality of the evidence, to determine whether the fact to be proven is probably true\"). See Kazarian v. USCIS (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010). USCIS has interpreted Kazarian as applicable to outstanding professor and researcher petitions.\n\n[8] See 8 CFR 204.5(i)(3)(i). The regulation at 8 CFR 204.5(i)(3)(ii) allows a petitioner to submit comparable evidence to establish eligibility if the standards in 8 CFR 204.5(i)(3)(i) do not readily apply.\n\n[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D).",
+              "dense_score": 0.6449
+            }
+          ],
+          "retrieval_warning": null,
+          "seconds": 5.0
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "D1",
+        "expected": "Self-petition allowed, no job offer required; still intend to continue work in the area and substantially benefit the United States.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "A person with extraordinary ability may file an EB‑1A petition without a job offer, including as a self‑petitioner.",
+              "evidence_ids": [
+                "eb1a-p003-c02-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p003-c02",
+                  "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]"
+                }
+              ],
+              "citations": [
+                "eb1a-p003-c02"
+              ]
+            },
+            {
+              "text": "The self‑petitioner must still demonstrate an intent to continue work in the area of their extraordinary ability and that the work will substantially benefit the United States in the future.",
+              "evidence_ids": [
+                "eb1a-p003-c02-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p003-c02",
+                  "text": "A petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]"
+                }
+              ],
+              "citations": [
+                "eb1a-p003-c02"
+              ]
+            }
+          ],
+          "question": "For EB-1A, can a person self-petition without a job offer? What must they still demonstrate?",
+          "category": "EB-1A",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 3,
+              "printed_manual_page": 787,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p003-c02",
+              "section": "Self-Petitioners",
+              "text": "### Self-Petitioners\n\nA petition filed on behalf of a person with extraordinary ability does not need to be supported by a job offer; therefore, anyone can file the petition on behalf of the person, including the alien who may file as a self-petitioner.[2] The person must still demonstrate, however, that he or she intends to continue work in the area of his or her extraordinary ability and that his or her work will substantially benefit the United States in the future.[3]",
+              "dense_score": 0.7999
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 3,
+              "printed_manual_page": 787,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p003-c03",
+              "section": "1. Sustained National or International Acclaim",
+              "text": "### 1. Sustained National or International Acclaim\n\nWhen filing a petition for a person with extraordinary ability, the petitioner must submit evidence that the person has sustained national or international acclaim and that the person's achievements have been recognized in the field of expertise.[4] In determining whether the beneficiary has enjoyed \"sustained\" national or international acclaim, the officer should consider that such acclaim must be maintained.[5] However, the term sustained does not imply an age limit on the beneficiary. A beneficiary may be very young or early in his or her career and still be able to show sustained acclaim. There is also no definitive time frame on what constitutes sustained.\n\nIf a person was recognized for a particular achievement, the officer should determine whether the person continues to maintain a comparable level of acclaim in the field of expertise since the person was originally afforded that recognition. A person may, for example, have achieved national or international acclaim in the past but then failed to maintain a comparable level of acclaim thereafter.",
+              "dense_score": 0.5802
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 12,
+              "printed_manual_page": 796,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p012-c02",
+              "section": "2. Final Merits Determination",
+              "text": "* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and\n\n* The record establishes that the person is named as an investigator, scientist, or researcher on a peer-reviewed and competitively-funded U.S. government grant or stipend for STEM research. This type of evidence can be a positive factor indicating a person is among the small percentage at the top of the person's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the person's extraordinary ability in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the person has achieved sustained national or international acclaim and recognition in their field of expertise.\n\nWhile a person may be stronger in one particular evidentiary area than in others, the totality of the evidence must establish that the person is extraordinary. If the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concluded that the petitioner has not demonstrated by a preponderance of the evidence that the person has extraordinary ability.[50] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.\n\nIf requesting additional evidence is appropriate, officers should provide some explanation of the deficiencies in the evidence already submitted and, if possible, examples of persuasive evidence that the petitioner might provide to corroborate the statements made in the petition. If a petitioner has submitted evidence that the petitioner believes establishes the person's extraordinary ability, merely restating the evidentiary requirements or stating that the evidence submitted is insufficient does not clarify to the petitioner how to overcome the deficiencies.\n\nWith respect to demonstrating extraordinary ability in athletics, USCIS considers a male athlete who has been competing against women to be a negative factor in determining whether the alien is among the small percentage at the very top of the field.[51]",
+              "dense_score": 0.5798
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 4,
+              "printed_manual_page": 788,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p004-c02",
+              "section": "B. Evidence of Extraordinary Ability",
+              "text": "## B. Evidence of Extraordinary Ability\n\nThe regulations describe various types of evidence that the petitioner must submit in support of a petition as documentation of the beneficiary's extraordinary ability.[11] In general, the petitioner must submit evidence that:\n\n* The person has sustained national or international acclaim; and\n\n* The person's achievements have been recognized in the field of expertise.\n\nThis initial evidence must include either evidence of a one-time achievement (for example, a major internationally recognized award, such as the Nobel Prize) or at least three of the types of evidence listed in the regulations.[12]\n\nThe evidence provided in support of the petition need not specifically use the words \"extraordinary.\" Rather, the material should be such that it is readily apparent that the person's contributions to the field are qualifying. Also, although some of the regulatory language relating to evidence occasionally uses plurals, it is entirely possible that the presentation of a single piece of evidence in a specific evidentiary category may be sufficient.\n\nOn the other hand, the submission of voluminous documentation may not contain sufficient persuasive evidence to establish the beneficiary's eligibility. The evidence provided in support of the petition must ultimately establish that the beneficiary \"is one of that small percentage who have risen to the very top of the field of endeavor.\"[13]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as a person with extraordinary ability.[14]\n\n\n\nPetition for Extraordinary Ability Classification: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.",
+              "dense_score": 0.6278
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion.",
+          "seconds": 6.26
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "D2",
+        "expected": "Actual participation required, not just invitation; invitation plus completed-review evidence is an example.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "An invitation to peer review alone does not satisfy the EB‑1A judging criterion; the petitioner must also demonstrate that the review was actually completed.",
+              "evidence_ids": [
+                "eb1a-p007-c01-e4",
+                "eb1a-p007-c01-e9"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p007-c01",
+                  "text": "* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;"
+                },
+                {
+                  "id": "eb1a-p007-c01",
+                  "text": "The petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review."
+                }
+              ],
+              "citations": [
+                "eb1a-p007-c01"
+              ]
+            }
+          ],
+          "question": "For EB-1A judging, is an invitation to peer review sufficient, or must the review actually be completed?",
+          "category": "EB-1A",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 7,
+              "printed_manual_page": 791,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p007-c01",
+              "section": "Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]",
+              "text": "## Criterion 4: The person's participation, either individually or on a panel, as a judge of the work of others in the same or an allied field of specification for which classification is sought.[26]\n\nUSCIS determines whether the person has acted as the judge of the work of others in the same or an allied field of specification.\n\nExamples of judging the work of others may include, but are not limited to:\n\n* Peer reviewing for a scholarly journal, as evidenced by a request from the journal to the person to do the review, accompanied by proof that the review was actually completed;\n\n* Peer review of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n\n* Serving as a member of a Ph.D. dissertation committee that makes the final judgment as to whether a candidate's body of work satisfies the requirements for a doctoral degree, as evidenced by departmental records; and\n\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the person has not only been invited to judge the work of others, but also that the person actually participated in the judging of the work of others in the same or allied field of specialization. For example, a petitioner might document the person's peer review work by submitting a copy of a request from a journal to the person to do the review, accompanied by evidence confirming that the person actually completed the review.",
+              "dense_score": 0.8094
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 12,
+              "printed_manual_page": 796,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p012-c02",
+              "section": "2. Final Merits Determination",
+              "text": "* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and\n\n* The record establishes that the person is named as an investigator, scientist, or researcher on a peer-reviewed and competitively-funded U.S. government grant or stipend for STEM research. This type of evidence can be a positive factor indicating a person is among the small percentage at the top of the person's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the person's extraordinary ability in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the person has achieved sustained national or international acclaim and recognition in their field of expertise.\n\nWhile a person may be stronger in one particular evidentiary area than in others, the totality of the evidence must establish that the person is extraordinary. If the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concluded that the petitioner has not demonstrated by a preponderance of the evidence that the person has extraordinary ability.[50] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.\n\nIf requesting additional evidence is appropriate, officers should provide some explanation of the deficiencies in the evidence already submitted and, if possible, examples of persuasive evidence that the petitioner might provide to corroborate the statements made in the petition. If a petitioner has submitted evidence that the petitioner believes establishes the person's extraordinary ability, merely restating the evidentiary requirements or stating that the evidence submitted is insufficient does not clarify to the petitioner how to overcome the deficiencies.\n\nWith respect to demonstrating extraordinary ability in athletics, USCIS considers a male athlete who has been competing against women to be a negative factor in determining whether the alien is among the small percentage at the very top of the field.[51]",
+              "dense_score": 0.7366
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 11,
+              "printed_manual_page": 795,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p011-c02",
+              "section": "Comparable evidence: Comparable evidence to establish the person's eligibility if the standards do not readily apply to the person's occupation.[39]",
+              "text": "However, objectively meeting the regulatory criteria in the first step alone does not establish that the person in fact meets the requirements for classification as a person with extraordinary ability.[41]\n\n**For example:**\n\n* Participating in the judging of the work of others in the same or an allied field of specialization alone, regardless of the circumstances, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's participation to determine whether it was indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\n* Publishing scholarly articles in professional or major trade publications or other major media alone, regardless of the caliber, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's publications to determine whether they were indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\nThe question of whether the person is one of that small percentage who have risen to the very top of the field of endeavor and enjoys sustained national or international acclaim should be addressed in the second step of the analysis (final merits determination). In the first step, the officer is only required to determine if the evidence objectively meets the regulatory criteria.",
+              "dense_score": 0.7124
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 4,
+              "printed_manual_page": 788,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p004-c02",
+              "section": "B. Evidence of Extraordinary Ability",
+              "text": "## B. Evidence of Extraordinary Ability\n\nThe regulations describe various types of evidence that the petitioner must submit in support of a petition as documentation of the beneficiary's extraordinary ability.[11] In general, the petitioner must submit evidence that:\n\n* The person has sustained national or international acclaim; and\n\n* The person's achievements have been recognized in the field of expertise.\n\nThis initial evidence must include either evidence of a one-time achievement (for example, a major internationally recognized award, such as the Nobel Prize) or at least three of the types of evidence listed in the regulations.[12]\n\nThe evidence provided in support of the petition need not specifically use the words \"extraordinary.\" Rather, the material should be such that it is readily apparent that the person's contributions to the field are qualifying. Also, although some of the regulatory language relating to evidence occasionally uses plurals, it is entirely possible that the presentation of a single piece of evidence in a specific evidentiary category may be sufficient.\n\nOn the other hand, the submission of voluminous documentation may not contain sufficient persuasive evidence to establish the beneficiary's eligibility. The evidence provided in support of the petition must ultimately establish that the beneficiary \"is one of that small percentage who have risen to the very top of the field of endeavor.\"[13]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as a person with extraordinary ability.[14]\n\n\n\nPetition for Extraordinary Ability Classification: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.",
+              "dense_score": 0.6899
+            }
+          ],
+          "retrieval_warning": null,
+          "seconds": 4.9
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "D3",
+        "expected": "No. A separate totality/final merits analysis assesses sustained acclaim and being among the small percentage at the very top.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "Meeting three regulatory criteria (or comparable evidence) satisfies the first‑step requirement but does not by itself establish eligibility for EB‑1A.",
+              "evidence_ids": [
+                "eb1a-p011-c02-e1"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p011-c02",
+                  "text": "However, objectively meeting the regulatory criteria in the first step alone does not establish that the person in fact meets the requirements for classification as a person with extraordinary ability.[41]"
+                }
+              ],
+              "citations": [
+                "eb1a-p011-c02"
+              ]
+            },
+            {
+              "text": "The officer must then perform a final merits determination, reviewing the petition in its entirety to decide if the beneficiary has sustained national or international acclaim and is among the small percentage who have risen to the very top of the field.",
+              "evidence_ids": [
+                "eb1a-p011-c03-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p011-c03",
+                  "text": "In the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination."
+                }
+              ],
+              "citations": [
+                "eb1a-p011-c03"
+              ]
+            },
+            {
+              "text": "The final merits decision is made on a preponderance‑of‑evidence basis and depends on the overall quality and relevance of all submitted evidence, not merely the presence of three criteria.",
+              "evidence_ids": [
+                "eb1a-p011-c03-e2",
+                "eb1a-p011-c03-e4"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1a-p011-c03",
+                  "text": "In the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination."
+                },
+                {
+                  "id": "eb1a-p011-c03",
+                  "text": "For example, an officer may think that if a person is extraordinary, there should be published articles about the person and the person's work. However, an officer cannot deny the petition because no published articles were submitted, so long as the petitioner has submitted other evidence that meets the three qualifying criteria which demonstrates the person is in fact extraordinary. Approval or denial of a petition is based on the type and quality of evidence submitted rather than assumptions about the failure to address different criteria."
+                }
+              ],
+              "citations": [
+                "eb1a-p011-c03"
+              ]
+            }
+          ],
+          "question": "Does meeting three EB-1A evidentiary criteria automatically establish eligibility? Explain the final merits step.",
+          "category": "EB-1A",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 11,
+              "printed_manual_page": 795,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p011-c03",
+              "section": "2. Final Merits Determination",
+              "text": "## 2. Final Merits Determination\n\nIn the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination.\n\nAn officer may not limit the kind of evidence the officer thinks the person should be able to submit and deny the petition if that particular type of evidence (whether one of the prescribed types[42] or comparable evidence[43]) is absent, if the person nonetheless submitted other types of evidence that meet the regulatory requirements for the classification.\n\nFor example, an officer may think that if a person is extraordinary, there should be published articles about the person and the person's work. However, an officer cannot deny the petition because no published articles were submitted, so long as the petitioner has submitted other evidence that meets the three qualifying criteria which demonstrates the person is in fact extraordinary. Approval or denial of a petition is based on the type and quality of evidence submitted rather than assumptions about the failure to address different criteria.",
+              "dense_score": 0.787
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 4,
+              "printed_manual_page": 788,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p004-c02",
+              "section": "B. Evidence of Extraordinary Ability",
+              "text": "## B. Evidence of Extraordinary Ability\n\nThe regulations describe various types of evidence that the petitioner must submit in support of a petition as documentation of the beneficiary's extraordinary ability.[11] In general, the petitioner must submit evidence that:\n\n* The person has sustained national or international acclaim; and\n\n* The person's achievements have been recognized in the field of expertise.\n\nThis initial evidence must include either evidence of a one-time achievement (for example, a major internationally recognized award, such as the Nobel Prize) or at least three of the types of evidence listed in the regulations.[12]\n\nThe evidence provided in support of the petition need not specifically use the words \"extraordinary.\" Rather, the material should be such that it is readily apparent that the person's contributions to the field are qualifying. Also, although some of the regulatory language relating to evidence occasionally uses plurals, it is entirely possible that the presentation of a single piece of evidence in a specific evidentiary category may be sufficient.\n\nOn the other hand, the submission of voluminous documentation may not contain sufficient persuasive evidence to establish the beneficiary's eligibility. The evidence provided in support of the petition must ultimately establish that the beneficiary \"is one of that small percentage who have risen to the very top of the field of endeavor.\"[13]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as a person with extraordinary ability.[14]\n\n\n\nPetition for Extraordinary Ability Classification: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.",
+              "dense_score": 0.7
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 11,
+              "printed_manual_page": 795,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p011-c02",
+              "section": "Comparable evidence: Comparable evidence to establish the person's eligibility if the standards do not readily apply to the person's occupation.[39]",
+              "text": "However, objectively meeting the regulatory criteria in the first step alone does not establish that the person in fact meets the requirements for classification as a person with extraordinary ability.[41]\n\n**For example:**\n\n* Participating in the judging of the work of others in the same or an allied field of specialization alone, regardless of the circumstances, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's participation to determine whether it was indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\n* Publishing scholarly articles in professional or major trade publications or other major media alone, regardless of the caliber, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's publications to determine whether they were indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\nThe question of whether the person is one of that small percentage who have risen to the very top of the field of endeavor and enjoys sustained national or international acclaim should be addressed in the second step of the analysis (final merits determination). In the first step, the officer is only required to determine if the evidence objectively meets the regulatory criteria.",
+              "dense_score": 0.7331
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 4,
+              "printed_manual_page": 788,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p004-c03",
+              "section": "1. Initial Evidence of Extraordinary Ability",
+              "text": "### 1. Initial Evidence of Extraordinary Ability\n\nThe first step of the evidentiary review is limited to determining whether the evidence submitted with the petition meets the regulatory criteria.[15] The evidence must be comprised of either a one-time achievement (that is, a major, internationally recognized award) or at least three of the ten regulatory criteria or be comparable to at least three of the ten regulatory criteria.[16] The officer should apply a preponderance of the evidence standard when making this determination.\n\nFor purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[17] Officers should not yet make a determination regarding whether or not the person is one of that small percentage who have risen to the very top of the field or if the person has sustained national or international acclaim.[18]\n\nThe following tables describe the limited determinations the officer should make in the first step of the analysis to determine whether the person has met the applicable evidentiary criteria, including any qualifying comparable evidence.[19]",
+              "dense_score": 0.7696
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion.",
+          "seconds": 7.89
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "D4",
+        "expected": "At least two of six criteria at the first step; then totality assessment of international recognition as outstanding.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "The initial evidence threshold requires the petition to include evidence that meets at least two of the six regulatory criteria, with officers evaluating the quality of that evidence but not yet determining international outstanding recognition.",
+              "evidence_ids": [
+                "eb1b-p016-c02-e2",
+                "eb1b-p016-c02-e3"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p016-c02",
+                  "text": "The first step of the evidentiary review is limited to determining whether the evidence submitted with the petition is comprised of at least two of the six regulatory criteria.[8]"
+                },
+                {
+                  "id": "eb1b-p016-c02",
+                  "text": "For purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[9] Officers should not yet make a determination regarding whether or not the beneficiary is recognized internationally as outstanding in the academic field."
+                }
+              ],
+              "citations": [
+                "eb1b-p016-c02"
+              ]
+            },
+            {
+              "text": "Certain types of evidence, such as serving as a judge of others’ work or authoring scholarly books or articles, automatically satisfy a regulatory criterion in the first step, though their significance for international recognition is assessed later.",
+              "evidence_ids": [
+                "eb1b-p016-c02-e4",
+                "eb1b-p016-c02-e5"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p016-c02",
+                  "text": "* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area."
+                },
+                {
+                  "id": "eb1b-p016-c02",
+                  "text": "* Authorship of scholarly books or articles (in scholarly journals with international circulation) in the academic field alone, regardless of the caliber, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's authorship of books or articles should be evaluated to determine whether they were indicative of the beneficiary being recognized internationally as outstanding in a specific academic area."
+                }
+              ],
+              "citations": [
+                "eb1b-p016-c02"
+              ]
+            },
+            {
+              "text": "In the final merits determination, officers consider all evidence together, including any additional relevant material, to decide by a preponderance of the evidence whether the beneficiary is internationally recognized as outstanding in a specific academic area.",
+              "evidence_ids": [
+                "eb1b-p020-c03-e2",
+                "eb1b-p020-c03-e3"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p020-c03",
+                  "text": "Meeting the minimum requirement by providing at least two types of initial evidence does not, in itself, establish that the beneficiary in fact meets the requirements for classification as an outstanding professor or researcher.[23] Officers also consider the quality of the evidence. In the second step of the analysis in each case, officers should evaluate the evidence together when considering the petition in its entirety to make a final merits determination of whether or not the petitioner, by a preponderance of the evidence, has demonstrated that the beneficiary is recognized internationally as outstanding in a specific academic area.[24]"
+                },
+                {
+                  "id": "eb1b-p020-c03",
+                  "text": "At this step, officers consider any potentially relevant evidence, even if such evidence does not fit one of the above regulatory criteria or was not presented as comparable evidence. The officers consider all evidence in the totality. Some evidence may weigh more favorably on its own, while other evidence is more persuasive when viewed with other evidence."
+                }
+              ],
+              "citations": [
+                "eb1b-p020-c03"
+              ]
+            }
+          ],
+          "question": "What are the EB-1B initial evidence threshold and the subsequent final merits assessment?",
+          "category": "EB-1B",
+          "passages": [
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 16,
+              "printed_manual_page": 800,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p016-c02",
+              "section": "1. Assess Whether Evidence Meets Any Regulatory Criteria",
+              "text": "### 1. Assess Whether Evidence Meets Any Regulatory Criteria\n\nThe first step of the evidentiary review is limited to determining whether the evidence submitted with the petition is comprised of at least two of the six regulatory criteria.[8]\n\nFor purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[9] Officers should not yet make a determination regarding whether or not the beneficiary is recognized internationally as outstanding in the academic field.\n\nFor example:\n\n* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\n* Authorship of scholarly books or articles (in scholarly journals with international circulation) in the academic field alone, regardless of the caliber, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's authorship of books or articles should be evaluated to determine whether they were indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\nThe issue of whether the beneficiary is recognized internationally as outstanding in a specific academic area should be addressed in the second step of the analysis (final merits determination), not in the first step where the officer is only required to determine if the evidence objectively meets the regulatory criteria.\n\nThe following tables provide details on the limited determinations that officers should make when first evaluating the evidence, including comparable evidence.",
+              "dense_score": 0.7611
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 20,
+              "printed_manual_page": 804,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p020-c03",
+              "section": "2. Final Merits Determination",
+              "text": "## 2. Final Merits Determination\n\nMeeting the minimum requirement by providing at least two types of initial evidence does not, in itself, establish that the beneficiary in fact meets the requirements for classification as an outstanding professor or researcher.[23] Officers also consider the quality of the evidence. In the second step of the analysis in each case, officers should evaluate the evidence together when considering the petition in its entirety to make a final merits determination of whether or not the petitioner, by a preponderance of the evidence, has demonstrated that the beneficiary is recognized internationally as outstanding in a specific academic area.[24]\n\nAt this step, officers consider any potentially relevant evidence, even if such evidence does not fit one of the above regulatory criteria or was not presented as comparable evidence. The officers consider all evidence in the totality. Some evidence may weigh more favorably on its own, while other evidence is more persuasive when viewed with other evidence.\n\nThe following are examples of situations where evidence in the record may help officers evaluate the quality of the initial or comparable evidence to determine whether, in a totality analysis that considers all of the evidence, the beneficiary is internationally recognized as outstanding:[25]\n\n* The record demonstrates that the beneficiary has published articles in highly-ranked journals relative to other journals in the field, as demonstrated by, for example, evidence the petitioner provides regarding the journal's impact factor.[26] Depending on the level of recognition of the journals in question, as demonstrated by evidence in the record, there may be a high level of recognition associated with publication in such journals, especially if the beneficiary is the most significant contributor to the publication, a senior author, or the sole author of the article;\n\n* The petitioner provides evidence demonstrating that the total rate of citations to the beneficiary's body of published work is high relative to others in the field, such as the beneficiary has a high h-index[27] for the field. Depending on the field and the comparative data the petitioner provides, such evidence may indicate a beneficiary's high overall standing for the purpose of demonstrating that the beneficiary enjoys international recognition as outstanding;[28]",
+              "dense_score": 0.77
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 16,
+              "printed_manual_page": 800,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p016-c01",
+              "section": "B. Evidence",
+              "text": "## B. Evidence\n\nThe regulation describes the evidence that the petitioner must submit in support of an Immigrant Petition for Alien Workers (Form I-140) for an outstanding professor or researcher.[2] The petitioner must submit evidence to demonstrate that the beneficiary professor or researcher (beneficiary) is recognized internationally as outstanding in the academic field specified in the petition. Academic field means \"a body of specialized knowledge offered for study at an accredited U.S. university or institution of higher education.\"[3]\n\nBy regulatory definition, a body of specialized knowledge is larger than a very small area of specialization in which only a single course is taught or that is the subject of a very specialized dissertation. As such, it would be acceptable to find the beneficiary is an outstanding professor or researcher in particle physics rather than physics in general, as long as the petitioner has demonstrated that the claimed field is \"a body of specialized knowledge offered for study at an accredited United States university or institution of higher education.\"[4]\n\nIn addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as an outstanding professor or researcher.[7]\n\n\n\nPetition to Classify an Outstanding Professor or Researcher: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.\n\n    \n\n  \n\n\nOfficers should apply a preponderance of the evidence standard when making these determinations.",
+              "dense_score": 0.6552
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c01",
+              "section": "2. Final Merits Determination",
+              "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;\n\n* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and\n\n* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the beneficiary's international recognition in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the beneficiary is internationally recognized as outstanding.\n\nWhen requesting additional evidence or denying a petition, if the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concludes that the petitioner, by a preponderance of the evidence, has not demonstrated that the beneficiary is an outstanding professor or researcher.[31] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.[32]",
+              "dense_score": 0.6896
+            }
+          ],
+          "retrieval_warning": null,
+          "seconds": 6.99
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "D5",
+        "expected": "No permanent labor certification; employer letter offering tenured/tenure-track teaching or permanent research in the field; employer ability to pay.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "A permanent labor certification is not required for an EB-1B outstanding professor or researcher petition.",
+              "evidence_ids": [
+                "eb1b-p021-c02-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p021-c02",
+                  "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+                }
+              ],
+              "citations": [
+                "eb1b-p021-c02"
+              ]
+            },
+            {
+              "text": "The petitioner must provide an offer of employment in the form of a letter from the prospective U.S. employer to the beneficiary.",
+              "evidence_ids": [
+                "eb1b-p021-c02-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p021-c02",
+                  "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+                }
+              ],
+              "citations": [
+                "eb1b-p021-c02"
+              ]
+            },
+            {
+              "text": "The offer letter must state that the employer is offering a tenured or tenure‑track teaching position or a permanent research position in the beneficiary’s academic field and must demonstrate the employer’s ability to pay the salary.",
+              "evidence_ids": [
+                "eb1b-p021-c02-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p021-c02",
+                  "text": "Although a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]"
+                }
+              ],
+              "citations": [
+                "eb1b-p021-c02"
+              ]
+            }
+          ],
+          "question": "For EB-1B, does the employer need a permanent labor certification, and what offer-of-employment evidence is required?",
+          "category": "EB-1B",
+          "passages": [
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c02",
+              "section": "C. Qualifying Status of Employer",
+              "text": "## C. Qualifying Status of Employer\n\nAlthough a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]\n\nThe beneficiary of a petition for outstanding professor or researcher must be seeking to work for a university; an institution of higher education; or a department, division, or institute of a private employer if the department, division, or institute employs at least three persons full time in research activities and has achieved documented accomplishments in an academic field.[36]\n\nIn general, positions with government agencies at the federal, state, or local level do not fit within the statutory framework unless the government agency is shown to be a U.S. university or an institution of higher learning.[37] Therefore, USCIS may only approve a petition for outstanding professor or researcher in instances where the offer of permanent employment is from a government agency if that agency can establish that it is a U.S. university or an institution of higher learning. Government agencies do not qualify as private employers.\n\nGovernment agencies that do not fit the statutory framework may have other available immigration avenues for offers of permanent employment to professors or researchers. For example, assuming all of the eligibility requirements for that visa preference category have been met, a government agency may file a petition for the person under the extraordinary ability classification.[38]",
+              "dense_score": 0.7054
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c03",
+              "section": "1. Research Positions",
+              "text": "### 1. Research Positions\n\nThe petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment.\n\nFor example, many research positions are funded by grant money received on a yearly basis. Researchers, therefore, are sometimes employed under employment contracts that are valid in 1-year increments. If the petitioning employer demonstrates, however, the intent to continue to seek funding and a reasonable expectation that funding will continue (such as demonstrated prior renewals for extended long-term research projects), such employment can be considered permanent within the meaning of the regulation.[40] Officers should also consider the circumstances surrounding the job offer as well as the benefits attached to the position. A position that appears to be limited to a specific term, such as in the example above, can meet the regulatory test if the position normally continues beyond the term (that is, if the funding grants are normally renewed).",
+              "dense_score": 0.6953
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 16,
+              "printed_manual_page": 800,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p016-c01",
+              "section": "B. Evidence",
+              "text": "## B. Evidence\n\nThe regulation describes the evidence that the petitioner must submit in support of an Immigrant Petition for Alien Workers (Form I-140) for an outstanding professor or researcher.[2] The petitioner must submit evidence to demonstrate that the beneficiary professor or researcher (beneficiary) is recognized internationally as outstanding in the academic field specified in the petition. Academic field means \"a body of specialized knowledge offered for study at an accredited U.S. university or institution of higher education.\"[3]\n\nBy regulatory definition, a body of specialized knowledge is larger than a very small area of specialization in which only a single course is taught or that is the subject of a very specialized dissertation. As such, it would be acceptable to find the beneficiary is an outstanding professor or researcher in particle physics rather than physics in general, as long as the petitioner has demonstrated that the claimed field is \"a body of specialized knowledge offered for study at an accredited United States university or institution of higher education.\"[4]\n\nIn addition, the petitioner must submit evidence of an offer from a qualifying prospective employer of tenured or tenure-track employment (for professors) or permanent employment (which can also include tenured or tenure track positions) in the case of research positions.[5] Finally, the petitioner must provide evidence that the beneficiary has had at least 3 years of experience in teaching or research in the academic field in which the beneficiary will be engaged.[6]\n\nOfficers should use a two-step analysis to evaluate the evidence submitted with the petition to demonstrate eligibility for classification as an outstanding professor or researcher.[7]\n\n\n\nPetition to Classify an Outstanding Professor or Researcher: Overview of Two-Step Evidentiary Review\n\n    \n\n  \n\n\nStep 1\n\n        Assess whether evidence meets regulatory criteria: Determine, by a preponderance of the evidence, which evidence submitted by the petitioner objectively meets the parameters of the regulatory description that applies to that type of evidence (referred to as \"regulatory criteria\").\n\n    \n\n    \nStep 2\n\n        Final merits determination: Evaluate all the evidence together when considering the petition in its entirety for the final merits determination, in the context of the high level of expertise required for this immigrant classification.\n\n    \n\n  \n\n\nOfficers should apply a preponderance of the evidence standard when making these determinations.",
+              "dense_score": 0.6486
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 22,
+              "printed_manual_page": 806,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p022-c02",
+              "section": "Footnotes",
+              "text": "## Footnotes\n\n[1] See INA 203(b)(1)(B). See 8 CFR 204.5(i).\n\n[2] See 8 CFR 204.5(i)(3).\n\n[3] See 8 CFR 204.5(i)(2).\n\n[4] See 8 CFR 204.5(i)(2) (definition of academic field).\n\n[5] See 8 CFR 204.5(i)(2), defining \"permanent, in reference to a research position\" as \"either tenured, tenure-track, or for a term of indefinite or unlimited duration, and in which the employee will ordinarily have an expectation of continued employment unless there is good cause for termination.\"\n\n[6] See 8 CFR 204.5(i)(3)(iii) and 8 CFR 204.5(i)(3)(iv). See 8 CFR 204.5(i)(2) for definitions for permanent and academic field.\n\n[7] See Matter of Chawathe (PDF), 25 I&N Dec. 369, 376 (AAO 2010) (\"[T]ruth is to be determined not by the quantity of evidence alone but by its quality. Therefore, in adjudicating the application pursuant to the preponderance of the evidence standard, the director must examine each piece of evidence for relevance, probative value, and credibility, both individually and within the context of the totality of the evidence, to determine whether the fact to be proven is probably true\"). See Kazarian v. USCIS (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010). USCIS has interpreted Kazarian as applicable to outstanding professor and researcher petitions.\n\n[8] See 8 CFR 204.5(i)(3)(i). The regulation at 8 CFR 204.5(i)(3)(ii) allows a petitioner to submit comparable evidence to establish eligibility if the standards in 8 CFR 204.5(i)(3)(i) do not readily apply.\n\n[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D).",
+              "dense_score": 0.6405
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion.",
+          "seconds": 7.29
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "D6",
+        "expected": "No denial solely because the clause is absent; establish intended indefinite/unlimited duration and ordinary expectation of continued employment.",
+        "answer": {
+          "status": "answered",
+          "message": "",
+          "claims": [
+            {
+              "text": "A permanent research offer does not have to contain a “good cause for termination” clause.",
+              "evidence_ids": [
+                "eb1b-p021-c03-e2"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p021-c03",
+                  "text": "The petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment."
+                }
+              ],
+              "citations": [
+                "eb1b-p021-c03"
+              ]
+            },
+            {
+              "text": "The employer must still establish that the offer is intended to be of indefinite or unlimited duration and that the employee will ordinarily have an expectation of continued employment, such as by showing intent to continue seeking funding and a reasonable expectation of grant renewals.",
+              "evidence_ids": [
+                "eb1b-p021-c03-e2",
+                "eb1b-p021-c03-e3"
+              ],
+              "quotes": [
+                {
+                  "id": "eb1b-p021-c03",
+                  "text": "The petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment."
+                },
+                {
+                  "id": "eb1b-p021-c03",
+                  "text": "For example, many research positions are funded by grant money received on a yearly basis. Researchers, therefore, are sometimes employed under employment contracts that are valid in 1-year increments. If the petitioning employer demonstrates, however, the intent to continue to seek funding and a reasonable expectation that funding will continue (such as demonstrated prior renewals for extended long-term research projects), such employment can be considered permanent within the meaning of the regulation.[40] Officers should also consider the circumstances surrounding the job offer as well as the benefits attached to the position. A position that appears to be limited to a specific term, such as in the example above, can meet the regulatory test if the position normally continues beyond the term (that is, if the funding grants are normally renewed)."
+                }
+              ],
+              "citations": [
+                "eb1b-p021-c03"
+              ]
+            }
+          ],
+          "question": "Does an EB-1B permanent research offer have to contain a good cause for termination clause? What must the employer establish?",
+          "category": "EB-1B",
+          "passages": [
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c03",
+              "section": "1. Research Positions",
+              "text": "### 1. Research Positions\n\nThe petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment.\n\nFor example, many research positions are funded by grant money received on a yearly basis. Researchers, therefore, are sometimes employed under employment contracts that are valid in 1-year increments. If the petitioning employer demonstrates, however, the intent to continue to seek funding and a reasonable expectation that funding will continue (such as demonstrated prior renewals for extended long-term research projects), such employment can be considered permanent within the meaning of the regulation.[40] Officers should also consider the circumstances surrounding the job offer as well as the benefits attached to the position. A position that appears to be limited to a specific term, such as in the example above, can meet the regulatory test if the position normally continues beyond the term (that is, if the funding grants are normally renewed).",
+              "dense_score": 0.7916
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c02",
+              "section": "C. Qualifying Status of Employer",
+              "text": "## C. Qualifying Status of Employer\n\nAlthough a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]\n\nThe beneficiary of a petition for outstanding professor or researcher must be seeking to work for a university; an institution of higher education; or a department, division, or institute of a private employer if the department, division, or institute employs at least three persons full time in research activities and has achieved documented accomplishments in an academic field.[36]\n\nIn general, positions with government agencies at the federal, state, or local level do not fit within the statutory framework unless the government agency is shown to be a U.S. university or an institution of higher learning.[37] Therefore, USCIS may only approve a petition for outstanding professor or researcher in instances where the offer of permanent employment is from a government agency if that agency can establish that it is a U.S. university or an institution of higher learning. Government agencies do not qualify as private employers.\n\nGovernment agencies that do not fit the statutory framework may have other available immigration avenues for offers of permanent employment to professors or researchers. For example, assuming all of the eligibility requirements for that visa preference category have been met, a government agency may file a petition for the person under the extraordinary ability classification.[38]",
+              "dense_score": 0.6597
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 22,
+              "printed_manual_page": 806,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p022-c01",
+              "section": "2. Tenure or Tenure-Track Positions",
+              "text": "The determination as to whether a position qualifies as a tenured or a tenure-track position is not linked to the regulatory requirement that the position be permanent.[41] The definition of permanent applies only to research positions. Officers do not need to evaluate whether the employment contract for a tenured or tenure-track position has a \"good cause for termination\" clause and should not deny a petition seeking an outstanding professor for a tenured or tenure-track position on that basis alone.\n\nHowever, officers should evaluate whether the overall nature of the position is tenured or tenure-track. USCIS does not consider positions that are temporary, adjunct, limited duration fellowships, or similar positions where the employee has no reasonable expectation of long-term employment with the university, to be tenured or tenure-track positions.",
+              "dense_score": 0.6452
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 22,
+              "printed_manual_page": 806,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p022-c02",
+              "section": "Footnotes",
+              "text": "## Footnotes\n\n[1] See INA 203(b)(1)(B). See 8 CFR 204.5(i).\n\n[2] See 8 CFR 204.5(i)(3).\n\n[3] See 8 CFR 204.5(i)(2).\n\n[4] See 8 CFR 204.5(i)(2) (definition of academic field).\n\n[5] See 8 CFR 204.5(i)(2), defining \"permanent, in reference to a research position\" as \"either tenured, tenure-track, or for a term of indefinite or unlimited duration, and in which the employee will ordinarily have an expectation of continued employment unless there is good cause for termination.\"\n\n[6] See 8 CFR 204.5(i)(3)(iii) and 8 CFR 204.5(i)(3)(iv). See 8 CFR 204.5(i)(2) for definitions for permanent and academic field.\n\n[7] See Matter of Chawathe (PDF), 25 I&N Dec. 369, 376 (AAO 2010) (\"[T]ruth is to be determined not by the quantity of evidence alone but by its quality. Therefore, in adjudicating the application pursuant to the preponderance of the evidence standard, the director must examine each piece of evidence for relevance, probative value, and credibility, both individually and within the context of the totality of the evidence, to determine whether the fact to be proven is probably true\"). See Kazarian v. USCIS (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010). USCIS has interpreted Kazarian as applicable to outstanding professor and researcher petitions.\n\n[8] See 8 CFR 204.5(i)(3)(i). The regulation at 8 CFR 204.5(i)(3)(ii) allows a petitioner to submit comparable evidence to establish eligibility if the standards in 8 CFR 204.5(i)(3)(i) do not readily apply.\n\n[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D).",
+              "dense_score": 0.643
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion.",
+          "seconds": 6.7
+        },
+        "behavior_pass": true,
+        "recall_at_4": 1.0
+      },
+      {
+        "id": "U1",
+        "expected": "Current filing fee is outside these dated chapters; do not invent a number.",
+        "answer": {
+          "status": "unsupported",
+          "message": "The provided passages do not contain information about the I-140 filing fee amount.",
+          "claims": [],
+          "question": "What is the current I-140 filing fee in US dollars today?",
+          "category": "EB-1A",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 3,
+              "printed_manual_page": 787,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p003-c01",
+              "section": "A. Eligibility",
+              "text": "When seeking classification as a person of extraordinary ability, a petitioner files an Immigrant Petition for Alien Workers (Form I-140) on behalf of an alien (who may be the petitioner) with evidence demonstrating that the beneficiary is eligible.[1]\n\n\n\nEligibility for Extraordinary Ability Classification\n\n    \n\n  \n\n\nThe person has extraordinary ability in the sciences\n\n        arts\n\n        education\n\n        business\n\n        or athletics\n\n        which has been demonstrated by sustained national or international acclaim\n\n        and whose achievements have been recognized in the field through extensive documentation.\n\n    \n\n    \nThe person seeks to enter the United States to continue work in the area of extraordinary ability.\n\n    \n\n    \nThe person's entry into the United States will substantially benefit the United States in the future.",
+              "dense_score": 0.5703
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 3,
+              "printed_manual_page": 787,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p003-c05",
+              "section": "3. Entry to Substantially Benefit the United States",
+              "text": "### 3. Entry to Substantially Benefit the United States\n\nTo qualify as a person with extraordinary ability, the person's entry must substantially benefit the United States in the future.[8] Although neither the statute nor the regulations specifically define the statutory phrase \"substantially benefit,\" it has been interpreted broadly.[9]\n\nWhether the petitioner demonstrates that the person's employment meets this requirement requires a fact-dependent assessment of the case. In some cases, a Request for Evidence (RFE) may be appropriate if an officer is not yet satisfied that the petitioner has met this requirement. There is no standard rule as to what will substantially benefit the United States. However, male athletes seeking to enter the United States",
+              "dense_score": 0.5159
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 13,
+              "printed_manual_page": 797,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p013-c02",
+              "section": "Footnotes",
+              "text": "## Footnotes\n\n[^ 1] See INA 203(b)(1)(A). See 8 CFR 204.5(h).\n\n[^ 2] See 8 CFR 204.5(h)(5). See 8 CFR 204.5(h)(1) (providing that \"[a]n alien, or any person on behalf of the alien,\" may file the petition).\n\n[^ 3] See INA 203(b)(1)(A)(ii)-(iii).\n\n[^ 4] See INA 203(b)(1)(A)(i). See 8 CFR 204.5(h)(3).\n\n[^ 5] According to Black's Law Dictionary (11th ed. 2019), the definition of sustain is \"to support or maintain, especially over a long period of time . . . To persist in making (an effort) over a long period of time.\"\n\n[^ 6] See INA 203(b)(1)(A)(ii). See 8 CFR 204.5(h)(5).\n\n[^ 7] See Executive Order 14201, Keeping Men Out of Women's Sports, 90 FR 9279 (Feb. 11, 2025), and Executive Order 14168, Defending Women From Gender Ideology Extremism and Restoring Biological Truth to the Federal Government, 90 FR 8615 (Jan. 20, 2025). For more information on evidence of biological sex and the role of biological sex in immigration benefit requests, see Volume 1, General Policies and Procedures, Part E, Adjudications, Chapter 5, Verification of Identifying Information, Section B, Personal Information, Subsection 2, Sex [1 USCIS-PM E.5(B)(2)].\n\n[^ 8] See INA 203(b)(1)(A)(iii).\n\n[^ 9] See *Matter of Price* (PDF), 20 I&N Dec. 953 (Assoc. Comm. 1994) (golfer of beneficiary's caliber will substantially benefit prospectively the United States given the popularity of the sport).\n\n[^ 10] See 8 CFR 204.5(h)(3)-(4).",
+              "dense_score": 0.5311
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 3,
+              "printed_manual_page": 787,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p003-c03",
+              "section": "1. Sustained National or International Acclaim",
+              "text": "### 1. Sustained National or International Acclaim\n\nWhen filing a petition for a person with extraordinary ability, the petitioner must submit evidence that the person has sustained national or international acclaim and that the person's achievements have been recognized in the field of expertise.[4] In determining whether the beneficiary has enjoyed \"sustained\" national or international acclaim, the officer should consider that such acclaim must be maintained.[5] However, the term sustained does not imply an age limit on the beneficiary. A beneficiary may be very young or early in his or her career and still be able to show sustained acclaim. There is also no definitive time frame on what constitutes sustained.\n\nIf a person was recognized for a particular achievement, the officer should determine whether the person continues to maintain a comparable level of acclaim in the field of expertise since the person was originally afforded that recognition. A person may, for example, have achieved national or international acclaim in the past but then failed to maintain a comparable level of acclaim thereafter.",
+              "dense_score": 0.4634
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (ValueError); showing hybrid rank fusion.",
+          "seconds": 10.71
+        },
+        "behavior_pass": true,
+        "recall_at_4": null
+      },
+      {
+        "id": "U2",
+        "expected": "Cannot predict an individual processing time from this corpus.",
+        "answer": {
+          "status": "unsupported",
+          "message": "The supplied passages describe eligibility criteria and adjudication standards for EB‑1B petitions, but they do not provide any information about USCIS processing times or the number of days required for approval.",
+          "claims": [],
+          "question": "How many days will USCIS take to approve my EB-1B petition next month?",
+          "category": "EB-1B",
+          "passages": [
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 22,
+              "printed_manual_page": 806,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p022-c02",
+              "section": "Footnotes",
+              "text": "## Footnotes\n\n[1] See INA 203(b)(1)(B). See 8 CFR 204.5(i).\n\n[2] See 8 CFR 204.5(i)(3).\n\n[3] See 8 CFR 204.5(i)(2).\n\n[4] See 8 CFR 204.5(i)(2) (definition of academic field).\n\n[5] See 8 CFR 204.5(i)(2), defining \"permanent, in reference to a research position\" as \"either tenured, tenure-track, or for a term of indefinite or unlimited duration, and in which the employee will ordinarily have an expectation of continued employment unless there is good cause for termination.\"\n\n[6] See 8 CFR 204.5(i)(3)(iii) and 8 CFR 204.5(i)(3)(iv). See 8 CFR 204.5(i)(2) for definitions for permanent and academic field.\n\n[7] See Matter of Chawathe (PDF), 25 I&N Dec. 369, 376 (AAO 2010) (\"[T]ruth is to be determined not by the quantity of evidence alone but by its quality. Therefore, in adjudicating the application pursuant to the preponderance of the evidence standard, the director must examine each piece of evidence for relevance, probative value, and credibility, both individually and within the context of the totality of the evidence, to determine whether the fact to be proven is probably true\"). See Kazarian v. USCIS (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010). USCIS has interpreted Kazarian as applicable to outstanding professor and researcher petitions.\n\n[8] See 8 CFR 204.5(i)(3)(i). The regulation at 8 CFR 204.5(i)(3)(ii) allows a petitioner to submit comparable evidence to establish eligibility if the standards in 8 CFR 204.5(i)(3)(i) do not readily apply.\n\n[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D).",
+              "dense_score": 0.5721
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c01",
+              "section": "2. Final Merits Determination",
+              "text": "* The petitioner documents the beneficiary's employment or research experience is with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[29] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[30]). Such employment or experience can be a positive factor toward demonstrating that the beneficiary enjoys international recognition as outstanding;\n\n* The record establishes that the beneficiary has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. Although such a role for the conference may not rise to the level of a leading or critical role, this type of invitation is generally indicative of a person's recognition for achievements in the field; and\n\n* The record establishes that the beneficiary is named as an investigator, scientist, or researcher on a peer-reviewed and competitively funded U.S. government grant or stipend for science, technology, engineering, and mathematics (STEM) research. This type of evidence can be a positive factor indicating a beneficiary is recognized internationally as outstanding in the beneficiary's field.\n\nIn all cases, the petitioner must provide sufficient context regarding the above evidence and considerations to demonstrate that the evidence meets the relevant criteria and to establish the beneficiary's international recognition in the totality of the circumstances. This means that the petitioner must explain the significance of the submitted evidence, and how it demonstrates that the beneficiary is internationally recognized as outstanding.\n\nWhen requesting additional evidence or denying a petition, if the officer determines that the petitioner has failed to demonstrate eligibility, the officer should not merely make general assertions regarding this failure. Rather, the officer must articulate the specific reasons as to why the officer concludes that the petitioner, by a preponderance of the evidence, has not demonstrated that the beneficiary is an outstanding professor or researcher.[31] As with all adjudications, if an officer believes that the facts stated in the petition are not true, and can articulate why in the denial, then the officer denies the petition and explains the reasons in the written denial.[32]",
+              "dense_score": 0.5668
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c03",
+              "section": "1. Research Positions",
+              "text": "### 1. Research Positions\n\nThe petitioner must submit evidence to establish that the job offer is for a permanent research position.[39] Officers should not deny a petition where the employer is seeking an outstanding researcher solely because the actual employment contract or offer of employment does not contain a \"good cause for termination\" clause. The petitioning employer, however, must still establish that the offer of employment is intended to be of an indefinite or unlimited duration and that the nature of the position is such that the employee will ordinarily have an expectation of continued employment.\n\nFor example, many research positions are funded by grant money received on a yearly basis. Researchers, therefore, are sometimes employed under employment contracts that are valid in 1-year increments. If the petitioning employer demonstrates, however, the intent to continue to seek funding and a reasonable expectation that funding will continue (such as demonstrated prior renewals for extended long-term research projects), such employment can be considered permanent within the meaning of the regulation.[40] Officers should also consider the circumstances surrounding the job offer as well as the benefits attached to the position. A position that appears to be limited to a specific term, such as in the example above, can meet the regulatory test if the position normally continues beyond the term (that is, if the funding grants are normally renewed).",
+              "dense_score": 0.5306
+            },
+            {
+              "document_id": "eb1b",
+              "chapter": 3,
+              "chapter_title": "Outstanding Professor or Researcher",
+              "source_pdf_page": 21,
+              "printed_manual_page": 805,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+              "id": "eb1b-p021-c02",
+              "section": "C. Qualifying Status of Employer",
+              "text": "## C. Qualifying Status of Employer\n\nAlthough a permanent labor certification is not required for the outstanding professor or researcher classification, the petitioner must provide an offer of employment as initial evidence in support of the petition.[33] The offer of employment must be in the form of a letter from the prospective U.S. employer to the beneficiary and the offer must state that the employer is offering the beneficiary employment in a tenured or tenure-track teaching position or a permanent research position in the beneficiary's academic field.[34] In addition, the petitioner must demonstrate that it has the ability to pay the beneficiary's salary.[35]\n\nThe beneficiary of a petition for outstanding professor or researcher must be seeking to work for a university; an institution of higher education; or a department, division, or institute of a private employer if the department, division, or institute employs at least three persons full time in research activities and has achieved documented accomplishments in an academic field.[36]\n\nIn general, positions with government agencies at the federal, state, or local level do not fit within the statutory framework unless the government agency is shown to be a U.S. university or an institution of higher learning.[37] Therefore, USCIS may only approve a petition for outstanding professor or researcher in instances where the offer of permanent employment is from a government agency if that agency can establish that it is a U.S. university or an institution of higher learning. Government agencies do not qualify as private employers.\n\nGovernment agencies that do not fit the statutory framework may have other available immigration avenues for offers of permanent employment to professors or researchers. For example, assuming all of the eligibility requirements for that visa preference category have been met, a government agency may file a petition for the person under the extraordinary ability classification.[38]",
+              "dense_score": 0.5165
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (ValueError); showing hybrid rank fusion.",
+          "seconds": 12.57
+        },
+        "behavior_pass": true,
+        "recall_at_4": null
+      },
+      {
+        "id": "U3",
+        "expected": "No personal approval probability supported; do not infer eligibility from two counts.",
+        "answer": {
+          "status": "unsupported",
+          "message": "The provided passages describe the qualitative criteria and totality‑of‑evidence analysis for EB‑1A petitions but do not contain any guidance or data for calculating a numerical percentage chance of approval based on number of papers or citations.",
+          "claims": [],
+          "question": "What percentage chance do I personally have of approval with 12 papers and 100 citations?",
+          "category": "EB-1A",
+          "passages": [
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 15,
+              "printed_manual_page": 799,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p015-c01",
+              "section": "Footnotes",
+              "text": "[^ 40] Consistent with a plain language reading, \"readily\" means \"easily\" or \"without much difficulty.\" See Merriam-Webster Dictionary's definition of \"readily.\" The term \"occupation\" is defined as \"the principal business of one's life.\" See Merriam-Webster Dictionary's definition of \"occupation.\"\n\n[^ 41] See INA 203(b)(1)(A).\n\n[^ 42] See 8 CFR 204.5(h)(3).\n\n[^ 43] See 8 CFR 204.5(h)(4).\n\n[^ 44] Not all cases will have such evidence, nor is such evidence necessary for the petitioner to demonstrate eligibility. Additionally, the list is a non-exhaustive list of examples. While the listed factors may be especially relevant to persons in STEM fields, the guidance applies to all extraordinary ability petitions.\n\n[^ 45] Impact factor is commonly used as a measure of a journal's influence; it represents the average number of citations received per article published in that journal during the 2 preceding years. See Garfield, E, The History and Meaning of the Journal Impact Factor, Journal of the American Medical Association, Vol. 295, Iss. 1, p. 90 (2006).\n\n[^ 46] The h-index is an example of a tool for measuring a researcher's output and impact. It is based on the highest number of the researcher's publications that have been cited at least that same number of times. For example, if a researcher has an h-index of 10, it means the researcher has 10 publications that have 10 or more citations each (but not 11 publications with at least 11 citations each). See Hirsch, J, An Index to Quantify an Individual's Scientific Research Output, Proceedings of the National Academy of Sciences of the United States of America, Vol. 102, Iss. 46, p. 16569 (2005). Other indices for measuring output and impact are also used. When relying on any of these tools, a petitioner should explain its methodology and significance with supporting documentation because the sources for the data and the duration of time involved in the calculation can impact the actual h-index value.\n\n[^ 47] This factor is less relevant for beneficiaries early in their career, as such persons have had less time to accumulate citations but may nevertheless have garnered acclaim and risen to the small percentage at the top of the field as demonstrated by other evidence in the record. As stated above, none of the listed factors are required to demonstrate eligibility.",
+              "dense_score": 0.6907
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 12,
+              "printed_manual_page": 796,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p012-c01",
+              "section": "2. Final Merits Determination",
+              "text": "At this step, officers consider any potentially relevant evidence in the record, even if such evidence does not fit one of the above regulatory criteria or was not presented as comparable evidence. The officers consider all evidence in the totality. Some evidence may weigh more favorably on its own, while other evidence is more persuasive when viewed with other evidence.\n\nThe following are examples of situations where evidence in the record may help officers evaluate the quality of the initial or comparable evidence and determine whether in a totality analysis that considers all of the evidence, the person is among the small percentage at the top of the field and has sustained national or international acclaim:[44]\n\n* The record demonstrates that the person has published articles in particularly highly-ranked journals (including published conference proceedings) relative to other journals in the field, as demonstrated by, for example, evidence the petitioner provides regarding the journal's impact factor.[45] Depending on the level of recognition of the journals in question, as demonstrated by evidence in the record, there may be particular prestige or acclaim associated with publication in such journals, especially if the person is the most significant contributor to the published article, a senior author, or the sole author of the article;\n\n* The petitioner provides evidence demonstrating that the total rate of citations to the person's body of published work is high relative to others in the field, such as the person has a high h-index[46] for the field. Depending on the field and the comparative data the petitioner provides, such evidence may indicate a person's high overall standing for the purpose of demonstrating that the person is among the small percentage at the top of the field;[47]\n\n* The petitioner documents the person's employment or research experience with leading institutions in the field (such as U.S. universities that have been recognized as having high or very high research activity by the Carnegie Classification of Institutions of Higher Education,[48] foreign universities with comparably high research activity, or a university that is highly regarded according to a widely recognized metric such as the QS World University Rankings[49]). Such employment or experience can be a positive factor toward demonstrating that the person is among the small percentage at the top of the field;\n\n* The record establishes that the person has received unsolicited invitations to speak or present research at nationally or internationally recognized conferences in the field. This type of invitation is generally indicative of a person's high standing and recognition for achievements in the field; and",
+              "dense_score": 0.7188
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 11,
+              "printed_manual_page": 795,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p011-c03",
+              "section": "2. Final Merits Determination",
+              "text": "## 2. Final Merits Determination\n\nIn the second step of the analysis, the officer should consider the petition in its entirety to determine eligibility according to the standard. To establish eligibility, the petition must demonstrate that the person has sustained national or international acclaim and that their achievements have been recognized in the field of expertise, indicating that the person is one of that small percentage who has risen to the very top of the field of endeavor. The officer applies a preponderance of the evidence standard when making this determination.\n\nAn officer may not limit the kind of evidence the officer thinks the person should be able to submit and deny the petition if that particular type of evidence (whether one of the prescribed types[42] or comparable evidence[43]) is absent, if the person nonetheless submitted other types of evidence that meet the regulatory requirements for the classification.\n\nFor example, an officer may think that if a person is extraordinary, there should be published articles about the person and the person's work. However, an officer cannot deny the petition because no published articles were submitted, so long as the petitioner has submitted other evidence that meets the three qualifying criteria which demonstrates the person is in fact extraordinary. Approval or denial of a petition is based on the type and quality of evidence submitted rather than assumptions about the failure to address different criteria.",
+              "dense_score": 0.6747
+            },
+            {
+              "document_id": "eb1a",
+              "chapter": 2,
+              "chapter_title": "Extraordinary Ability",
+              "source_pdf_page": 11,
+              "printed_manual_page": 795,
+              "source_file": "Policy Manual_USCIS_eb.pdf",
+              "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+              "snapshot_date": "2026-09-23",
+              "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-2",
+              "id": "eb1a-p011-c02",
+              "section": "Comparable evidence: Comparable evidence to establish the person's eligibility if the standards do not readily apply to the person's occupation.[39]",
+              "text": "However, objectively meeting the regulatory criteria in the first step alone does not establish that the person in fact meets the requirements for classification as a person with extraordinary ability.[41]\n\n**For example:**\n\n* Participating in the judging of the work of others in the same or an allied field of specialization alone, regardless of the circumstances, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's participation to determine whether it was indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\n* Publishing scholarly articles in professional or major trade publications or other major media alone, regardless of the caliber, should satisfy the regulatory criteria in the first step of the analysis. However, the second step requires the officer to evaluate the person's publications to determine whether they were indicative of the person being one of that small percentage who have risen to the very top of the field of endeavor and enjoying sustained national or international acclaim.\n\nThe question of whether the person is one of that small percentage who have risen to the very top of the field of endeavor and enjoys sustained national or international acclaim should be addressed in the second step of the analysis (final merits determination). In the first step, the officer is only required to determine if the evidence objectively meets the regulatory criteria.",
+              "dense_score": 0.6558
+            }
+          ],
+          "retrieval_warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion.",
+          "seconds": 7.93
+        },
+        "behavior_pass": true,
+        "recall_at_4": null
+      }
+    ]
+  },
+  "agent": {
+    "model": "openai/gpt-oss-120b",
+    "seconds_to_review": 18.35,
+    "draft": {
+      "title": "Research EB-1B judging evidence and prepare a short checklist of documentation to verify.",
+      "category": "EB-1B",
+      "snapshot": "2026-09-23",
+      "items": [
+        {
+          "task": "Obtain the original invitation (e.g., journal review request, conference abstract review request) addressed to the beneficiary.",
+          "text": "The petitioner must submit evidence that the beneficiary was invited to judge the work of others in the same or an allied academic field.",
+          "evidence_ids": [
+            "eb1b-p019-c01-e6",
+            "eb1b-p019-c01-e7"
+          ],
+          "research_task": "Obtain the original invitation (e.g., journal review request, conference abstract review request) addressed to the beneficiary.",
+          "quotes": [
+            {
+              "id": "eb1b-p019-c01",
+              "text": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field."
+            },
+            {
+              "id": "eb1b-p019-c01",
+              "text": "For example, a petitioner might document a beneficiary's peer review work by submitting a copy of a request from a journal to the beneficiary to do the review, accompanied by evidence confirming that the beneficiary actually completed the review."
+            }
+          ],
+          "citations": [
+            "eb1b-p019-c01"
+          ]
+        },
+        {
+          "task": "Collect documentation confirming completion of the review, such as a signed reviewer form, email confirming submission, or a copy of the completed review.",
+          "text": "The petitioner must also provide proof that the beneficiary actually performed the judging activity.",
+          "evidence_ids": [
+            "eb1b-p019-c01-e6",
+            "eb1b-p019-c01-e7"
+          ],
+          "research_task": "Collect documentation confirming completion of the review, such as a signed reviewer form, email confirming submission, or a copy of the completed review.",
+          "quotes": [
+            {
+              "id": "eb1b-p019-c01",
+              "text": "The petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field."
+            },
+            {
+              "id": "eb1b-p019-c01",
+              "text": "For example, a petitioner might document a beneficiary's peer review work by submitting a copy of a request from a journal to the beneficiary to do the review, accompanied by evidence confirming that the beneficiary actually completed the review."
+            }
+          ],
+          "citations": [
+            "eb1b-p019-c01"
+          ]
+        },
+        {
+          "task": "Gather records of each type of activity (e.g., conference program listings, journal reviewer acknowledgments, dissertation committee minutes, grant‑review panel letters).",
+          "text": "Acceptable judging activities include reviewing abstracts or papers for conferences, peer‑reviewing scholarly publications, serving on doctoral dissertation committees, and peer‑reviewing government research funding proposals.",
+          "evidence_ids": [
+            "eb1b-p019-c01-e4"
+          ],
+          "research_task": "Gather records of each type of activity (e.g., conference program listings, journal reviewer acknowledgments, dissertation committee minutes, grant‑review panel letters).",
+          "quotes": [
+            {
+              "id": "eb1b-p019-c01",
+              "text": "* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs."
+            }
+          ],
+          "citations": [
+            "eb1b-p019-c01"
+          ]
+        }
+      ],
+      "user_note": "",
+      "sources": [
+        {
+          "document_id": "eb1b",
+          "chapter": 3,
+          "chapter_title": "Outstanding Professor or Researcher",
+          "source_pdf_page": 19,
+          "printed_manual_page": 803,
+          "source_file": "Policy Manual_USCIS_eb.pdf",
+          "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+          "snapshot_date": "2026-09-23",
+          "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+          "id": "eb1b-p019-c01",
+          "section": "Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]",
+          "text": "## Criterion 4: The beneficiary's participation, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.[14]\n\nUSCIS determines whether the beneficiary has participated, either individually or on a panel, as the judge of the work of others in the same or an allied academic field.\n\nExamples of qualifying judging experience may include, but are not limited to:\n\n* Reviewer of abstracts or papers submitted for presentation at scholarly conferences in the respective field;\n* Peer reviewer for scholarly publications;\n* Member of doctoral dissertation committees; and\n* Peer reviewer for government research funding programs.\n\n**Considerations:**\n\nThe petitioner must show that the beneficiary has not only been invited to judge the work of others, but also that the beneficiary actually participated in the judging of the work of others in the same or allied academic field.\n\nFor example, a petitioner might document a beneficiary's peer review work by submitting a copy of a request from a journal to the beneficiary to do the review, accompanied by evidence confirming that the beneficiary actually completed the review.",
+          "dense_score": 0.7723
+        },
+        {
+          "document_id": "eb1b",
+          "chapter": 3,
+          "chapter_title": "Outstanding Professor or Researcher",
+          "source_pdf_page": 16,
+          "printed_manual_page": 800,
+          "source_file": "Policy Manual_USCIS_eb.pdf",
+          "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+          "snapshot_date": "2026-09-23",
+          "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+          "id": "eb1b-p016-c02",
+          "section": "1. Assess Whether Evidence Meets Any Regulatory Criteria",
+          "text": "### 1. Assess Whether Evidence Meets Any Regulatory Criteria\n\nThe first step of the evidentiary review is limited to determining whether the evidence submitted with the petition is comprised of at least two of the six regulatory criteria.[8]\n\nFor purposes of the first step of the analysis, officers should consider the quality and caliber of the evidence to determine whether a particular regulatory criterion has been met, to the extent the criterion has qualitative requirements.[9] Officers should not yet make a determination regarding whether or not the beneficiary is recognized internationally as outstanding in the academic field.\n\nFor example:\n\n* Participating in the judging of the work of others in the same or an allied academic field alone, regardless of the circumstances, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's participation should be evaluated to determine whether it was indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\n* Authorship of scholarly books or articles (in scholarly journals with international circulation) in the academic field alone, regardless of the caliber, should satisfy the regulatory criteria in step one. However, for the analysis in step two, the beneficiary's authorship of books or articles should be evaluated to determine whether they were indicative of the beneficiary being recognized internationally as outstanding in a specific academic area.\n\nThe issue of whether the beneficiary is recognized internationally as outstanding in a specific academic area should be addressed in the second step of the analysis (final merits determination), not in the first step where the officer is only required to determine if the evidence objectively meets the regulatory criteria.\n\nThe following tables provide details on the limited determinations that officers should make when first evaluating the evidence, including comparable evidence.",
+          "dense_score": 0.7104
+        },
+        {
+          "document_id": "eb1b",
+          "chapter": 3,
+          "chapter_title": "Outstanding Professor or Researcher",
+          "source_pdf_page": 22,
+          "printed_manual_page": 806,
+          "source_file": "Policy Manual_USCIS_eb.pdf",
+          "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+          "snapshot_date": "2026-09-23",
+          "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+          "id": "eb1b-p022-c02",
+          "section": "Footnotes",
+          "text": "## Footnotes\n\n[1] See INA 203(b)(1)(B). See 8 CFR 204.5(i).\n\n[2] See 8 CFR 204.5(i)(3).\n\n[3] See 8 CFR 204.5(i)(2).\n\n[4] See 8 CFR 204.5(i)(2) (definition of academic field).\n\n[5] See 8 CFR 204.5(i)(2), defining \"permanent, in reference to a research position\" as \"either tenured, tenure-track, or for a term of indefinite or unlimited duration, and in which the employee will ordinarily have an expectation of continued employment unless there is good cause for termination.\"\n\n[6] See 8 CFR 204.5(i)(3)(iii) and 8 CFR 204.5(i)(3)(iv). See 8 CFR 204.5(i)(2) for definitions for permanent and academic field.\n\n[7] See Matter of Chawathe (PDF), 25 I&N Dec. 369, 376 (AAO 2010) (\"[T]ruth is to be determined not by the quantity of evidence alone but by its quality. Therefore, in adjudicating the application pursuant to the preponderance of the evidence standard, the director must examine each piece of evidence for relevance, probative value, and credibility, both individually and within the context of the totality of the evidence, to determine whether the fact to be proven is probably true\"). See Kazarian v. USCIS (PDF), 596 F.3d 1115, 1122 (9th Cir. 2010). USCIS has interpreted Kazarian as applicable to outstanding professor and researcher petitions.\n\n[8] See 8 CFR 204.5(i)(3)(i). The regulation at 8 CFR 204.5(i)(3)(ii) allows a petitioner to submit comparable evidence to establish eligibility if the standards in 8 CFR 204.5(i)(3)(i) do not readily apply.\n\n[9] For example, in evaluating an award submitted under 8 CFR 204.5(i)(3)(i)(A), it is necessary to consider the level of recognition the award holds to determine whether it is a major award, consistent with the requirements of the criterion. However, evidence that the beneficiary participated as a judge of the work of others in the same or allied field alone, regardless of the caliber or significance of such judging experience, would satisfy the requirements of 8 CFR 204.5(i)(3)(i)(D).",
+          "dense_score": 0.6895
+        },
+        {
+          "document_id": "eb1b",
+          "chapter": 3,
+          "chapter_title": "Outstanding Professor or Researcher",
+          "source_pdf_page": 19,
+          "printed_manual_page": 803,
+          "source_file": "Policy Manual_USCIS_eb.pdf",
+          "source_sha256": "cb8814dfed0d855edeac8f6bf160d9d686f2dddaf67fbecf73285e561db1143d",
+          "snapshot_date": "2026-09-23",
+          "source_url": "https://www.uscis.gov/policy-manual/volume-6-part-f-chapter-3",
+          "id": "eb1b-p019-c02",
+          "section": "Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]",
+          "text": "## Criterion 5: The beneficiary's original scientific or scholarly research contributions to the academic field.[15]\n\nUSCIS determines whether the beneficiary has made original scientific or scholarly research contributions to the academic field.\n\nExamples of relevant evidence of qualifying contributions may include, but are not limited to:\n\n* Published materials about the significance of the beneficiary's original work;\n* Testimonials, letters, and affidavits about the beneficiary's original work;\n* Documentation that the beneficiary's original work was cited at a level indicative of an original scientific or scholarly research contribution to an academic field; and\n* Patents or licenses deriving from the beneficiary's work or evidence of commercial use of the beneficiary's work.\n\n**Considerations:**\n\nThe regulations do not require that the beneficiary's contributions be of major significance. That said, the description of this type of evidence in the regulation does not simply require original research, but an original scientific or scholarly research contribution.[16] Moreover, the description of this type of evidence in the regulation requires that the contribution must be to the academic field, rather than an individual laboratory or institution.\n\nThe regulations include a separate criterion for scholarly articles.[17] Therefore, contributions are a separate evidentiary requirement from scholarly articles.\n\nPossible items that could satisfy this criterion include, but are not limited to:\n\n* Citation history or patterns for the beneficiary's work, as evidenced by number of citations, as well as an examination of the impact factor for the journals in which the beneficiary publishes.[18] While many scholars publish, not all are cited or publish in journals with significant impact factors. The petitioner may use web tools such as Google Scholar, SciFinder, and the Web of Science to establish the number of citations and the impact factor for journals; and\n\n* Detailed letters from experts in the field explaining the nature and significance of the beneficiary's contribution may also provide valuable context for evaluating whether the original work is a contribution to the academic field, particularly when the record includes documentation corroborating the claimed significance. Submitted letters should specifically describe the beneficiary's contribution and its significance to the field and should also set forth the basis of the writer's knowledge and expertise.",
+          "dense_score": 0.7004
+        }
+      ]
+    },
+    "trace": [
+      {
+        "step": 1,
+        "action": "search_policy",
+        "query": "EB-1B \"judging the work of others\" evidence checklist",
+        "reason": "Need USCIS policy guidance on the \"judging the work of others\" criterion for EB-1B to draft a concise documentation checklist."
+      },
+      {
+        "observation": "Retrieved 4 passages.",
+        "warning": "Reranking unavailable (LengthFinishReasonError); showing hybrid rank fusion."
+      },
+      {
+        "step": 2,
+        "action": "draft_checklist",
+        "query": null,
+        "reason": "Creating a concise documentation checklist for EB-1B \"judging the work of others\" evidence based on the retrieved policy manual excerpts."
+      }
+    ],
+    "status": "saved",
+    "saved_id": "432cf04315a4bc6292fc4da7",
+    "approval": "Scripted public-policy test, not a real candidate case",
+    "restart_recovery": true
+  },
+  "browser": {
+    "week2": {
+      "status": "answered",
+      "browser_seconds": 11.31
+    }
+  },
+  "semantic_claim_audit": "Not independently audited; behavior checks are not answer accuracy."
+}

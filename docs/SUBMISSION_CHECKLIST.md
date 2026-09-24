@@ -8,7 +8,7 @@ This custom use case follows the supplied Week 3 handout. This repository covers
 | Read/write boundary and human intervention | Final save gated on exact-draft approval; edit, re-review and cancellation implemented. |
 | Memory across restart | Local mode recovers goal, history, sources, draft, trace and approval state from checkpoints across restarts. |
 | Failure handling | Bounded calls, API retries, source-empty handoff, failed-save retention and idempotent retry. |
-| End-to-end validation | Five scenario categories covered by live and deterministic checks; 27 standalone tests passed, including UI and workspace checks; see GitHub Actions. |
+| End-to-end validation | Five scenario categories covered by live and deterministic checks; 30 standalone tests passed, including UI, workspace, timeout and research-focus checks; see GitHub Actions. |
 | Documentation and prompts | `WEEK3_SUBMISSION.md`, `WEEK3_EVALUATION.md`, `ARCHITECTURE.md` and `eb1/research.py`. |
 | Manual baseline comparison | Not measured; no quantitative human time saving is claimed. |
 | GitHub assets | This repository and ZIP contain the Week 3 agent. |

@@ -1,5 +1,6 @@
 import re
 import time
+from openai import APIError
 from .models import json_call
 
 ANSWER_PROMPT = '''You explain a dated USCIS EB-1A / EB-1B policy snapshot for research.
@@ -83,8 +84,12 @@ def answer_from_passages(question, category, passages, checklist=False):
     prompt = ANSWER_PROMPT
     if checklist:
         prompt += ('\nThis is a research checklist. For each claim also return research_task: a concrete action '
-                   'to check or collect evidence for this policy point. Never assume the user has evidence or qualifies.')
-    result = json_call(prompt, {'question': question, 'selected_category': category, 'passages': context})
+                   'to check or collect evidence for this policy point. Never assume the user has evidence or qualifies. '
+                   'Keep every task and policy statement within the exact topic of the user goal. '
+                   'Use this JSON shape for an answered checklist: '
+                   '{"status":"answered","message":"","claims":[{"text":"supported policy point",'
+                   '"evidence_ids":["exact evidence span ID"],"research_task":"specific evidence to locate or verify"}]}')
+    result = json_call(prompt, {'question': question, 'selected_category': category, 'passages': context}, purpose='answer')
     if result.get('status') not in ('answered', 'clarify', 'unsupported'):
         raise ValueError('Invalid answer status')
     if result['status'] == 'answered':
@@ -114,7 +119,12 @@ def ask(retriever, question, category='Both', mode='hybrid'):
                 'claims': [], 'question': question, 'category': category, 'passages': [], 'retrieval_warning': None,
                 'seconds': round(time.perf_counter() - start, 2)}
     passages, warning = retriever.search(question, category, mode)
-    result = answer_from_passages(question, category, passages)
+    try:
+        result = answer_from_passages(question, category, passages)
+    except (APIError, TimeoutError):
+        # Keep genuine retrieved evidence usable during a provider outage. This
+        # is a service failure, not an unsupported policy question or a cached answer.
+        result = {'status': 'unavailable', 'message': 'The answer service did not finish. You can read the retrieved policy passages below, or try the question again.', 'claims': []}
     return {**result, 'question': question, 'category': category, 'passages': passages,
             'retrieval_warning': warning, 'seconds': round(time.perf_counter() - start, 2)}
 

@@ -1,6 +1,6 @@
 # Week 2 evaluation
 
-Final model: `Qwen/Qwen3-235B-A22B-Instruct-2507`. Public policy questions only. The two modes used the same corpus, embedding model and final answer prompt.
+Original evaluation model: `Qwen/Qwen3-235B-A22B-Instruct-2507`. Public policy questions only. The two modes used the same corpus, embedding model and final answer prompt.
 
 ## Measured results
 
@@ -56,3 +56,7 @@ One retained failure is C3 claim 1: the answer describes original contributions 
 5. Source review found overbroad/tangential smaller-model claims even after behavior checks passed. The final larger model improved precision and observed latency, but one criterion-scope error remains and is explicitly scored as a failure.
 
 Earlier raw results are retained in `evals/iteration1`, `iteration2`, and `iteration3`. Final question definitions, raw answers, sources and timing are in `evals/questions.json` and `evals/results/`. Audit judgments are in `evals/claim_review.json`.
+
+## Current runtime
+
+The default model and timeout handling have since changed. See [the response-time follow-up](PERFORMANCE.md). The measurements above remain the original Qwen baseline.
