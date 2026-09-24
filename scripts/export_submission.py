@@ -19,7 +19,6 @@ def public_files():
     files.extend((ROOT / 'evals/iteration3').glob('*.json'))
     files.extend((ROOT / 'corpus/index').glob('*'))
     files.extend((ROOT / '.github/workflows').glob('*.yml'))
-    files.extend(ROOT / 'docs' / name for name in ('WEEK2_PROJECT_REPORT.docx', 'WEEK3_PROJECT_REPORT.docx') if (ROOT / 'docs' / name).exists())
     local_only = {'docs/DEMO_SCRIPT.md', '.streamlit/secrets.toml'}
     files = [path for path in files if path.relative_to(ROOT).as_posix() not in local_only]
     # Exact-key scan only, never print a key or a matching line.
@@ -33,12 +32,9 @@ def public_files():
     for path in files:
         path.resolve().relative_to(ROOT.resolve())
         relative = path.relative_to(ROOT).as_posix()
-        if path.name == '.env' or path.name.endswith('.secrets.toml') or path.suffix in ('.pdf', '.sqlite', '.db') or (path.suffix == '.npy' and relative != 'corpus/index/vectors.npy'):
+        if path.name == '.env' or path.name.endswith('.secrets.toml') or path.suffix in ('.pdf', '.docx', '.sqlite', '.db') or (path.suffix == '.npy' and relative != 'corpus/index/vectors.npy'):
             raise ValueError('A private/runtime file was selected for export')
         raw = path.read_bytes()
-        if path.suffix == '.docx':
-            with zipfile.ZipFile(path) as document:
-                raw += b''.join(document.read(name) for name in document.namelist())
         if any(s.encode() in raw for s in secrets):
             raise ValueError('Secret scan failed; export stopped without displaying the secret')
     return sorted(set(files))
@@ -54,7 +50,7 @@ def main():
             archive.write(path, path.relative_to(ROOT).as_posix())
     print(json.dumps({'zip': str(target), 'files': len(set(files)), 'bytes': target.stat().st_size,
                       'secret_scan': 'configured credentials passed', 'included': 'public policy index',
-                      'excluded': ['.env', 'original PDFs', 'cloud job responses', 'runtime sessions', '.venv', 'demo scripts', 'cloud secrets', 'viewer access codes']}))
+                      'excluded': ['.env', 'original PDFs', 'cloud job responses', 'runtime sessions', '.venv', 'demo scripts', 'Word reports', 'screenshots', 'cloud secrets', 'viewer access codes']}))
 
 if __name__ == '__main__':
     main()

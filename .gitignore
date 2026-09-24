@@ -17,3 +17,6 @@ pytest-cache-files-*/
 /docs/DEMO_SCRIPT.md
 .streamlit/secrets.toml
 *.secrets.toml
+*.docx
+local_materials/
+screenshots/

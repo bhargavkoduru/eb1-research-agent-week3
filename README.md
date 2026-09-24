@@ -1,21 +1,20 @@
 # EB-1 Research Agent - Week 3
 
-This is the standalone **Week 3 submission**. The app opens directly to the research/checklist agent; there is no week selector or examiner login. The separate [Week 2 project](https://github.com/bhargavkoduru/eb1-policy-qa-week2) has its own repository.
+This is the standalone **Week 3 submission**. The local app researches policy questions and pauses for human review before saving checklists. The separate [Week 2 project](https://github.com/bhargavkoduru/eb1-policy-qa-week2) has its own repository.
 
 Enter a research goal, inspect the source evidence, edit or cancel if needed, then approve and download the checklist.
 
 Example: **Research EB-1B judging evidence and prepare a short checklist of documentation to verify.**
 
-## Submission links
+## Project documentation
 
 - Code: https://github.com/bhargavkoduru/eb1-research-agent-week3
-- [Editable Word report](docs/WEEK3_PROJECT_REPORT.docx) - includes the write-up and evaluation; ready to open in Google Docs.
-- [Google Doc draft](docs/WEEK3_SUBMISSION.md)
+- [Project report](docs/WEEK3_SUBMISSION.md)
 - [Evaluation and retained limitations](docs/WEEK3_EVALUATION.md)
-- [Requirement mapping and remaining actions](docs/SUBMISSION_CHECKLIST.md)
+- [Requirements alignment](docs/SUBMISSION_CHECKLIST.md)
 - [Architecture](docs/ARCHITECTURE.md) and [source preparation](docs/SOURCE_AUDIT.md)
 
-This repository provides the project documentation and code assets for the weekly submission. API keys are excluded from Git and the submission ZIP.
+The documentation covers scope, data, prompts, implementation, iterations and measured results. API keys are excluded from Git and the submission ZIP.
 
 ## Run a fresh copy
 

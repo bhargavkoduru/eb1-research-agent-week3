@@ -1,6 +1,6 @@
-# Week 3 submission checklist
+# Week 3 requirements alignment
 
-This custom use case follows the supplied Week 3 handout. Submit this repository for Week 3; [Week 2](https://github.com/bhargavkoduru/eb1-policy-qa-week2) is separate.
+This custom use case follows the supplied Week 3 handout. This repository covers Week 3; [Week 2](https://github.com/bhargavkoduru/eb1-policy-qa-week2) is separate.
 
 | Week 3 item | Evidence/status |
 | --- | --- |
@@ -10,13 +10,9 @@ This custom use case follows the supplied Week 3 handout. Submit this repository
 | Failure handling | Bounded calls, API retries, source-empty handoff, failed-save retention and idempotent retry. |
 | End-to-end validation | Five scenario categories covered by live and deterministic checks; 27 standalone tests passed, including UI and workspace checks; see GitHub Actions. |
 | Documentation and prompts | `WEEK3_SUBMISSION.md`, `WEEK3_EVALUATION.md`, `ARCHITECTURE.md` and `eb1/research.py`. |
-| Manual baseline comparison | Not measured. Time one manual policy search and checklist preparation before claiming a time-saving percentage. |
+| Manual baseline comparison | Not measured; no quantitative human time saving is claimed. |
 | GitHub assets | This repository and ZIP contain the Week 3 agent. |
 
-## Finish this week's submission
+The supplied handout permits a custom use case. The checks above concern this project's chosen scope, not specialized requirements of unrelated sample projects. Measured results describe a small development evaluation; they do not establish performance on unseen questions.
 
-1. Upload `WEEK3_PROJECT_REPORT.docx` to Google Drive and open it with Google Docs. Replace `[Your name]`; the report already includes the evaluation and repository link.
-2. Use **https://github.com/bhargavkoduru/eb1-research-agent-week3** as this week's GitHub link. It is public; no examiner invitation is needed.
-3. Submit the Doc and GitHub links through the course form. Nothing has been submitted to the course on your behalf.
-
-Demonstrate human approval before save. Use local mode for restart recovery. Do not claim a measured human time saving.
+The nine-field agent framework is included in `WEEK3_SUBMISSION.md`, although the handout labels the expanded framework optional. All five scenario categories passed; real human review time and manual workflow cost remain unmeasured.
